@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Requirements</title>
+    <title>Go Figure's Awesome Requirements</title>
 </head>
 <body>
     <h1>Requirements</h1>
     <h2>Functional</h2>
-    <ol type="1">
-        <li>User must be able to move game character</li>
+    <ol>
+        <li></li>
     </ol>
 
     <h2>Constraint</h2>
@@ -17,7 +17,7 @@
 
     <h2>Risk</h2>
     <ol>
-        <li>Game physics not breaking</li>
+        <li></li>
     </ol>
 </body>
 </html>
