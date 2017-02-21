@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Requirements</title>
+</head>
+<body>
+    <h1>Go Figure Game Requirements</h1>
+    <h2 style="border-bottom:solid">Overall Game</h2>
+    <ol type="1">
+        <li>Name: Main Menu<br />Type: Functional<br /> Summary: The menu to select the level editor or the game</li>
+        <li>Name: Game Layout<br />Type: Functional<br /> Summary: This will be where levels are played</li>
+        <li>Name: Game Rules<br />Type: Functional<br /> Summary: Rules that define the game</li>
+        <li>Name: Mobility <br />Type: Functional<br /> Summary: User must be able to move game character through world through the WASD keys</li>
+        <li>Name: Visbility <br />Type: Functional<br /> Summary: User must be able to see enough of the game world to move and make decisions</li>
+        <li>Name: Clock <br />Type: Functional<br /> Summary: To have time constraints on completing a level, the game will need a method of keeping time</li>
+        <li>Name: Mute Toggle <br />Type: Functional<br /> Summary: User must be able to turn off sounds/music</li>
+        <li>Name: Playable Character <br />Type: Functional<br /> Summary: User must have a way to interact with the level(s)</li>
+        <li>Name: Number of Playable Characters <br />Type: Constraint<br /> Summary: The user will have at most 3 characters to select</li>
+        <li>Name: Terrain <br />Type: Functional<br /> Summary: This will be used as the floor or for platforms</li>
+        <li>Name: Character Jumping <br />Type: Functional<br /> Summary: The playable character must be able to maneuver up terrain</li>
+        <li>Name: Character Falling <br />Type: Functional<br /> Summary: The playable character must be able to maneuver down terrain</li>
+        <li>Name: Level Border <br />Type: Functional<br /> Summary: Playable character can't leave the dimensions of the game</li>
+        <li>Name: End Objective<br />Type: Functional<br /> Summary: A way to signal the playable character has reached the end of the level</li>
+        <li>Name: Pressure Plate<br />Type: Functional<br /> Summary: An object that can manipulate the environment and the character</li>
+        <li>Name: Spikes<br />Type: Functional<br /> Summary: An object which will kill the playable character</li>
+        <li>Name: Character Death<br />Type: Functional<br /> Summary: The playable character will be killed after one hit</li>
+        <li>Name: Sound Effects<br />Type: Functional<br /> Summary: When the playable character interacts with the environment or object, a sound will be played</li>
+        <li>Name: Tutorial<br />Type: Functional<br /> Summary: A way to tell the user about the controls and different objects in the game</li>
+        <li>Name: Pre-built Levels<br />Type: Functional<br /> Summary: At least 3 levels will already be made with the game</li>
+        <li>Name: Return Button <br />Type: Functional<br /> Summary: This button will be in game level, which will allow the user to back to the previous menu/level editor</li>
+        <li>Name: Program Storage<br />Type: Functional<br /> Summary: Game and level editor will access the same folder</li>
+        <li>*New Name: Level Ending<br />Type: Functional<br /> Summary: After level has ended let player choose to progress, quit, or restart</li>
+    </ol>
+
+    <h2 style="border-bottom:solid">Level Editor</h2>
+    <ol>
+        <li>Name: Level Editor - Rules<br />Type: Constraint<br /> Summary: The level editor cannot break the rules of the game mode</li>
+        <li>Name: Level Editor <br />Type: Functional<br /> Summary: Drag and drop interface with a grid layout for the level for user to make their own levels</li>
+        <li>Name: Level Editor - Testing<br />Type: Functional<br /> Summary: The user will be able to go from the level editor to the game to test their level</li>
+        <li>Name: Level Editor - Edit <br />Type: Functional<br /> Summary: User should be able to reopen and edit previously user-made levels</li>
+        <li>Name: Level Editor - Deleting <br />Type: Functional<br /> Summary: The level editor needs a way to remove objects</li>
+        <li>Name: Saved Levels <br />Type: Functional<br /> Summary: User created levels will need to be saved</li>
+        <li>Name: Level Menu <br />Type: Functional<br /> Summary: User must be able access and play their level(s) from the game GUI</li>
+        <li>Name: Level Deletion<br />Type: Functional<br /> Summary: The user can delete levels from the level menu</li>
+        <li>Name: Deleting Custom Levels<br />Type: Constraint<br /> Summary: The user is only able to delete user created levels</li>
+    </ol>
+
+    <h2 style="border-bottom:solid">Misc.</h2>
+    <ol>
+        <li>Name: Physics <br />Type: Risk<br /> Summary: Implementing the collosion detection and gravity of objects</li>
+        <li>Name: Difficulty Curve <br />Type: Risk<br /> Summary: Developing a decently fun game with user created levels that work on time</li>
+        <li>Name: File Storage<br />Type: Risk<br /> Summary: Storing the information of a level in a file</li>
+        <li>Name: Music<br />Type: Risk<br /> Summary: The management of both sound effects and music being played</li>
+        <li>Name: Window Resolution <br />Type: Constraint<br /> Summary: The windows form will be 720 x 1280px, must cooperate with visibility requirement</li>
+        <li>Name: Hardware Specs <br />Type: Constraint<br /> Summary: Physics and game calculations must be able to be processed by most computers</li>
+        <li>Name: Artwork <br />Type: Constraint<br /> Summary: Use artwork that is in the public domain</li>
+        <li>Name: Free Music<br />Type: Constraint<br /> Summary: Use Music that is in the public domain</li>
+        <li>*New Name: Frame Rate<br />Type: Constraint<br /> Summary: FPS must be 60 or higher</li>
+        <li>*New Name: Response Time<br />Type: Constraint<br /> Summary: Input should be processed in 50ms or less</li>
+    </ol>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
