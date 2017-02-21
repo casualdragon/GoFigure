@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="456d16f5-8767-46f6-9a2a-adfb582b586a"
+  name="Level" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="3ee7349d-6feb-4d6e-ab94-5ca525c25306"
+        name="Layout"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="db7160c4-e092-4eb1-b88f-094abb055681"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fa8a082a-0e7b-4987-8fa9-0d1420962d2c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0b0548d8-1a1a-4ea6-8602-9de0d6254d4f"
+                  LastKnownName="Choose an action"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode
+            Id="7b27dbae-992a-4aee-9ec1-40d3dfd50dcc"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6404c9f7-ea98-4f1e-9da8-c01750368123"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e424de9c-769f-487b-9f6e-22ea773a65c7"
+                  LastKnownName="Choose Level"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="510ca9b0-0fbe-484c-86c3-0b4de2b609de"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8d2059ea-35e0-4cd7-b8d1-dca22dc5d6dc"
+                  LastKnownName="Exit"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c5de45a3-42ef-4438-8157-99b04405ac6b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="38b83de5-b3ac-4de3-b3e0-18c41b174a71"
+                  LastKnownName="Move to Level Editor"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e424de9c-769f-487b-9f6e-22ea773a65c7"
+            name="Choose Level"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="fee0215a-e305-4d66-a07c-91f4c1357dc3"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="ff2c1608-3597-47dd-82b1-8f8aa07badb0"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <objectNodeMoniker
+                        Id="52f67d4c-988b-4ebd-bdf4-705cad98d5af"
+                        LastKnownName="Level"
+                        LastKnownLocation="Level.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="4491facb-e293-4d87-86ea-4c10deb0f6a9"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="38b83de5-b3ac-4de3-b3e0-18c41b174a71"
+            name="Move to Level Editor"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4e22c6e0-8791-49d9-9536-3df7efa936d3"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5de5c6f1-b970-4345-879f-57737f96e383"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8d2059ea-35e0-4cd7-b8d1-dca22dc5d6dc"
+            name="Exit"
+            isLeaf="false" />
+          <decisionNode
+            Id="5de5c6f1-b970-4345-879f-57737f96e383"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bbdfca3f-bd92-47fc-8906-adbf7a6482a1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="689f2534-62e8-454e-8e0d-fb47275c198f"
+                  LastKnownName="Create new level"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="426d7898-334c-4f9c-9ffa-572ab9d68323"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="646c936c-c525-4bfe-9f60-e6aeb5df78ab"
+                  LastKnownName="Choose Level"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="689f2534-62e8-454e-8e0d-fb47275c198f"
+            name="Create new level"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="d1504007-0195-4327-99ee-cb3a10916128"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="1a8d5d6f-6e85-4273-bd93-83b65ce65f4c"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <objectNodeMoniker
+                        Id="49b966c4-c7ca-42e8-822d-237c57cb4d33"
+                        LastKnownName="Level"
+                        LastKnownLocation="Level.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="725588be-0206-4365-8218-e4be64f568cd"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="9e31dcf4-5672-4d26-8655-2231f1e74e89"
+            name="Edit level"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="85fda79a-923b-43dd-8381-c410e0499328"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="1a54f439-2c7f-430a-b024-3486a4d5c477"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <objectNodeMoniker
+                        Id="d9e47322-bb03-4161-87a4-f2e69c536094"
+                        LastKnownName="Level"
+                        LastKnownLocation="Level.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="48a5afb1-1616-43e7-9dbe-b833617ef4fa"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="ab3fe132-0620-4987-928d-bb05ee1dd8a5"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="b36c7ad5-ced4-4dcd-b309-a853fbb947dc"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="01e380eb-642a-4f90-9b1d-74b2519a19df"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="4e751e99-a692-4150-91dd-d73003b4f4f4"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="a92b3c55-6bc6-408c-b60e-871557b5ba68"
+            name="Save Level"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0ee4c803-b7bc-4b26-8145-c78af24baad8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0b0548d8-1a1a-4ea6-8602-9de0d6254d4f"
+                  LastKnownName="Choose an action"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="200d84e7-6bf5-4a18-817a-d86cb6f6e24c"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="d25c0816-7510-4171-9311-d9db20284238"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode
+            Id="9f80c000-c93b-4dd5-8f81-890096d5d0ed"
+            name="Decision3"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="6180100d-3f4d-43d6-9c5a-f0ecf0081853"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="200d84e7-6bf5-4a18-817a-d86cb6f6e24c"
+                  LastKnownLocation="Level.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="f549e15a-aaa0-4f77-8c9d-d696edf76729"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="590dab05-dea0-48ac-bbd1-8fc815670d91"
+                  LastKnownLocation="Level.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="b685bd7b-6d64-4fdd-baf2-d1f5fc57639f"
+            name="Play Level"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4c6d8803-f219-4387-949f-1cea45d351d9"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="61fb3924-97bc-4fdb-a72e-c1e94264da73"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="3979d30e-cf85-494a-b454-02f954fc04f2"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="2209d3ad-fa4b-4a7a-9e14-3ff1e5f0680b"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="590dab05-dea0-48ac-bbd1-8fc815670d91"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="9db72074-a180-47f5-9818-4f4f095b3c63"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="e56bba03-b9f4-4c4c-a0aa-4fc0b2da9429"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="cfd41dd2-af27-4790-9085-f2e38af2c0ae"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <objectNodeMoniker
+                        Id="2d260058-79ba-4390-93ea-de0dd0987b5b"
+                        LastKnownName="Level"
+                        LastKnownLocation="Level.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="b79f4ede-cbcc-48b9-9f5c-3ff7c07be549"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <objectNode
+            Id="52f67d4c-988b-4ebd-bdf4-705cad98d5af"
+            name="Level"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="2fb017d4-d664-4b52-b410-3b2bc23aabd6"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="3979d30e-cf85-494a-b454-02f954fc04f2"
+                  LastKnownLocation="Level.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="367e957b-09f0-464f-9e19-f413e3a85183"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="d9e47322-bb03-4161-87a4-f2e69c536094"
+            name="Level"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="92b2a097-5327-430c-927e-da60ec0ebd4f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <decisionNodeMoniker
+                  Id="9f80c000-c93b-4dd5-8f81-890096d5d0ed"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Level.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="b3251391-0bfc-4f3d-80f1-20377df383d7"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="49b966c4-c7ca-42e8-822d-237c57cb4d33"
+            name="Level"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="9fa64cd1-af6a-4975-8e72-5320cbab8194"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="ab3fe132-0620-4987-928d-bb05ee1dd8a5"
+                  LastKnownLocation="Level.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="789bc137-0e8d-42e0-98db-d6cfeb5adb1b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="646c936c-c525-4bfe-9f60-e6aeb5df78ab"
+            name="Choose Level"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="17a03087-a97d-47eb-bdaa-a6f1b7003b77"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="717830c5-7e28-4b6b-82f6-15f3c39621f8"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <objectNodeMoniker
+                        Id="49b966c4-c7ca-42e8-822d-237c57cb4d33"
+                        LastKnownName="Level"
+                        LastKnownLocation="Level.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="8eaaf1a6-977f-43af-a55a-b599fbb3fab7"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <objectNode
+            Id="2d260058-79ba-4390-93ea-de0dd0987b5b"
+            name="Level"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="91597e8d-869f-43c8-8ffb-6dd1af049252"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="01e380eb-642a-4f90-9b1d-74b2519a19df"
+                  LastKnownLocation="Level.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="15acfe3a-afff-4026-b377-418cabf669b7"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="0b0548d8-1a1a-4ea6-8602-9de0d6254d4f"
+            name="Choose an action"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9f5673e0-17ae-4dd4-9035-b123173bc03a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7b27dbae-992a-4aee-9ec1-40d3dfd50dcc"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="61fb3924-97bc-4fdb-a72e-c1e94264da73"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1401caf5-238f-4681-a5d2-910fae114cac"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e424de9c-769f-487b-9f6e-22ea773a65c7"
+                  LastKnownName="Choose Level"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d4f2221c-2894-458a-8ab0-08207dfa1adc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0b0548d8-1a1a-4ea6-8602-9de0d6254d4f"
+                  LastKnownName="Choose an action"
+                  LastKnownLocation="Level.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
