@@ -29,6 +29,20 @@
       <SubType>Content</SubType>
       <DependentUpon>Layout.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="MovementCollision.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MovementCollision.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MovementCollision.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="GoFigure.classdiagram">
       <SubType>Content</SubType>
