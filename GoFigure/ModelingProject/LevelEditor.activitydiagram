@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="574ea143-fb84-47e1-9b71-ae7c360d149d" name="FileProcessing" linkedPackageId="80ee52ce-616e-4b42-992f-09f63106929e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="a508d603-2410-4b59-8e2e-30dfda08c648" name="FileProcessing" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="03374748-a0f0-420b-b306-250b80745504" />
+        <nodes>
+          <initialNode Id="90b1d9da-09f9-4535-a03d-88407f67a2ff" name="Initial1" isLeaf="false">
+            <elementDefinition Id="267a8693-8392-4e37-ac63-fc2634225334" />
+            <flowNodeTargets>
+              <controlFlow Id="fdcd1c79-3b55-42ca-b62b-9017e062beda" isLeaf="false">
+                <decisionNodeMoniker Id="63bfe69b-337c-44a6-8ab8-244ddfd0f77b" LastKnownName="Decision1" />
+                <elementDefinition Id="729bf0a4-7fea-4f98-b91a-2842bde62e45" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode Id="63bfe69b-337c-44a6-8ab8-244ddfd0f77b" name="Decision1" isLeaf="false">
+            <elementDefinition Id="6a68d370-d9ec-4807-827a-e9f8c2d1dcda" />
+            <flowNodeTargets>
+              <controlFlow Id="7f25c148-30ba-4430-ad24-dd2a9668fa51" isLeaf="false">
+                <opaqueActionMoniker Id="d74756d7-ba71-42d0-8fe8-5b9a5a922a7c" LastKnownName="Select New Level" />
+                <elementDefinition Id="f70852b3-0675-4f9a-964c-233747d7fdcb" />
+              </controlFlow>
+              <controlFlow Id="3aad8f70-4b16-4d93-8583-99de24c7846e" isLeaf="false">
+                <opaqueActionMoniker Id="5ec375f8-da98-480b-b49e-406cb8816610" LastKnownName="Select Level" />
+                <elementDefinition Id="24681e28-5ff5-4dd7-b809-e73d0aad46ab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="dcc420aa-c983-416f-af05-269a87482eca" name="Open Level File" isLeaf="false">
+            <elementDefinition Id="18f24b52-0800-4640-a8f3-ffa15deab378" />
+            <flowNodeTargets>
+              <controlFlow Id="d4b8a5a5-bb69-4a7b-b63c-610f06994b74" isLeaf="false">
+                <opaqueActionMoniker Id="ac84c33b-ad05-43cf-95f8-6f13021debb2" LastKnownName="Edit Level" />
+                <elementDefinition Id="cd60c599-6947-4117-a767-62f20095e212" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="62546c33-ebb2-4f39-b9e4-c8b0555bedc5" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="a9688c52-037b-45f4-b61d-099c1de4d967" />
+                  <upperBound>
+                    <literalInteger Id="c21e63f7-e669-44a0-a602-e59d76836237" name="2147483647" value="2147483647">
+                      <elementDefinition Id="cb1940d3-478a-44e0-b730-3b817d2a2e9a" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="e3a3a3f8-7a0b-46f5-a4c4-2ca521d0b574" name="Create Level File" isLeaf="false">
+            <elementDefinition Id="b6800e4e-bd45-44ab-b1dc-2a85cd6fc67b" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="0062f15d-9cd8-4641-af01-2ceba65dbedf" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="70aea075-fee3-46d9-8623-dedf1197d1cf" />
+                  <objectFlowTargets>
+                    <objectFlow Id="4d13949d-c28d-4a9f-a906-e2f6c1616245" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <objectNodeMoniker Id="a7704bcb-d6cc-4d10-9659-fcc5449b54ea" LastKnownName="File" />
+                      <elementDefinition Id="102a80ba-1c0d-4a09-8eef-130382c2b3cc" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="88b88eb6-4baa-4dae-8bf0-29e417181f62" name="2147483647" value="2147483647">
+                      <elementDefinition Id="b59d0b4e-d9f7-469c-9d70-5081e659cd9d" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="79872145-2edd-450a-8c46-3d608d35fa7e" name="Save Level" isLeaf="false">
+            <elementDefinition Id="d7bb64f9-9edd-42dd-aba3-fa5ee4b84ebf" />
+            <flowNodeTargets>
+              <controlFlow Id="7c368e80-1c7c-405c-9d86-fdecfc8b86b0" isLeaf="false">
+                <decisionNodeMoniker Id="140dff24-8c6f-494d-808f-f74878597aae" LastKnownName="Decision2" />
+                <elementDefinition Id="43a8709b-9cc3-4e47-a102-a2d26a9040c6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5ec375f8-da98-480b-b49e-406cb8816610" name="Select Level" isLeaf="false">
+            <elementDefinition Id="3bee5046-39a8-46de-af1f-ba62188e348e" />
+            <flowNodeTargets>
+              <controlFlow Id="68635ede-ec0d-4609-b858-76326487fe9f" isLeaf="false">
+                <opaqueActionMoniker Id="857293eb-3d52-4e1f-a9ec-857283ef5ff5" LastKnownName="Check File Permissions" />
+                <elementDefinition Id="2f6e1698-8c31-475c-9e80-3d24fed51f3e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d74756d7-ba71-42d0-8fe8-5b9a5a922a7c" name="Select New Level" isLeaf="false">
+            <elementDefinition Id="ecc0a010-93c2-4e35-abde-b60a90694456" />
+            <flowNodeTargets>
+              <controlFlow Id="2651aa65-aeec-48fc-b5d2-dc987887a887" isLeaf="false">
+                <opaqueActionMoniker Id="e3a3a3f8-7a0b-46f5-a4c4-2ca521d0b574" LastKnownName="Create Level File" />
+                <elementDefinition Id="f372cec5-a138-4b8f-901d-697dfbec2de5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bd17bb2b-941c-48da-937c-9e4ad668e486" name="Close Level File" isLeaf="false">
+            <elementDefinition Id="e1b359e1-7ce8-4215-b8fe-78246278b0af" />
+            <flowNodeTargets>
+              <controlFlow Id="a7b20c84-081a-4e36-b44d-60e9e2caaa99" isLeaf="false">
+                <activityFinalNodeMoniker Id="6d0f52db-e5e7-4d1a-a1ef-352bee0c0a22" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="728c1f70-aa34-441e-a4d5-c99fa80b1a12" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="857293eb-3d52-4e1f-a9ec-857283ef5ff5" name="Check File Permissions" isLeaf="false">
+            <elementDefinition Id="4a2d65aa-4fd0-4dec-a908-d5a7923250c0" />
+            <flowNodeTargets>
+              <controlFlow Id="3fb6b0ac-f153-4a93-bb7a-aec9b61e90aa" isLeaf="false">
+                <decisionNodeMoniker Id="24e01743-1e35-4092-ae63-5b999c2163af" LastKnownName="Decision3" />
+                <elementDefinition Id="eb53bb66-012f-4dc6-ba6e-60086a6b95f6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="a33b16dd-60fd-4225-9749-03c16753dcc7" name="Read-Only File" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="1960a9d0-a278-43e0-b86b-a8cbcb337e4a" />
+            <objectFlowTargets>
+              <objectFlow Id="83684fae-ff30-449a-a968-3fc7cce32f3a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="62546c33-ebb2-4f39-b9e4-c8b0555bedc5" />
+                <elementDefinition Id="d8632420-a55d-41ac-a3db-29f4796118c8" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="6a84bec0-dd5f-4512-808a-522cb3f18f4f" name="2147483647" value="2147483647">
+                <elementDefinition Id="9fe33638-f47a-402a-b12f-9f10cca3f0e6" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="a7704bcb-d6cc-4d10-9659-fcc5449b54ea" name="File" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="929596f0-30f6-4de4-88a1-2dc05af17da4" />
+            <objectFlowTargets>
+              <objectFlow Id="4efaeceb-da23-43ad-b972-c1782225c86b" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="62546c33-ebb2-4f39-b9e4-c8b0555bedc5" />
+                <elementDefinition Id="6dccf8a2-722f-40e8-bc60-689a28e45a04" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="df264450-4333-421e-a7bd-29b1a35f310d" name="2147483647" value="2147483647">
+                <elementDefinition Id="a538d358-51b6-416e-a81e-37908f25e369" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="a56e16c6-3ac7-43a4-a47e-90cc5ed94c78" name="Copy Read-Only File" isLeaf="false">
+            <elementDefinition Id="e4197683-c436-4ab0-a0e2-83df4ac53632" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="6dca4e62-c403-47f4-9cc4-be110a5c1316" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="a03ccd77-977b-4cab-9230-bc59ab293277" />
+                  <objectFlowTargets>
+                    <objectFlow Id="cc4d1701-91ac-4859-8a27-547ca82044db" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <objectNodeMoniker Id="a33b16dd-60fd-4225-9749-03c16753dcc7" LastKnownName="Read-Only File" />
+                      <elementDefinition Id="c684b7c0-687f-46d4-b4c3-9038f156dc06" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="41088f61-1588-443d-a05f-25697e14fcce" name="2147483647" value="2147483647">
+                      <elementDefinition Id="819f86ec-fdb3-48dd-9045-cb4850b9f7b6" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode Id="24e01743-1e35-4092-ae63-5b999c2163af" name="Decision3" isLeaf="false">
+            <elementDefinition Id="102d481e-77b4-43e7-9d74-1759be62f5e1" />
+            <flowNodeTargets>
+              <controlFlow Id="0130defc-0324-4bf7-a05b-badbbe93528a" isLeaf="false">
+                <opaqueActionMoniker Id="a56e16c6-3ac7-43a4-a47e-90cc5ed94c78" LastKnownName="Copy Read-Only File" />
+                <elementDefinition Id="6499ff58-34c5-4265-9ac5-e34c48a50f38" />
+              </controlFlow>
+              <controlFlow Id="b92040ca-ebcc-42ad-a4b6-aa0d86b2fed1" isLeaf="false">
+                <opaqueActionMoniker Id="78d2a893-ef8a-4753-a529-5c11fcf26e26" LastKnownName="Cancel" />
+                <elementDefinition Id="ef5a7df0-6abf-4cd2-ae98-227b3e96d0ea" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="78d2a893-ef8a-4753-a529-5c11fcf26e26" name="Cancel" isLeaf="false">
+            <elementDefinition Id="86acad86-70ff-4876-bad9-c414e5eed1ae" />
+            <flowNodeTargets>
+              <controlFlow Id="03e327ed-ec78-47f2-9e85-6f6eec856d9f" isLeaf="false">
+                <opaqueActionMoniker Id="5ec375f8-da98-480b-b49e-406cb8816610" LastKnownName="Select Level" />
+                <elementDefinition Id="dd24b925-7528-4b93-929c-75eec4267a26" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ac84c33b-ad05-43cf-95f8-6f13021debb2" name="Edit Level" isLeaf="false">
+            <elementDefinition Id="248a490e-848c-4e5e-9c4e-f2251ca43e40" />
+            <objectFlowTargets>
+              <objectFlow Id="4e971f95-b3c7-4f9b-9c1a-30b797100a4e" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1b73ffaf-2bee-4da9-b9e9-20406120146f" LastKnownName="File" />
+                <elementDefinition Id="b2ba01c5-3cc1-4f15-8255-8e7e58da5ca0" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="1b73ffaf-2bee-4da9-b9e9-20406120146f" name="File" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="298e5966-78b3-4fe7-9eb1-d370668905ac" />
+            <objectFlowTargets>
+              <objectFlow Id="5f048f58-19d9-414b-a968-2606bada45ca" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="79872145-2edd-450a-8c46-3d608d35fa7e" LastKnownName="Save Level" />
+                <elementDefinition Id="749706cc-2a17-4113-8c94-236b65027756" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="a385c863-798a-4e40-a8a7-ffed78470363" name="2147483647" value="2147483647">
+                <elementDefinition Id="57bed5b6-7b1c-404e-b623-fe314742ae9f" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <decisionNode Id="140dff24-8c6f-494d-808f-f74878597aae" name="Decision2" isLeaf="false">
+            <elementDefinition Id="74877c03-970c-4bbc-85b5-4a1cf7c0da50" />
+            <flowNodeTargets>
+              <controlFlow Id="ee978e22-9411-42d7-99c0-a55855e67ef7" isLeaf="false">
+                <opaqueActionMoniker Id="bd17bb2b-941c-48da-937c-9e4ad668e486" LastKnownName="Close Level File" />
+                <elementDefinition Id="c527646c-5449-4816-a4cd-191dfade9ba7" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="8b80ed52-c30d-42c5-bdff-f7068ce465dc" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="b11a4af7-de23-45e2-baba-4efc0657c7e0" LastKnownName="File" />
+                <elementDefinition Id="0524c598-f24a-42b9-afd3-5467064b5397" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <objectNode Id="b11a4af7-de23-45e2-baba-4efc0657c7e0" name="File" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="78c578e1-e95e-4ac7-9783-aa80697d19ba" />
+            <objectFlowTargets>
+              <objectFlow Id="9cc95b27-f7f4-4ccb-89ef-865571955758" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="ac84c33b-ad05-43cf-95f8-6f13021debb2" LastKnownName="Edit Level" />
+                <elementDefinition Id="dd87981e-ba7c-4861-b307-9e6bbe37e3e3" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="69640cbf-e147-4b0c-8134-0da0e2ebb80f" name="2147483647" value="2147483647">
+                <elementDefinition Id="bdd463ed-f3a2-41c0-9bcc-870bff7b3461" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <activityFinalNode Id="6d0f52db-e5e7-4d1a-a1ef-352bee0c0a22" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="439e7da3-c2ae-4b8e-b4a1-559efe5b9165" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="80ee52ce-616e-4b42-992f-09f63106929e" name="Level">
+    <elementDefinition Id="456d16f5-8767-46f6-9a2a-adfb582b586a" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5eeb63a5-688f-4476-b0cc-6fc915be9d00">
+        <profileInstance Id="3dca0ac9-d841-4801-bb77-aaa46fcd0434" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e603c603-2c14-41de-bc5f-91fdae13c8b1">
+        <profileInstance Id="c86d504c-7d39-42a9-9b7a-d81c1d766394" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

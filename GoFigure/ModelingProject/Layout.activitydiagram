@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9bf65b97-286b-46c6-9a03-e4f4908122e0" name="Layout" linkedPackageId="91729a82-29ce-4133-aaaf-8c202f3f0a63" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="6e815280-12b3-425c-ad1c-21272621ed1c">
-      <profileInstance Id="ec26a050-53b9-4ec0-98e1-9283b9773c5b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6bae2588-3b7e-4c03-9301-675cebaeccd8">
-      <profileInstance Id="8539ab05-ac90-48a1-b7c3-16172f2fd8de" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="9bf65b97-286b-46c6-9a03-e4f4908122e0" name="Layout" linkedPackageId="91729a82-29ce-4133-aaaf-8c202f3f0a63" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="230e12fa-5d13-4a4c-9969-b673c819a7cd" name="Layout" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -77,6 +63,12 @@
           </opaqueAction>
           <opaqueAction Id="a2c4b209-c163-4230-9c2e-0cfae8230c7f" name="Exit" isLeaf="false">
             <elementDefinition Id="8d2059ea-35e0-4cd7-b8d1-dca22dc5d6dc" />
+            <flowNodeTargets>
+              <controlFlow Id="949530d5-065d-452b-90a4-1c4916610899" isLeaf="false">
+                <activityFinalNodeMoniker Id="57c96769-5c34-4b0c-a569-e4376e3b99df" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="eb78a21c-059c-406c-bc54-a36c85b7e745" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <decisionNode Id="6a260aef-86e1-4032-b801-ee4f330c4952" name="Decision2" isLeaf="false">
             <elementDefinition Id="5de5c6f1-b970-4345-879f-57737f96e383" />
@@ -181,10 +173,6 @@
                 <inputPinMoniker Id="acc09372-22a4-4ffa-9ce1-2032bbe973ac" />
                 <elementDefinition Id="6180100d-3f4d-43d6-9c5a-f0ecf0081853" />
               </objectFlow>
-              <objectFlow Id="7f3357a7-1119-41be-b8fb-e7e81b98e394" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <inputPinMoniker Id="1b385b00-5c6f-42f7-a247-49a2ce880e21" />
-                <elementDefinition Id="f549e15a-aaa0-4f77-8c9d-d696edf76729" />
-              </objectFlow>
             </objectFlowTargets>
           </decisionNode>
           <opaqueAction Id="9d6bf186-84a4-4fa8-a0e0-24e98e6d0838" name="Play Level" isLeaf="false">
@@ -206,32 +194,6 @@
                   </upperBound>
                 </inputPin>
               </opaqueActionHasInputValues>
-              <opaqueActionHasInputValues>
-                <inputPin Id="1b385b00-5c6f-42f7-a247-49a2ce880e21" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
-                  <elementDefinition Id="590dab05-dea0-48ac-bbd1-8fc815670d91" />
-                  <upperBound>
-                    <literalInteger Id="aea7dd56-744a-4bd7-a75a-557c4c6d1dee" name="2147483647" value="2147483647">
-                      <elementDefinition Id="9db72074-a180-47f5-9818-4f4f095b3c63" />
-                    </literalInteger>
-                  </upperBound>
-                </inputPin>
-              </opaqueActionHasInputValues>
-              <opaqueActionHasOutputValues>
-                <outputPin Id="9786a147-0132-4024-b457-0bab6879e32e" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
-                  <elementDefinition Id="e56bba03-b9f4-4c4c-a0aa-4fc0b2da9429" />
-                  <objectFlowTargets>
-                    <objectFlow Id="b63f3058-4e46-4a73-9923-f2cc1e4573e8" isLeaf="false" isMulticast="false" isMultireceive="false">
-                      <objectNodeMoniker Id="e8878b66-6d7a-40fb-9292-2e865e222ef4" LastKnownName="Level" />
-                      <elementDefinition Id="cfd41dd2-af27-4790-9085-f2e38af2c0ae" />
-                    </objectFlow>
-                  </objectFlowTargets>
-                  <upperBound>
-                    <literalInteger Id="2a7c2621-7efc-4ea0-9858-201947442238" name="2147483647" value="2147483647">
-                      <elementDefinition Id="b79f4ede-cbcc-48b9-9f5c-3ff7c07be549" />
-                    </literalInteger>
-                  </upperBound>
-                </outputPin>
-              </opaqueActionHasOutputValues>
             </pins>
           </opaqueAction>
           <objectNode Id="989e5da4-cf0f-455b-b76b-b4131268dac4" name="Level" isLeaf="false" ordering="Unordered" isControlType="false">
@@ -254,6 +216,10 @@
               <objectFlow Id="737b46dd-605e-4bbf-a736-7596394b5fbf" isLeaf="false" isMulticast="false" isMultireceive="false">
                 <decisionNodeMoniker Id="ad8bd84e-7e2f-4e03-b84a-98dd029face3" LastKnownName="Decision3" />
                 <elementDefinition Id="92b2a097-5327-430c-927e-da60ec0ebd4f" />
+              </objectFlow>
+              <objectFlow Id="13efce8a-b0ac-4c7e-af06-150b0cc687d6" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="d5c7ed2c-2599-4e6f-a943-73460104757d" />
+                <elementDefinition Id="b4016deb-2567-4979-babf-c8b5f991cce1" />
               </objectFlow>
             </objectFlowTargets>
             <upperBound>
@@ -300,9 +266,9 @@
           <objectNode Id="e8878b66-6d7a-40fb-9292-2e865e222ef4" name="Level" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="2d260058-79ba-4390-93ea-de0dd0987b5b" />
             <objectFlowTargets>
-              <objectFlow Id="73ca7d6d-57ed-493e-8221-ef80844c2b7d" isLeaf="false" isMulticast="false" isMultireceive="false">
+              <objectFlow Id="190705dc-b679-4009-a131-4cab54ad0840" isLeaf="false" isMulticast="false" isMultireceive="false">
                 <inputPinMoniker Id="6942eb3b-688d-475a-aebe-1ca16b52f213" />
-                <elementDefinition Id="91597e8d-869f-43c8-8ffb-6dd1af049252" />
+                <elementDefinition Id="36dc0ea4-a343-4ea4-bf6d-d890d6435bff" />
               </objectFlow>
             </objectFlowTargets>
             <upperBound>
@@ -333,11 +299,59 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
+          <opaqueAction Id="ddeedc51-eafc-4aac-8fde-a3bca30088d7" name="Play Level" isLeaf="false">
+            <elementDefinition Id="390fe7c6-8280-4036-885c-73d80763f454" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="d5c7ed2c-2599-4e6f-a943-73460104757d" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="e9bad8d5-c086-4bd7-b7ca-c767abe2e53b" />
+                  <upperBound>
+                    <literalInteger Id="25715540-3bd7-431c-9309-c1fd7a8421fd" name="2147483647" value="2147483647">
+                      <elementDefinition Id="eaccb9f2-0cda-4d7b-bec2-4ff29bc305a4" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="31bb5b53-129e-4142-aa9a-8d32e029b1b6" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="0747d1b5-2b49-4b1e-981b-0cbb5d634d68" />
+                  <objectFlowTargets>
+                    <objectFlow Id="d963858a-c856-4138-a489-5d38845d86f0" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <objectNodeMoniker Id="e8878b66-6d7a-40fb-9292-2e865e222ef4" LastKnownName="Level" />
+                      <elementDefinition Id="d32dfed1-7ca8-4056-ba6f-819dd4e0966f" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="94a6b8d3-ee72-49d3-8bf3-dc4650ee372e" name="2147483647" value="2147483647">
+                      <elementDefinition Id="f05daf7f-0e66-4b88-a61a-e09197367faa" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <activityFinalNode Id="57c96769-5c34-4b0c-a569-e4376e3b99df" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="56b2f309-0298-43d1-a7de-c89765073728" />
+          </activityFinalNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="91729a82-29ce-4133-aaaf-8c202f3f0a63" name="Level">
     <elementDefinition Id="456d16f5-8767-46f6-9a2a-adfb582b586a" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6e815280-12b3-425c-ad1c-21272621ed1c">
+        <profileInstance Id="ec26a050-53b9-4ec0-98e1-9283b9773c5b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6bae2588-3b7e-4c03-9301-675cebaeccd8">
+        <profileInstance Id="8539ab05-ac90-48a1-b7c3-16172f2fd8de" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

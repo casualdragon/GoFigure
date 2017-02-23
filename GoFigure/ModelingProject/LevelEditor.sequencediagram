@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="01bf60b5-d1e2-4c7b-9c7d-b4a1beee15e6" name="FileProcessing" linkedPackageId="3f275be4-4bc0-4272-8ded-4792ee24b4ff" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="f2c30d9e-c72a-42da-a77e-707fbd97a8ae" name="FileProcessing" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="cd3a8bf4-aa35-4b39-8db9-f6b3236c6935" />
+        <lifelines>
+          <lifeline Id="47f4b3de-940c-4c45-8a41-cc356a52e566" name="Player" isActor="false" lifelineDisplayName="Player">
+            <elementDefinition Id="1e52d0a7-5b75-49d1-b6de-8f004ad4bc8f" />
+          </lifeline>
+          <lifeline Id="2ea13fab-d876-438b-8b05-9bc465c9540f" name="Level Editor" isActor="false" lifelineDisplayName="Level Editor">
+            <elementDefinition Id="ddaba9bb-45de-4881-bcf7-1b0c2f1643e5" />
+          </lifeline>
+          <lifeline Id="8482ba2b-4d05-496b-8395-8dfc2cf9b03e" name="File" isActor="false" lifelineDisplayName="File">
+            <elementDefinition Id="cdd4ba7d-b8f2-4831-94ef-368de885f952" />
+          </lifeline>
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="3f275be4-4bc0-4272-8ded-4792ee24b4ff" name="Level">
+    <elementDefinition Id="456d16f5-8767-46f6-9a2a-adfb582b586a" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5deca761-a3e4-4660-9ec8-9a82c29897f3">
+        <profileInstance Id="c59aa2bd-bd71-44d4-ac9f-67ed74ab3f6b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2a271937-2884-4959-b3be-71b59d5e6d3c">
+        <profileInstance Id="9e464143-c9d2-418c-941a-5f6107e16a89" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</SequenceDesignerModel>
