@@ -5054,6 +5054,223 @@
         isLeaf="false"
         isReentrant="false">
         <fragments>
+          <combinedFragment
+            Id="d624db7a-caaf-40e4-ae62-c1221cee62c3"
+            name="CombinedFragment1"
+            interactionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
+                LastKnownName="Movement"
+                LastKnownLocation="Level.uml" />
+              <lifelineMoniker
+                Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
+                LastKnownName="Player"
+                LastKnownLocation="Level.uml" />
+              <lifelineMoniker
+                Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
+                LastKnownName="Collision Check"
+                LastKnownLocation="Level.uml" />
+              <lifelineMoniker
+                Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                LastKnownName="End Goal"
+                LastKnownLocation="Level.uml" />
+              <lifelineMoniker
+                Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                LastKnownName="Nguyen"
+                LastKnownLocation="Level.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="25098aa3-8962-488a-b812-a01f80e84f47"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
+                    LastKnownName="Movement"
+                    LastKnownLocation="Level.uml" />
+                  <lifelineMoniker
+                    Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
+                    LastKnownName="Player"
+                    LastKnownLocation="Level.uml" />
+                  <lifelineMoniker
+                    Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
+                    LastKnownName="Collision Check"
+                    LastKnownLocation="Level.uml" />
+                  <lifelineMoniker
+                    Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                    LastKnownName="End Goal"
+                    LastKnownLocation="Level.uml" />
+                  <lifelineMoniker
+                    Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                    LastKnownName="Nguyen"
+                    LastKnownLocation="Level.uml" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment
+                    Id="4455482b-714a-4847-a2c4-70544512daab"
+                    name="CombinedFragment1"
+                    interactionOperator="Break">
+                    <coveredLifelines>
+                      <lifelineMoniker
+                        Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                        LastKnownName="Nguyen"
+                        LastKnownLocation="Level.uml" />
+                      <lifelineMoniker
+                        Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                        LastKnownName="End Goal"
+                        LastKnownLocation="Level.uml" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand
+                        Id="ff824b32-cd9c-40a4-aca8-1c30927800cc"
+                        name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker
+                            Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                            LastKnownName="Nguyen"
+                            LastKnownLocation="Level.uml" />
+                          <lifelineMoniker
+                            Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                            LastKnownName="End Goal"
+                            LastKnownLocation="Level.uml" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint
+                            Id="5b65a875-5d1d-4d55-8bf6-9a44ab4bbdbc" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker
+                            Id="34ab64ee-fe92-4b6a-8339-fc1a0d45663b"
+                            LastKnownName="OperandOccurrenceSpecification11"
+                            LastKnownLocation="Level.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="a0b0cd9c-4898-4bfd-8c0d-7279ebdb8fb0"
+                            LastKnownName="OperandOccurrenceSpecification12"
+                            LastKnownLocation="Level.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="89431765-7a86-464b-81fb-f402937c1806"
+                            LastKnownName="OperandOccurrenceSpecification13"
+                            LastKnownLocation="Level.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="ff6a81a3-ba4e-4993-a16a-5d9a2816e9e2"
+                            LastKnownName="OperandOccurrenceSpecification14"
+                            LastKnownLocation="Level.uml" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint
+                    Id="da66a84e-fed9-44cf-b811-d48fe1a6d93d">
+                    <maxInt>
+                      <literalString
+                        Id="456044a5-d157-4a37-b405-d8d0821290c1"
+                        name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString
+                        Id="666ef431-6cc4-4c05-a0bb-16a5dcf3d968"
+                        name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="16a6e746-eaef-4f7f-b0b0-a38202a2a6a5"
+                    LastKnownName="OperandOccurrenceSpecification1"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="995b14d5-bbeb-4861-bcbf-bb8c5a29ab9b"
+                    LastKnownName="OperandOccurrenceSpecification2"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="5c91ce98-5155-4ada-9b7f-95ed732bfa1a"
+                    LastKnownName="OperandOccurrenceSpecification3"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="fd46e7e3-d3a6-4630-b5cf-f0e50e3014a8"
+                    LastKnownName="OperandOccurrenceSpecification4"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="459a7d61-4a7b-49cb-8b47-a1b028388aaa"
+                    LastKnownName="OperandOccurrenceSpecification5"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="5f7987a9-f843-43e8-a552-58d65064851d"
+                    LastKnownName="OperandOccurrenceSpecification6"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="88dc5ff2-0e10-468c-b5c6-1d6380963814"
+                    LastKnownName="OperandOccurrenceSpecification7"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="cb829f23-9df4-4eee-a276-10d9d68d614a"
+                    LastKnownName="OperandOccurrenceSpecification8"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="bcb1c767-d976-428b-b6bd-e4538ccb7dd5"
+                    LastKnownName="OperandOccurrenceSpecification9"
+                    LastKnownLocation="Level.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="9d9511fa-93aa-4fcb-aee9-45fc208d8dce"
+                    LastKnownName="OperandOccurrenceSpecification10"
+                    LastKnownLocation="Level.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="bcb1c767-d976-428b-b6bd-e4538ccb7dd5"
+            name="OperandOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                LastKnownName="Nguyen"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="88dc5ff2-0e10-468c-b5c6-1d6380963814"
+            name="OperandOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                LastKnownName="End Goal"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="459a7d61-4a7b-49cb-8b47-a1b028388aaa"
+            name="OperandOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
+                LastKnownName="Collision Check"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="5c91ce98-5155-4ada-9b7f-95ed732bfa1a"
+            name="OperandOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
+                LastKnownName="Player"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="16a6e746-eaef-4f7f-b0b0-a38202a2a6a5"
+            name="OperandOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
+                LastKnownName="Movement"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="23d734af-b8f6-4706-9dc8-52d664f53031"
             name="BehaviorExecutionSpecification1">
@@ -5191,22 +5408,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="1794bd68-1c83-4c4d-a0cb-0b3478849255"
-            name="MessageOccurrenceSpecification7">
-            <covered>
-              <lifelineMoniker
-                Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
-                LastKnownName="Movement"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="bd6d94c1-2300-477d-a356-a572f6f94c35"
             name="MessageOccurrenceSpecification8">
             <covered>
               <lifelineMoniker
                 Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
                 LastKnownName="Collision Check"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1794bd68-1c83-4c4d-a0cb-0b3478849255"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
+                LastKnownName="Movement"
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5236,9 +5453,17 @@
                 Id="cc71369f-f6a2-46d3-979b-62008b28fdfa"
                 LastKnownName="MessageOccurrenceSpecification16"
                 LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="89431765-7a86-464b-81fb-f402937c1806"
+                LastKnownName="OperandOccurrenceSpecification13"
+                LastKnownLocation="Level.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="69abffcd-9b40-43ca-a313-be4425623556"
                 LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ff6a81a3-ba4e-4993-a16a-5d9a2816e9e2"
+                LastKnownName="OperandOccurrenceSpecification14"
                 LastKnownLocation="Level.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="f3641076-b09e-4c2c-9757-c6746f5639f5"
@@ -5285,16 +5510,6 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="80cf9526-328e-4239-9723-2ea9a3fcdc8f"
-            name="MessageOccurrenceSpecification9">
-            <covered>
-              <lifelineMoniker
-                Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
-                LastKnownName="Collision Check"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="c6a632ad-2963-4b83-8176-1b7bc52546d3"
             name="MessageOccurrenceSpecification10">
             <covered>
@@ -5304,6 +5519,54 @@
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="80cf9526-328e-4239-9723-2ea9a3fcdc8f"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
+                LastKnownName="Collision Check"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="da1a03e0-ca89-465a-973c-62098c658fe2"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="64b45b1b-323d-43e6-bfdc-c7fe347227e9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Level.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
+                LastKnownName="Collision Check"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="89431765-7a86-464b-81fb-f402937c1806"
+            name="OperandOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                LastKnownName="End Goal"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="34ab64ee-fe92-4b6a-8339-fc1a0d45663b"
+            name="OperandOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                LastKnownName="Nguyen"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="1d168569-60e9-462c-8c76-2eb112194afe"
             name="BehaviorExecutionSpecification8">
@@ -5350,24 +5613,6 @@
                 LastKnownLocation="Level.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <executionOccurrenceSpecification
-            Id="da1a03e0-ca89-465a-973c-62098c658fe2"
-            name="ExecutionOccurrenceSpecification6">
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker
-                  Id="64b45b1b-323d-43e6-bfdc-c7fe347227e9"
-                  LastKnownName="ExecutionEvent"
-                  LastKnownLocation="Level.uml" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
-                LastKnownName="Collision Check"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="f3d13dcd-9adb-4147-ac10-0d5eb582bd1f"
             name="MessageOccurrenceSpecification22">
@@ -5388,6 +5633,44 @@
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="aa9b847e-21f6-4e24-a1c6-9eb19b25e9eb"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b34b6bfa-f518-4b71-8837-c26c2ca5c493"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Level.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                LastKnownName="Nguyen"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="a0b0cd9c-4898-4bfd-8c0d-7279ebdb8fb0"
+            name="OperandOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                LastKnownName="Nguyen"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ff6a81a3-ba4e-4993-a16a-5d9a2816e9e2"
+            name="OperandOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                LastKnownName="End Goal"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="13a39106-768e-4b96-b77b-b791a7a3cdb8"
             name="BehaviorExecutionSpecification7">
@@ -5455,24 +5738,6 @@
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
-            Id="aa9b847e-21f6-4e24-a1c6-9eb19b25e9eb"
-            name="ExecutionOccurrenceSpecification16">
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker
-                  Id="b34b6bfa-f518-4b71-8837-c26c2ca5c493"
-                  LastKnownName="ExecutionEvent"
-                  LastKnownLocation="Level.uml" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
-                LastKnownName="Nguyen"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </executionOccurrenceSpecification>
-          <executionOccurrenceSpecification
             Id="44204642-8087-42ae-a68f-a5518c51160b"
             name="ExecutionOccurrenceSpecification10">
             <event>
@@ -5526,6 +5791,56 @@
                 LastKnownLocation="Level.uml" />
             </covered>
           </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="995b14d5-bbeb-4861-bcbf-bb8c5a29ab9b"
+            name="OperandOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
+                LastKnownName="Movement"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="fd46e7e3-d3a6-4630-b5cf-f0e50e3014a8"
+            name="OperandOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
+                LastKnownName="Player"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="5f7987a9-f843-43e8-a552-58d65064851d"
+            name="OperandOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
+                LastKnownName="Collision Check"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="9d9511fa-93aa-4fcb-aee9-45fc208d8dce"
+            name="OperandOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                LastKnownName="Nguyen"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="cb829f23-9df4-4eee-a276-10d9d68d614a"
+            name="OperandOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
+                LastKnownName="End Goal"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
         </fragments>
         <lifelines>
           <lifeline
@@ -5534,9 +5849,17 @@
             isActor="false"
             lifelineDisplayName="Player">
             <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="5c91ce98-5155-4ada-9b7f-95ed732bfa1a"
+                LastKnownName="OperandOccurrenceSpecification3"
+                LastKnownLocation="Level.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="1536f3c1-52eb-4144-9f40-17115f551739"
                 LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="fd46e7e3-d3a6-4630-b5cf-f0e50e3014a8"
+                LastKnownName="OperandOccurrenceSpecification4"
                 LastKnownLocation="Level.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -5546,6 +5869,10 @@
             isActor="false"
             lifelineDisplayName="Movement">
             <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="16a6e746-eaef-4f7f-b0b0-a38202a2a6a5"
+                LastKnownName="OperandOccurrenceSpecification1"
+                LastKnownLocation="Level.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="80e52b84-2ba3-4ff9-afff-c111033decb5"
                 LastKnownName="ExecutionOccurrenceSpecification1"
@@ -5553,6 +5880,10 @@
               <executionOccurrenceSpecificationMoniker
                 Id="c4e366c4-e47d-46b4-831e-9dcfc4f708b5"
                 LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="995b14d5-bbeb-4861-bcbf-bb8c5a29ab9b"
+                LastKnownName="OperandOccurrenceSpecification2"
                 LastKnownLocation="Level.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -5562,6 +5893,10 @@
             isActor="false"
             lifelineDisplayName="Collision Check">
             <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="459a7d61-4a7b-49cb-8b47-a1b028388aaa"
+                LastKnownName="OperandOccurrenceSpecification5"
+                LastKnownLocation="Level.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="4da184f9-c11d-4ba9-87ba-21b5452f5851"
                 LastKnownName="ExecutionOccurrenceSpecification5"
@@ -5569,6 +5904,10 @@
               <executionOccurrenceSpecificationMoniker
                 Id="da1a03e0-ca89-465a-973c-62098c658fe2"
                 LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="5f7987a9-f843-43e8-a552-58d65064851d"
+                LastKnownName="OperandOccurrenceSpecification6"
                 LastKnownLocation="Level.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -5578,6 +5917,10 @@
             isActor="false"
             lifelineDisplayName="End Goal">
             <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="88dc5ff2-0e10-468c-b5c6-1d6380963814"
+                LastKnownName="OperandOccurrenceSpecification7"
+                LastKnownLocation="Level.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="043dac57-26c7-40b4-bac9-179fb8775925"
                 LastKnownName="ExecutionOccurrenceSpecification9"
@@ -5585,6 +5928,10 @@
               <executionOccurrenceSpecificationMoniker
                 Id="44204642-8087-42ae-a68f-a5518c51160b"
                 LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="cb829f23-9df4-4eee-a276-10d9d68d614a"
+                LastKnownName="OperandOccurrenceSpecification8"
                 LastKnownLocation="Level.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -5594,6 +5941,14 @@
             isActor="false"
             lifelineDisplayName="Nguyen">
             <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="bcb1c767-d976-428b-b6bd-e4538ccb7dd5"
+                LastKnownName="OperandOccurrenceSpecification9"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="34ab64ee-fe92-4b6a-8339-fc1a0d45663b"
+                LastKnownName="OperandOccurrenceSpecification11"
+                LastKnownLocation="Level.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="df166123-c79a-4450-8090-10c33ec61b7e"
                 LastKnownName="ExecutionOccurrenceSpecification15"
@@ -5601,6 +5956,14 @@
               <executionOccurrenceSpecificationMoniker
                 Id="aa9b847e-21f6-4e24-a1c6-9eb19b25e9eb"
                 LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="a0b0cd9c-4898-4bfd-8c0d-7279ebdb8fb0"
+                LastKnownName="OperandOccurrenceSpecification12"
+                LastKnownLocation="Level.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="9d9511fa-93aa-4fcb-aee9-45fc208d8dce"
+                LastKnownName="OperandOccurrenceSpecification10"
                 LastKnownLocation="Level.uml" />
             </topLevelOccurrences>
           </lifeline>

@@ -50,12 +50,12 @@
       <SubType>Content</SubType>
       <DependentUpon>MovementCollision.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram">
+    <Content Include="MovementCollision.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+    <Content Include="MovementCollision.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+      <DependentUpon>MovementCollision.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="GoFigure.classdiagram">
