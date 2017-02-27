@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="456d16f5-8767-46f6-9a2a-adfb582b586a"
   name="Level" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -6135,6 +6135,837 @@
       <executionEvent
         Id="4c14cc47-b43f-48ac-acd6-1827bba426e1"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="029586ec-f2b9-4b68-a5fa-f5ac343ff92f"
+        name="Player"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5e4db9d4-0af8-4a43-aebf-a73e20848d6d"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Move Character"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d7645360-972b-466f-be7d-cf2c8c6f6f0b"
+              LastKnownName="Move Character"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37b54afe-383a-43b1-99e7-76fd4b17d562"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52a25d3f-f6f9-475d-b2a9-d9fb0097f613"
+                  name="Move Character"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="02bb103b-2c2d-4494-91e1-322e64c861cc"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Selects Level Editor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="96d32c4d-25c1-4ece-afa4-a7e11f6a55fc"
+              LastKnownName="Select Level Editor"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9382275-3799-4c6e-bcb3-aa2cd72f7e5a"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc6c4afb-23e6-41c0-9630-205e596f9c82"
+                  name="Selects Level Editor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a6e6f67c-970d-4e6a-85e7-d3b7804b512f"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Select Level for Edit"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="09c573e0-75d9-4d71-aa90-4d52649d1449"
+              LastKnownName="Select Level for Edit"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5505afb-30b8-4fb1-8542-5661b1c4ddb0"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ad64f61-b0dc-4fca-83df-87229f6fc57c"
+                  name="Select Level for Edit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e33f7e41-1e78-42ae-891a-ccc692012440"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Make Changes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fb0319a8-aa80-4c26-b5c6-5ceba4cc87d3"
+              LastKnownName="Make Changes"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23686e78-3a93-464f-ae8b-a9acb6250192"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9b1c70a-6b69-45bc-8efb-388f4cfd4d79"
+                  name="Make Changes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c76d0a43-51ee-41e3-aae1-d7922e05488b"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Select Game"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4cf87f84-6625-4b14-9033-5998f1107ef8"
+              LastKnownName="Select Game"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3691d2f-aa0d-4e5b-a09f-9842c7c774d6"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7fe2f2a6-2b4c-4c5e-beff-589d60ec09a6"
+                  name="Select Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5d351916-41de-4195-8e54-4c7f09279ffe"
+        name="Character"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9cada900-caf2-41f7-a94a-d0076cd37479"
+        name="Level Editor"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d4aa5261-e005-485f-8595-af8c85997635"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="e46e7bda-ee11-415c-9bbb-8d2e358f2989"
+              LastKnownName="Game"
+              LastKnownLocation="Level.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="43fc6953-19f6-4ea8-bae9-6960f366bc3d"
+            isDerived="false"
+            sourceEndRoleName="Level Editor"
+            targetEndRoleName="Open Level"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="142bf482-4f13-4665-84db-289444f853ea"
+              LastKnownName="Open Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9654f159-86fc-4a5b-9cb6-0fde34a0a6b7"
+                  name="Level Editor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8bb4f44b-4a16-44cd-ac5e-753941565f8c"
+                  name="Open Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="76d0f535-e7ec-409e-a895-0a76954a95c2"
+            isDerived="false"
+            sourceEndRoleName="Level Editor"
+            targetEndRoleName="Test Level"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9b7dc053-af1d-40f8-925d-7c862e192a73"
+              LastKnownName="Test Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="821b0709-af62-40bc-9839-1a4bee14def3"
+                  name="Level Editor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea7a6f80-ab1f-46b0-a409-15cdd17304aa"
+                  name="Test Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7507811d-cd11-4907-a248-bdedb5ea9dd1"
+            isDerived="false"
+            sourceEndRoleName="Level Editor"
+            targetEndRoleName="Save Level"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="878904b4-c6fa-4376-8b23-1c150f01bb5d"
+              LastKnownName="Save Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0e9a8f3-a04f-453b-862a-53c203ba1541"
+                  name="Level Editor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="409d33ab-fb43-47c1-842a-531cfb63ecfe"
+                  name="Save Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e46e7bda-ee11-415c-9bbb-8d2e358f2989"
+        name="Game"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="594fc9c8-b1c0-434e-b61f-480a0078c4d0"
+            isDerived="false"
+            sourceEndRoleName="Game"
+            targetEndRoleName="Play Level"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="61bd1fb5-37a0-4016-abb8-69cd189ab342"
+              LastKnownName="Play Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="533064d6-72e6-4066-bff1-d8df4852144e"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b35223a3-a151-4f57-8b79-2170c8f6a5f4"
+                  name="Play Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b17b6903-d94a-4165-824c-2d2e41d523bd"
+            isDerived="false"
+            sourceEndRoleName="Game"
+            targetEndRoleName="Open Level"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7cf01233-9dcf-4942-8ebb-9661a51f4f11"
+              LastKnownName="Open Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4944fc6d-6d80-4b5e-b695-9181e1d6f9f8"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbc8bbd5-7156-4e8d-a23c-424df89a64eb"
+                  name="Open Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="18e3314a-037d-4d7c-bf75-16d54f87f511"
+        name="Level"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="adb11f93-5cbd-4238-b000-cfa3a4640f8b"
+        name="Blocks"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb6115fd-7674-4273-bfc7-0992309c74ab"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="b3fcdc86-efdd-44d9-b48c-abaef6dfc6f9"
+        name="Collison"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5db5bd81-9f70-47da-98ee-99a0f02e1ee6"
+        name="Check for Blocks"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b3fcdc86-efdd-44d9-b48c-abaef6dfc6f9"
+            LastKnownName="Collison"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d7645360-972b-466f-be7d-cf2c8c6f6f0b"
+        name="Move Character"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4851a4dc-8960-40c9-b168-cbfaaccc2c89"
+            isDerived="false"
+            sourceEndRoleName="Move Character"
+            targetEndRoleName="Character"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="5d351916-41de-4195-8e54-4c7f09279ffe"
+              LastKnownName="Character"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="de5613c2-293c-4ea3-890b-032d0924f7bb"
+                  name="Move Character"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b56c904b-1f70-4b69-9baa-12bd14788c3c"
+                  name="Character"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="d03153a8-b75a-411a-adf9-3401a08a8a25">
+            <useCaseMoniker
+              Id="5db5bd81-9f70-47da-98ee-99a0f02e1ee6"
+              LastKnownName="Check for Blocks"
+              LastKnownLocation="Level.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="b3fcdc86-efdd-44d9-b48c-abaef6dfc6f9"
+            LastKnownName="Collison"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="134afd43-2fb1-4391-b152-5239fc98e9ca"
+        name="Level Editor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="96d32c4d-25c1-4ece-afa4-a7e11f6a55fc"
+        name="Select Level Editor"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="134afd43-2fb1-4391-b152-5239fc98e9ca"
+            LastKnownName="Level Editor"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="09c573e0-75d9-4d71-aa90-4d52649d1449"
+        name="Select Level for Edit"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="80a7d23e-78a0-431e-8ee4-d5e6612799b5"
+            isDerived="false"
+            sourceEndRoleName="Select Level for Edit"
+            targetEndRoleName="Level"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="d6581100-f901-4ff1-8512-35db2f0b5352"
+              LastKnownName="Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6eddd3b0-7d36-4b8d-a709-eed2ded0ec05"
+                  name="Select Level for Edit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e51bd9f6-e007-4486-abd2-cf672f8d94dd"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="134afd43-2fb1-4391-b152-5239fc98e9ca"
+            LastKnownName="Level Editor"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="142bf482-4f13-4665-84db-289444f853ea"
+        name="Open Level"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="134afd43-2fb1-4391-b152-5239fc98e9ca"
+            LastKnownName="Level Editor"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb0319a8-aa80-4c26-b5c6-5ceba4cc87d3"
+        name="Make Changes"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="134afd43-2fb1-4391-b152-5239fc98e9ca"
+            LastKnownName="Level Editor"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9b7dc053-af1d-40f8-925d-7c862e192a73"
+        name="Test Level"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="134afd43-2fb1-4391-b152-5239fc98e9ca"
+            LastKnownName="Level Editor"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="878904b4-c6fa-4376-8b23-1c150f01bb5d"
+        name="Save Level"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dad8c488-b121-455c-81b2-7d5f78be36d1"
+            isDerived="false"
+            sourceEndRoleName="Save Level"
+            targetEndRoleName="Level"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="d6581100-f901-4ff1-8512-35db2f0b5352"
+              LastKnownName="Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="718ea7de-d3c2-419e-acfd-e447c8272492"
+                  name="Save Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea3c3ff5-0c82-4777-8a1a-19f47f4c405c"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="134afd43-2fb1-4391-b152-5239fc98e9ca"
+            LastKnownName="Level Editor"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d6581100-f901-4ff1-8512-35db2f0b5352"
+        name="Level"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2d764746-e336-4740-8297-51b7138a8b99"
+            isDerived="false"
+            sourceEndRoleName="Level"
+            targetEndRoleName="Select Level"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bfdaddc1-cba4-4a5f-844f-a03567634ee8"
+              LastKnownName="Select Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4c73baa-4bab-41aa-9260-c4ce33be0d0d"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9f710aa5-4eb7-4911-8d43-9e8ec67aa8cc"
+                  name="Select Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="1672f497-6876-4393-b5f6-a981ce2316e4"
+        name="Game"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4cf87f84-6625-4b14-9033-5998f1107ef8"
+        name="Select Game"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1672f497-6876-4393-b5f6-a981ce2316e4"
+            LastKnownName="Game"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bfdaddc1-cba4-4a5f-844f-a03567634ee8"
+        name="Select Level"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1672f497-6876-4393-b5f6-a981ce2316e4"
+            LastKnownName="Game"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="61bd1fb5-37a0-4016-abb8-69cd189ab342"
+        name="Play Level"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1672f497-6876-4393-b5f6-a981ce2316e4"
+            LastKnownName="Game"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7cf01233-9dcf-4942-8ebb-9661a51f4f11"
+        name="Open Level"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1672f497-6876-4393-b5f6-a981ce2316e4"
+            LastKnownName="Game"
+            LastKnownLocation="Level.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
