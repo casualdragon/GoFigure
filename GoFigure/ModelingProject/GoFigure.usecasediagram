@@ -99,6 +99,54 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="c76d0a43-51ee-41e3-aae1-d7922e05488b" />
           </association>
+          <association Id="2b7a30ba-cdb3-4af6-b0b8-0eb42e2d00fd" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Select Level" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="925a8dde-522a-48a7-b897-8e593a9d97f9" LastKnownName="Select Level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="edcefd1a-100e-4d8f-83cf-a9a61eeab8c2" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d3cbdac9-1882-4fc2-adfb-e3d10e6a9a8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77219e4e-df75-4b95-8769-613dee89f6e9" name="Select Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aed87ede-ebb0-419e-8b4a-3bcbf4dcb2b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cfd26eac-9964-4d29-92a8-39ad19095209" />
+          </association>
+          <association Id="d5c4732e-9390-4ffa-919f-7b8f26955c24" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Play Level" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3e6baf50-49a7-4b96-a2ba-45750ce9a242" LastKnownName="Play Level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2fd7db92-c049-4a29-af96-80e4435fe3b2" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cc8c4e12-75c3-4fc8-9122-1f6a563b92eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aca6083c-c560-4e33-a2e9-83fe65d7b569" name="Play Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef475f67-47d5-488d-9f7a-bb33171f2efd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85237877-1969-42b9-b49c-f3f5fcbde9d9" />
+          </association>
+          <association Id="59715ec7-3336-45af-8676-d3a5d7bba9c6" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Test Level" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c2697fb2-8bf5-452e-b9d7-7285d89d0eb8" LastKnownName="Test Level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f9929e6-722d-4c27-8a30-93539541c633" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5e53171b-8b80-4807-b5b4-6889b8c556d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1a83b50-6441-4dda-a236-1aeb7b2b7e0b" name="Test Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a28e8366-61be-4800-b9be-23dac3e4789a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="69916823-90d9-461d-99d4-f525a10d3308" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -344,24 +392,6 @@
     <useCaseModelRootHasTypes>
       <actor Id="021cf451-a225-4ddf-8188-e39538c70500" name="Level" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d6581100-f901-4ff1-8512-35db2f0b5352" />
-        <targetEnds>
-          <association Id="c29f6fd7-3eba-41e7-9e16-8ba405ee4f6f" isDerived="false" sourceEndRoleName="Level" targetEndRoleName="Select Level" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="925a8dde-522a-48a7-b897-8e593a9d97f9" LastKnownName="Select Level" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="20d82507-e294-4901-9b11-3665d2e57643" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="f4c73baa-4bab-41aa-9260-c4ce33be0d0d" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ccf74afd-2a5b-46ae-a6b9-4fca191c1814" name="Select Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="9f710aa5-4eb7-4911-8d43-9e8ec67aa8cc" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="2d764746-e336-4740-8297-51b7138a8b99" />
-          </association>
-        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -380,6 +410,24 @@
     <packageHasNamedElement>
       <useCase Id="925a8dde-522a-48a7-b897-8e593a9d97f9" name="Select Level" isAbstract="false" isLeaf="false">
         <elementDefinition Id="bfdaddc1-cba4-4a5f-844f-a03567634ee8" />
+        <targetEnds>
+          <association Id="7397d418-dd84-479e-9f2d-3e32b36c3956" isDerived="false" sourceEndRoleName="Select Level" targetEndRoleName="Level" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="021cf451-a225-4ddf-8188-e39538c70500" LastKnownName="Level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="596e6fd0-2dce-4b34-a464-705d30305757" name="Select Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b4997f39-5d54-462d-bfe8-014e6e1359ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="053320f1-af45-4c57-8e9a-33be83eea608" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c6c10515-42f7-47e3-b2b6-ff904ebf0a8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c5b96161-b5c3-412e-aa85-a71f306364b9" />
+          </association>
+        </targetEnds>
         <subjects>
           <subsystemMoniker Id="02bfeebc-76ae-4f84-a92b-c702cacbb2a7" LastKnownName="Game" />
         </subjects>
