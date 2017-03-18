@@ -22,6 +22,27 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="GoFigure.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GoFigure.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>GoFigure.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="LevelEditor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LevelEditor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LevelEditor.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="LevelEditor.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LevelEditor.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LevelEditor.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Layout.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -36,12 +57,12 @@
       <SubType>Content</SubType>
       <DependentUpon>MovementCollision.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram">
+    <Content Include="MovementCollision.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+    <Content Include="MovementCollision.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+      <DependentUpon>MovementCollision.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="GoFigure.classdiagram">

@@ -1,112 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="2b8e3c72-6c82-453d-816b-38b52f9ec0f9" name="MovementCollision" linkedPackageId="c56c045f-33ac-40dc-8548-a5292bf46cdd" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
-    <comment Id="225f200c-1a68-4b75-9962-b67612f29823">
-      <elementDefinition Id="4122cec0-5b5f-43ec-a041-5c771d907b24" />
+    <comment Id="db2f139a-7517-4943-ad5b-92917b0d9054">
+      <elementDefinition Id="9c0cdc81-925c-4c94-aa54-cc7ad574e826" />
       <body>No collision detected</body>
     </comment>
-    <comment Id="34cfc80d-97f1-4b21-b72a-db1e2ebe6887">
-      <elementDefinition Id="865e0d06-6f93-4ace-a468-8e218dce0314" />
+    <comment Id="440d8540-92d8-4adb-940a-b5f76679533a">
+      <elementDefinition Id="73a526a6-4b2b-481c-ad84-bc7dabb28c2b" />
       <body>Collision detected</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="1b8fe045-3f52-47ad-80e8-11e2f6861942">
-      <profileInstance Id="bb5330c2-1980-41d2-a819-a32a000742bb" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="3536416c-d09a-465b-8f6c-6412d6f01eb6">
-      <profileInstance Id="bab5e30b-7230-4342-9779-df963806fb51" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
-      <activity Id="848c3d81-d361-4ac3-a7ab-04becd85de8f" name="MovementCollision" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
-        <elementDefinition Id="3de9549f-2d00-433d-9c30-0f98ff77349b" />
+      <activity Id="3162c5b2-bc15-4a1c-8232-b024759f4532" name="MovementCollision" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="8c3d1a8e-d61c-498a-9689-208b7556dc0c" />
         <nodes>
-          <initialNode Id="4f16f0ed-beb7-45c2-836b-b61da67cb885" name="Initial1" isLeaf="false">
-            <elementDefinition Id="5c32d025-e298-45e3-b73a-3f6d21e78578" />
+          <initialNode Id="0e6e3ee8-80df-410f-aa1c-d1af680ff1aa" name="Initial1" isLeaf="false">
+            <elementDefinition Id="db7f285c-2181-4a57-a2b5-336d6ba574a6" />
             <flowNodeTargets>
-              <controlFlow Id="fd3f2509-bca1-44c2-979e-eda72ce9f0d6" isLeaf="false">
-                <opaqueActionMoniker Id="53294f56-a3ab-4a5d-a0a9-1d06f22f309d" LastKnownName="Choose Movement" />
-                <elementDefinition Id="bdebffc9-148e-43ba-8b0c-d9820828fc7a" />
+              <controlFlow Id="05d299aa-2202-4bce-b93e-22fa455a853b" isLeaf="false">
+                <opaqueActionMoniker Id="f14b29df-c7bc-4c5b-a989-ed8442f2ea2d" LastKnownName="Choose Movement" />
+                <elementDefinition Id="da81764b-c9cb-4b3c-8fd3-10bad5b4f62c" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <opaqueAction Id="53294f56-a3ab-4a5d-a0a9-1d06f22f309d" name="Choose Movement" isLeaf="false">
-            <elementDefinition Id="9a6e9507-c149-4e82-afe6-e7a7aa43c388" />
+          <opaqueAction Id="f14b29df-c7bc-4c5b-a989-ed8442f2ea2d" name="Choose Movement" isLeaf="false">
+            <elementDefinition Id="5b096aa2-94f1-4ee1-a4ea-7616ef53fdd6" />
             <flowNodeTargets>
-              <controlFlow Id="6fdb80f2-3bbf-4622-bc0c-6c46e2f95d6b" isLeaf="false">
-                <opaqueActionMoniker Id="91639850-0f1a-4f42-af39-a2faf9e1b332" LastKnownName="Collision Check" />
-                <elementDefinition Id="86464fff-2402-4c84-a29e-bf3cba8549da" />
+              <controlFlow Id="1a4f989b-f50f-485a-8b22-2851abf5f335" isLeaf="false">
+                <opaqueActionMoniker Id="a4f42d99-b9b9-495b-8348-ea6af6b0dfc3" LastKnownName="Collision Check" />
+                <elementDefinition Id="f37a0f80-46d4-4e06-bdff-0785dc849fc8" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="0e7b8513-bda9-4b45-b651-4835c5102c2b" name="Check for End" isLeaf="false">
-            <elementDefinition Id="68f3ccc1-df95-4265-85eb-542e335e7981" />
+          <opaqueAction Id="5d1690da-a097-4616-beb3-98c0f62047d9" name="Check for End" isLeaf="false">
+            <elementDefinition Id="f7172f42-45e8-4175-a0af-b48d829e6b45" />
             <flowNodeTargets>
-              <controlFlow Id="78b470d9-9969-484e-a0c2-5a658f3dd496" isLeaf="false">
-                <decisionNodeMoniker Id="1790246c-c22f-4fc7-846a-7af3248dc117" LastKnownName="Decision2" />
-                <elementDefinition Id="11a29d49-7b18-4898-98c8-0ed1d81b8ebb" />
+              <controlFlow Id="81cb84a8-05f0-4cb1-b262-a553ef0f3366" isLeaf="false">
+                <decisionNodeMoniker Id="b8d122ba-e3f5-4db7-9d51-6037dd6f334d" LastKnownName="Decision2" />
+                <elementDefinition Id="74a079f7-d957-47b4-ab7f-616e51abe5ce" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <objectNode Id="d8cb429b-7fa0-43b2-8a71-34d67ca8470f" name="End Goal" isLeaf="false" ordering="Unordered" isControlType="false">
-            <elementDefinition Id="2311d159-ea09-4518-9568-59cbc7dafd13" />
+          <objectNode Id="60f9659a-d63d-4ce7-b321-641d25695530" name="End Goal" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="5c059368-f783-4639-b2bf-497c6194a1b7" />
             <objectFlowTargets>
-              <objectFlow Id="952508c0-52bf-4f17-8625-996560aa036f" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <activityFinalNodeMoniker Id="17312439-df15-4130-8b61-7b50b7f61126" LastKnownName="ActivityFinal1" />
-                <elementDefinition Id="4c8fa336-e851-4f51-96e3-9275c73e347f" />
+              <objectFlow Id="e9f23508-f1b5-474d-80eb-9bba8581d348" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityFinalNodeMoniker Id="4134a60c-353d-44c9-be67-4851492124a0" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="46dfbff9-88a4-4e0b-a5e1-62e391948ece" />
               </objectFlow>
             </objectFlowTargets>
             <upperBound>
-              <literalInteger Id="8d626809-955c-4062-b814-6d230f909e85" name="2147483647" value="2147483647">
-                <elementDefinition Id="2d06d8c5-54d5-4b0c-8a27-437edd40efa5" />
+              <literalInteger Id="c10191a4-1c27-4ed2-b16f-88529c0cb031" name="2147483647" value="2147483647">
+                <elementDefinition Id="dd512d83-a04f-433e-8609-f08f23d3557e" />
               </literalInteger>
             </upperBound>
           </objectNode>
-          <activityFinalNode Id="17312439-df15-4130-8b61-7b50b7f61126" name="ActivityFinal1" isLeaf="false">
-            <elementDefinition Id="0152b3ae-8ee9-49ee-a621-8430eef5f7e3" />
+          <activityFinalNode Id="4134a60c-353d-44c9-be67-4851492124a0" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="46435ba6-6b59-4dee-9870-4641e959ad7a" />
           </activityFinalNode>
-          <opaqueAction Id="91639850-0f1a-4f42-af39-a2faf9e1b332" name="Collision Check" isLeaf="false">
-            <elementDefinition Id="a4630986-267c-4e98-bca1-059b5c1bf495" />
+          <opaqueAction Id="a4f42d99-b9b9-495b-8348-ea6af6b0dfc3" name="Collision Check" isLeaf="false">
+            <elementDefinition Id="671f191d-83af-4fc5-a3c8-3aed7c36e463" />
             <flowNodeTargets>
-              <controlFlow Id="4d5c60fa-02d8-451d-ab73-ef70bcff51db" isLeaf="false">
-                <decisionNodeMoniker Id="579868ad-b99c-456e-8f25-5b416ed82280" LastKnownName="Decision1" />
-                <elementDefinition Id="6d793b74-1e04-4864-b2ec-1a882a4bd4dd" />
+              <controlFlow Id="1d4090d3-2b47-44cf-9fc9-537bddaac7e7" isLeaf="false">
+                <decisionNodeMoniker Id="dd26c45a-fc2b-417d-be22-845e6a1b5a57" LastKnownName="Decision1" />
+                <elementDefinition Id="5e6db37a-08fa-4b1f-9be2-6a6a331881e5" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <decisionNode Id="579868ad-b99c-456e-8f25-5b416ed82280" name="Decision1" isLeaf="false">
-            <elementDefinition Id="d50efda5-c2ac-4188-a0d5-095892f467cf" />
+          <decisionNode Id="dd26c45a-fc2b-417d-be22-845e6a1b5a57" name="Decision1" isLeaf="false">
+            <elementDefinition Id="a2bd4ecd-af49-4ffc-a72f-d4fb50c2a215" />
             <flowNodeTargets>
-              <controlFlow Id="d0100ac8-def5-4a7d-b45c-b7705ecdfa8f" isLeaf="false">
-                <opaqueActionMoniker Id="53294f56-a3ab-4a5d-a0a9-1d06f22f309d" LastKnownName="Choose Movement" />
-                <elementDefinition Id="7ebe84de-abad-4e08-9c1b-ae36b38f73b5" />
+              <controlFlow Id="59bd95bd-b877-49ed-8ec9-8bb52bef8f44" isLeaf="false">
+                <opaqueActionMoniker Id="f14b29df-c7bc-4c5b-a989-ed8442f2ea2d" LastKnownName="Choose Movement" />
+                <elementDefinition Id="4eb9cf48-1dd4-4dd3-b6fe-41a4cd5be3a3" />
               </controlFlow>
-              <controlFlow Id="c0a94060-92b4-4e66-b611-20ae1d66b3ea" isLeaf="false">
-                <opaqueActionMoniker Id="0e7b8513-bda9-4b45-b651-4835c5102c2b" LastKnownName="Check for End" />
-                <elementDefinition Id="44bf7ec4-58cb-4318-8b7c-bfd50ee3976c" />
+              <controlFlow Id="dbee38fa-3409-48b6-a1c9-f080613f297e" isLeaf="false">
+                <opaqueActionMoniker Id="5d1690da-a097-4616-beb3-98c0f62047d9" LastKnownName="Check for End" />
+                <elementDefinition Id="d3a80174-2e91-44db-8f9b-76e2ce394ec9" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <decisionNode Id="1790246c-c22f-4fc7-846a-7af3248dc117" name="Decision2" isLeaf="false">
-            <elementDefinition Id="154c6411-690b-436b-9619-9b1629aac40b" />
+          <decisionNode Id="b8d122ba-e3f5-4db7-9d51-6037dd6f334d" name="Decision2" isLeaf="false">
+            <elementDefinition Id="2271db8f-7d68-416e-ae5e-54fb9a2e9eea" />
             <flowNodeTargets>
-              <controlFlow Id="2b6ddc69-6888-4993-afd4-d756bf01e399" isLeaf="false">
-                <opaqueActionMoniker Id="53294f56-a3ab-4a5d-a0a9-1d06f22f309d" LastKnownName="Choose Movement" />
-                <elementDefinition Id="d69102ca-d46c-43bc-bf71-524238eb688a" />
+              <controlFlow Id="a2732e3f-efb0-4d7d-866d-c842460ec492" isLeaf="false">
+                <opaqueActionMoniker Id="f14b29df-c7bc-4c5b-a989-ed8442f2ea2d" LastKnownName="Choose Movement" />
+                <elementDefinition Id="89c36386-cabd-4b8b-a3e8-fdb0ae52a21b" />
               </controlFlow>
             </flowNodeTargets>
             <objectFlowTargets>
-              <objectFlow Id="608902d9-4362-4c9e-bf27-953f6efde8fd" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="d8cb429b-7fa0-43b2-8a71-34d67ca8470f" LastKnownName="End Goal" />
-                <elementDefinition Id="ca9e2e2c-ccba-44b1-bec2-c98661fd0663" />
+              <objectFlow Id="a3389b57-048d-4047-9ce9-0dbde52d7927" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="60f9659a-d63d-4ce7-b321-641d25695530" LastKnownName="End Goal" />
+                <elementDefinition Id="7b4320a5-a0fa-4574-9006-55f341a52e81" />
               </objectFlow>
             </objectFlowTargets>
           </decisionNode>
@@ -116,5 +102,19 @@
   </packagedElements>
   <package Id="c56c045f-33ac-40dc-8548-a5292bf46cdd" name="Level">
     <elementDefinition Id="456d16f5-8767-46f6-9a2a-adfb582b586a" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1b8fe045-3f52-47ad-80e8-11e2f6861942">
+        <profileInstance Id="bb5330c2-1980-41d2-a819-a32a000742bb" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3536416c-d09a-465b-8f6c-6412d6f01eb6">
+        <profileInstance Id="bab5e30b-7230-4342-9779-df963806fb51" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
