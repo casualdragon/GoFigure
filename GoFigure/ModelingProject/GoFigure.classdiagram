@@ -319,6 +319,50 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="83ec9a26-5cd9-435e-bba8-453a5d576bc5" name="Level" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="cc5e40b6-e977-4985-976f-587ea42845b0" />
+        <targetEnds>
+          <association Id="10dad35b-0067-4583-bbcf-6aa9fc9b2f7b" isDerived="false" sourceEndRoleName="Level" targetEndRoleName="Cell" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a43fefdf-6c1d-4d10-b448-409108638956" LastKnownName="Cell" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f24f26c-9061-4628-92a7-33d772b74cf5" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dec102c4-42b1-4103-ac90-165a25153712" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="090ebb44-9c9d-45ca-bce9-cf5ebe9c2aad" name="Cell" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="12e55eb6-59c1-4e6f-87d7-b327ffe207ac" name="Lower" value="0">
+                      <elementDefinition Id="d3f6efb6-c024-455a-ad65-f9dd391cf5ab" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1a892126-567a-4a4b-8bb0-567676bdaf2e" name="Upper" value="*">
+                      <elementDefinition Id="4f110f9c-790f-481f-a333-32df3ccdd8ef" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b0427e1d-4340-44bf-b23a-54d5b5fb8a9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb0bebb6-893a-4339-beed-154fcfde12a0" />
+          </association>
+          <association Id="2eae5ccb-e81f-41a6-86eb-3dc872101c11" isDerived="false" sourceEndRoleName="Level" targetEndRoleName="Clock" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b45f8b26-5c09-45d5-a275-921c23b605ff" LastKnownName="Clock" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dce9a24c-a6f7-4377-8676-94a2d84ae389" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7e7135d9-d42e-4226-b428-d28cf2ea4d30" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e478d7a-8683-4874-b8dd-763858163242" name="Clock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="8a00d13a-8c2d-4edc-8ef1-8ea1a97d31b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="57b06d71-1ad3-41c6-b4b8-3aea42d4121a" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="9ab8e9e8-547c-4725-985c-1c08c9578f44" name="filename" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="3ec544d6-279e-4153-af91-e8a382df9192" />
@@ -627,6 +671,40 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="526587c9-d48e-42ac-bf0b-cb3762731e92" name="LevelEditor" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c6db2252-18b5-4eb3-9e6e-84ab7910e42c" />
+        <targetEnds>
+          <association Id="fc46d70f-b07f-4075-9690-5420161500cb" isDerived="false" sourceEndRoleName="LevelEditor" targetEndRoleName="Level" isLeaf="false" isAbstract="false">
+            <classMoniker Id="83ec9a26-5cd9-435e-bba8-453a5d576bc5" LastKnownName="Level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30fd2e68-b0ee-404c-9d32-f9af07c8c6ab" name="LevelEditor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8c85299c-ee93-48c5-9f4b-f04646d6401a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="19e2e66c-84b0-4ce0-8694-ab5d6e90e845" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b1313a0a-9304-412e-b07b-333670b3c604" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e5ddd7a3-1220-498c-aff0-0f2abfd7de59" />
+          </association>
+          <association Id="d33781f7-5d23-4031-9ea1-21ca48073831" isDerived="false" sourceEndRoleName="LevelEditor" targetEndRoleName="Game" isLeaf="false" isAbstract="false">
+            <classMoniker Id="531995b3-89a6-40d2-8601-f8f36e9f3d39" LastKnownName="Game" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ceb19363-f4e0-457b-bd4c-6a5adb1716df" name="LevelEditor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a2f6be1c-c65a-43ec-b2d5-d920f1a61661" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="568ac636-489c-4ebc-bbab-f107b46bb7c5" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="53b04466-9a21-4cf0-9630-5944986cecc2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7e3e767-f2d9-471c-9e2e-00c4d4d41a4a" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="17bf3bb3-45f7-4171-8470-2deefc316d44" name="level" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="9c840467-a6ac-4d8c-bfb6-719bed0005b6" />
@@ -844,6 +922,24 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="a43fefdf-6c1d-4d10-b448-409108638956" name="Cell" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f36e1c6c-393d-40a0-82b7-f6d288a54f93" />
+        <targetEnds>
+          <association Id="e6123a0f-adf4-4402-a503-19c4f03e3bef" isDerived="false" sourceEndRoleName="Cell" targetEndRoleName="Shape" isLeaf="false" isAbstract="false">
+            <classMoniker Id="11eae1c7-0217-4f37-8d69-c8c9dc904bd1" LastKnownName="Shape" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8962099c-9a7a-4ffa-8236-4cf7e3d8c3d6" name="Cell" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="264419e7-9950-4dab-9c80-2b3885c259f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4cd1f709-84dc-43ae-a358-3f2af3481d1f" name="Shape" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="ba26cc74-ccd6-42cd-86a8-c6c9f53d41ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="52b8fc0e-93c9-4d07-a89d-9a2ecaaad78f" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="3ef7ec4f-1e42-45b5-9b63-35e6ea76f656" name="height" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="09c33160-9dc9-47a0-a7e1-c41fafe6a07d" />

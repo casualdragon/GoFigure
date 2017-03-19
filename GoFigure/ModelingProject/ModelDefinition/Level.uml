@@ -7678,6 +7678,99 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="cb0bebb6-893a-4339-beed-154fcfde12a0"
+            isDerived="false"
+            sourceEndRoleName="Level"
+            targetEndRoleName="Cell"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f36e1c6c-393d-40a0-82b7-f6d288a54f93"
+              LastKnownName="Cell"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dec102c4-42b1-4103-ac90-165a25153712"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0427e1d-4340-44bf-b23a-54d5b5fb8a9d"
+                  name="Cell"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d3f6efb6-c024-455a-ad65-f9dd391cf5ab"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4f110f9c-790f-481f-a333-32df3ccdd8ef"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="57b06d71-1ad3-41c6-b4b8-3aea42d4121a"
+            isDerived="false"
+            sourceEndRoleName="Level"
+            targetEndRoleName="Clock"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="01086db7-1580-452a-b888-5d176bd9fdaa"
+              LastKnownName="Clock"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e7135d9-d42e-4226-b428-d28cf2ea4d30"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a00d13a-8c2d-4edc-8ef1-8ea1a97d31b4"
+                  name="Clock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="3ec544d6-279e-4153-af91-e8a382df9192"
@@ -8314,6 +8407,86 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e5ddd7a3-1220-498c-aff0-0f2abfd7de59"
+            isDerived="false"
+            sourceEndRoleName="LevelEditor"
+            targetEndRoleName="Level"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cc5e40b6-e977-4985-976f-587ea42845b0"
+              LastKnownName="Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c85299c-ee93-48c5-9f4b-f04646d6401a"
+                  name="LevelEditor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b1313a0a-9304-412e-b07b-333670b3c604"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e7e3e767-f2d9-471c-9e2e-00c4d4d41a4a"
+            isDerived="false"
+            sourceEndRoleName="LevelEditor"
+            targetEndRoleName="Game"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7828047a-82a0-4963-b212-f862340f2ec6"
+              LastKnownName="Game"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2f6be1c-c65a-43ec-b2d5-d920f1a61661"
+                  name="LevelEditor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53b04466-9a21-4cf0-9630-5944986cecc2"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="9c840467-a6ac-4d8c-bfb6-719bed0005b6"
@@ -8772,6 +8945,47 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="52b8fc0e-93c9-4d07-a89d-9a2ecaaad78f"
+            isDerived="false"
+            sourceEndRoleName="Cell"
+            targetEndRoleName="Shape"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
+              LastKnownName="Shape"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="264419e7-9950-4dab-9c80-2b3885c259f1"
+                  name="Cell"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba26cc74-ccd6-42cd-86a8-c6c9f53d41ad"
+                  name="Shape"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="09c33160-9dc9-47a0-a7e1-c41fafe6a07d"
