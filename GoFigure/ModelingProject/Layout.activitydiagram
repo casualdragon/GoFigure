@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="9bf65b97-286b-46c6-9a03-e4f4908122e0" name="Layout" linkedPackageId="91729a82-29ce-4133-aaaf-8c202f3f0a63" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="9bf65b97-286b-46c6-9a03-e4f4908122e0" name="Layout" linkedPackageId="91729a82-29ce-4133-aaaf-8c202f3f0a63" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="230e12fa-5d13-4a4c-9969-b673c819a7cd" name="Layout" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -14,23 +14,6 @@
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <decisionNode Id="812da71e-6053-4fd1-9035-fa34444736ad" name="Decision1" isLeaf="false">
-            <elementDefinition Id="7b27dbae-992a-4aee-9ec1-40d3dfd50dcc" />
-            <flowNodeTargets>
-              <controlFlow Id="b5dea1bc-5696-4372-9025-1152f00da3f5" isLeaf="false">
-                <opaqueActionMoniker Id="c9b4f600-022e-4f72-8b8d-e781337ed326" LastKnownName="Choose Level" />
-                <elementDefinition Id="6404c9f7-ea98-4f1e-9da8-c01750368123" />
-              </controlFlow>
-              <controlFlow Id="3abc9b37-c774-4c4d-8f09-459e5c0e8333" isLeaf="false">
-                <opaqueActionMoniker Id="a2c4b209-c163-4230-9c2e-0cfae8230c7f" LastKnownName="Exit" />
-                <elementDefinition Id="510ca9b0-0fbe-484c-86c3-0b4de2b609de" />
-              </controlFlow>
-              <controlFlow Id="654082c5-a1d7-4443-8fa8-3ccc9a403b4c" isLeaf="false">
-                <opaqueActionMoniker Id="552b1007-59f0-4d8a-8a62-cfa675cd0ce9" LastKnownName="Move to Level Editor" />
-                <elementDefinition Id="c5de45a3-42ef-4438-8157-99b04405ac6b" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
           <opaqueAction Id="c9b4f600-022e-4f72-8b8d-e781337ed326" name="Choose Level" isLeaf="false">
             <elementDefinition Id="e424de9c-769f-487b-9f6e-22ea773a65c7" />
             <pins>
@@ -73,11 +56,11 @@
           <decisionNode Id="6a260aef-86e1-4032-b801-ee4f330c4952" name="Decision2" isLeaf="false">
             <elementDefinition Id="5de5c6f1-b970-4345-879f-57737f96e383" />
             <flowNodeTargets>
-              <controlFlow Id="1c64c3ce-ce10-4ef4-a1b4-0692eeb10861" isLeaf="false">
+              <controlFlow Id="1c64c3ce-ce10-4ef4-a1b4-0692eeb10861" guard="Select new Level" isLeaf="false">
                 <opaqueActionMoniker Id="78175fac-0bfb-4de2-b633-8214d8a4d21f" LastKnownName="Create new level" />
                 <elementDefinition Id="bbdfca3f-bd92-47fc-8906-adbf7a6482a1" />
               </controlFlow>
-              <controlFlow Id="fbc929cc-e6e0-4eb0-b0fc-cb064751e259" isLeaf="false">
+              <controlFlow Id="fbc929cc-e6e0-4eb0-b0fc-cb064751e259" guard="Selecta pre-existing level" isLeaf="false">
                 <opaqueActionMoniker Id="f04caa3b-3bd9-465f-b4a7-ff5646217719" LastKnownName="Choose Level" />
                 <elementDefinition Id="426d7898-334c-4f9c-9ffa-572ab9d68323" />
               </controlFlow>
@@ -148,9 +131,9 @@
           <opaqueAction Id="a11a3c8a-23bc-43a1-ad67-4e2e92dd554c" name="Save Level" isLeaf="false">
             <elementDefinition Id="a92b3c55-6bc6-408c-b60e-871557b5ba68" />
             <flowNodeTargets>
-              <controlFlow Id="3c23860e-e5ef-430d-8966-1ad6ec6b9a6f" isLeaf="false">
-                <opaqueActionMoniker Id="346b6c81-8e53-47f7-94e1-f7ad8a042c05" LastKnownName="Choose an action" />
-                <elementDefinition Id="0ee4c803-b7bc-4b26-8145-c78af24baad8" />
+              <controlFlow Id="bc782447-3e75-4795-86aa-f7b34926c85d" isLeaf="false">
+                <decisionNodeMoniker Id="d6e9a5bf-d17c-4369-985e-dac0b951b70e" LastKnownName="Decision3" />
+                <elementDefinition Id="b7983acf-d4a8-49c3-bd62-abba891eddae" />
               </controlFlow>
             </flowNodeTargets>
             <pins>
@@ -166,15 +149,6 @@
               </opaqueActionHasInputValues>
             </pins>
           </opaqueAction>
-          <decisionNode Id="ad8bd84e-7e2f-4e03-b84a-98dd029face3" name="Decision3" isLeaf="false">
-            <elementDefinition Id="9f80c000-c93b-4dd5-8f81-890096d5d0ed" />
-            <objectFlowTargets>
-              <objectFlow Id="5b997894-744f-42d2-88e5-2a922edbe1d1" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <inputPinMoniker Id="acc09372-22a4-4ffa-9ce1-2032bbe973ac" />
-                <elementDefinition Id="6180100d-3f4d-43d6-9c5a-f0ecf0081853" />
-              </objectFlow>
-            </objectFlowTargets>
-          </decisionNode>
           <opaqueAction Id="9d6bf186-84a4-4fa8-a0e0-24e98e6d0838" name="Play Level" isLeaf="false">
             <elementDefinition Id="b685bd7b-6d64-4fdd-baf2-d1f5fc57639f" />
             <flowNodeTargets>
@@ -213,13 +187,9 @@
           <objectNode Id="25510414-70ca-4395-80d2-71f3e919293b" name="Level" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="d9e47322-bb03-4161-87a4-f2e69c536094" />
             <objectFlowTargets>
-              <objectFlow Id="737b46dd-605e-4bbf-a736-7596394b5fbf" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <decisionNodeMoniker Id="ad8bd84e-7e2f-4e03-b84a-98dd029face3" LastKnownName="Decision3" />
-                <elementDefinition Id="92b2a097-5327-430c-927e-da60ec0ebd4f" />
-              </objectFlow>
-              <objectFlow Id="13efce8a-b0ac-4c7e-af06-150b0cc687d6" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <inputPinMoniker Id="d5c7ed2c-2599-4e6f-a943-73460104757d" />
-                <elementDefinition Id="b4016deb-2567-4979-babf-c8b5f991cce1" />
+              <objectFlow Id="641f49d6-f4f7-4725-aeb7-2e654c13faa8" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="acc09372-22a4-4ffa-9ce1-2032bbe973ac" />
+                <elementDefinition Id="b11e71f2-dc32-4225-9cfa-eaa1dd66ad8e" />
               </objectFlow>
             </objectFlowTargets>
             <upperBound>
@@ -280,20 +250,20 @@
           <opaqueAction Id="346b6c81-8e53-47f7-94e1-f7ad8a042c05" name="Choose an action" isLeaf="false">
             <elementDefinition Id="0b0548d8-1a1a-4ea6-8602-9de0d6254d4f" />
             <flowNodeTargets>
-              <controlFlow Id="b1db07ce-8045-487f-a3dc-43733732dac6" isLeaf="false">
-                <decisionNodeMoniker Id="812da71e-6053-4fd1-9035-fa34444736ad" LastKnownName="Decision1" />
-                <elementDefinition Id="9f5673e0-17ae-4dd4-9035-b123173bc03a" />
+              <controlFlow Id="e33b615b-d208-415b-bab5-085dc784d549" isLeaf="false">
+                <decisionNodeMoniker Id="916f4815-156d-4698-935c-e5be38fd7839" LastKnownName="Decision1" />
+                <elementDefinition Id="d1eb6125-e6a7-4cf8-8faa-16755deeecbc" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <decisionNode Id="3d9f5935-86d1-4c89-a242-dc6a6e8190de" name="Decision4" isLeaf="false">
             <elementDefinition Id="61fb3924-97bc-4fdb-a72e-c1e94264da73" />
             <flowNodeTargets>
-              <controlFlow Id="bbc7dc6d-b25c-4ae4-badb-4b658e140a3e" isLeaf="false">
+              <controlFlow Id="bbc7dc6d-b25c-4ae4-badb-4b658e140a3e" guard="Select Level" isLeaf="false">
                 <opaqueActionMoniker Id="c9b4f600-022e-4f72-8b8d-e781337ed326" LastKnownName="Choose Level" />
                 <elementDefinition Id="1401caf5-238f-4681-a5d2-910fae114cac" />
               </controlFlow>
-              <controlFlow Id="cac456c8-2e22-4eaf-bc31-3159745322e9" isLeaf="false">
+              <controlFlow Id="cac456c8-2e22-4eaf-bc31-3159745322e9" guard="Back to beginning" isLeaf="false">
                 <opaqueActionMoniker Id="346b6c81-8e53-47f7-94e1-f7ad8a042c05" LastKnownName="Choose an action" />
                 <elementDefinition Id="d4f2221c-2894-458a-8ab0-08207dfa1adc" />
               </controlFlow>
@@ -333,6 +303,42 @@
           <activityFinalNode Id="57c96769-5c34-4b0c-a569-e4376e3b99df" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="56b2f309-0298-43d1-a7de-c89765073728" />
           </activityFinalNode>
+          <decisionNode Id="916f4815-156d-4698-935c-e5be38fd7839" name="Decision1" isLeaf="false">
+            <elementDefinition Id="f83e7319-a1e6-4056-85df-184988d74379" />
+            <flowNodeTargets>
+              <controlFlow Id="c9668291-6f9e-4658-96d4-ae9de87359e8" guard="Clicks Exit" isLeaf="false">
+                <opaqueActionMoniker Id="a2c4b209-c163-4230-9c2e-0cfae8230c7f" LastKnownName="Exit" />
+                <elementDefinition Id="38dc3e3a-cdbe-4bd9-b528-4436a3ba99b1" />
+              </controlFlow>
+              <controlFlow Id="09efe3ea-b920-4783-bce6-cbd3db65ce7e" guard="Clicks Play" isLeaf="false">
+                <opaqueActionMoniker Id="c9b4f600-022e-4f72-8b8d-e781337ed326" LastKnownName="Choose Level" />
+                <elementDefinition Id="a0ed0d0b-32f4-4436-8e5a-b5758c1b5f95" />
+              </controlFlow>
+              <controlFlow Id="e805c962-5a77-4f14-b9c1-bf80ff79cea4" guard="Clicks Level Editor" isLeaf="false">
+                <opaqueActionMoniker Id="552b1007-59f0-4d8a-8a62-cfa675cd0ce9" LastKnownName="Move to Level Editor" />
+                <elementDefinition Id="7a74f846-6e53-4905-a398-7a77cf030d42" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="d6e9a5bf-d17c-4369-985e-dac0b951b70e" name="Decision3" isLeaf="false">
+            <elementDefinition Id="08b98f69-0463-4c7b-b4b7-04a9ac0ffa24" />
+            <flowNodeTargets>
+              <controlFlow Id="c206aff4-5b13-4d15-a223-1510a6272b96" guard="Continue Editing" isLeaf="false">
+                <opaqueActionMoniker Id="c3d86d00-4a37-4ea9-97c6-e6a0e10ea724" LastKnownName="Edit level" />
+                <elementDefinition Id="93a5322b-4996-48bf-8fd8-e29f54ece7b3" />
+              </controlFlow>
+              <controlFlow Id="f0a37cb9-18c6-4816-b2cd-eb66868d6e74" guard="Back to beginning" isLeaf="false">
+                <opaqueActionMoniker Id="346b6c81-8e53-47f7-94e1-f7ad8a042c05" LastKnownName="Choose an action" />
+                <elementDefinition Id="f5da70da-4e02-4f1e-8b84-9d5292d47d74" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="11101b66-ee9c-4ba5-8e97-3d3cd837aa9b" guard="Test Level" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="d5c7ed2c-2599-4e6f-a943-73460104757d" />
+                <elementDefinition Id="e447065c-b53f-4f95-b33c-f45db9eba4e5" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
