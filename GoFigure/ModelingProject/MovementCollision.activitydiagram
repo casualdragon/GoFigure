@@ -1,15 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="2b8e3c72-6c82-453d-816b-38b52f9ec0f9" name="MovementCollision" linkedPackageId="c56c045f-33ac-40dc-8548-a5292bf46cdd" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <ownedCommentsInternal>
-    <comment Id="db2f139a-7517-4943-ad5b-92917b0d9054">
-      <elementDefinition Id="9c0cdc81-925c-4c94-aa54-cc7ad574e826" />
-      <body>No collision detected</body>
-    </comment>
-    <comment Id="440d8540-92d8-4adb-940a-b5f76679533a">
-      <elementDefinition Id="73a526a6-4b2b-481c-ad84-bc7dabb28c2b" />
-      <body>Collision detected</body>
-    </comment>
-  </ownedCommentsInternal>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2b8e3c72-6c82-453d-816b-38b52f9ec0f9" name="MovementCollision" linkedPackageId="c56c045f-33ac-40dc-8548-a5292bf46cdd" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="3162c5b2-bc15-4a1c-8232-b024759f4532" name="MovementCollision" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -71,11 +61,11 @@
           <decisionNode Id="dd26c45a-fc2b-417d-be22-845e6a1b5a57" name="Decision1" isLeaf="false">
             <elementDefinition Id="a2bd4ecd-af49-4ffc-a72f-d4fb50c2a215" />
             <flowNodeTargets>
-              <controlFlow Id="59bd95bd-b877-49ed-8ec9-8bb52bef8f44" isLeaf="false">
+              <controlFlow Id="59bd95bd-b877-49ed-8ec9-8bb52bef8f44" guard="Collision detected" isLeaf="false">
                 <opaqueActionMoniker Id="f14b29df-c7bc-4c5b-a989-ed8442f2ea2d" LastKnownName="Choose Movement" />
                 <elementDefinition Id="4eb9cf48-1dd4-4dd3-b6fe-41a4cd5be3a3" />
               </controlFlow>
-              <controlFlow Id="dbee38fa-3409-48b6-a1c9-f080613f297e" isLeaf="false">
+              <controlFlow Id="dbee38fa-3409-48b6-a1c9-f080613f297e" guard="No collision detected" isLeaf="false">
                 <opaqueActionMoniker Id="5d1690da-a097-4616-beb3-98c0f62047d9" LastKnownName="Check for End" />
                 <elementDefinition Id="d3a80174-2e91-44db-8f9b-76e2ce394ec9" />
               </controlFlow>
@@ -84,13 +74,13 @@
           <decisionNode Id="b8d122ba-e3f5-4db7-9d51-6037dd6f334d" name="Decision2" isLeaf="false">
             <elementDefinition Id="2271db8f-7d68-416e-ae5e-54fb9a2e9eea" />
             <flowNodeTargets>
-              <controlFlow Id="a2732e3f-efb0-4d7d-866d-c842460ec492" isLeaf="false">
+              <controlFlow Id="a2732e3f-efb0-4d7d-866d-c842460ec492" guard="End goal not found" isLeaf="false">
                 <opaqueActionMoniker Id="f14b29df-c7bc-4c5b-a989-ed8442f2ea2d" LastKnownName="Choose Movement" />
                 <elementDefinition Id="89c36386-cabd-4b8b-a3e8-fdb0ae52a21b" />
               </controlFlow>
             </flowNodeTargets>
             <objectFlowTargets>
-              <objectFlow Id="a3389b57-048d-4047-9ce9-0dbde52d7927" isLeaf="false" isMulticast="false" isMultireceive="false">
+              <objectFlow Id="a3389b57-048d-4047-9ce9-0dbde52d7927" guard="End goal found" isLeaf="false" isMulticast="false" isMultireceive="false">
                 <objectNodeMoniker Id="60f9659a-d63d-4ce7-b321-641d25695530" LastKnownName="End Goal" />
                 <elementDefinition Id="7b4320a5-a0fa-4574-9006-55f341a52e81" />
               </objectFlow>
