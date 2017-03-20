@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="456d16f5-8767-46f6-9a2a-adfb582b586a"
   name="Level" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -619,7 +619,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
               <lifelineMoniker
                 Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
@@ -641,7 +641,7 @@
                 <coveredLifelines>
                   <lifelineMoniker
                     Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                    LastKnownName="Menu"
+                    LastKnownName="Choice"
                     LastKnownLocation="Level.uml" />
                   <lifelineMoniker
                     Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
@@ -663,20 +663,20 @@
                     interactionOperator="Alt">
                     <coveredLifelines>
                       <lifelineMoniker
+                        Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
+                        LastKnownName="Choice"
+                        LastKnownLocation="Level.uml" />
+                      <lifelineMoniker
                         Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                         LastKnownName="Level Editor"
                         LastKnownLocation="Level.uml" />
                       <lifelineMoniker
-                        Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                        LastKnownName="Menu"
+                        Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                        LastKnownName="Game"
                         LastKnownLocation="Level.uml" />
                       <lifelineMoniker
                         Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
                         LastKnownName="Level"
-                        LastKnownLocation="Level.uml" />
-                      <lifelineMoniker
-                        Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                        LastKnownName="Game"
                         LastKnownLocation="Level.uml" />
                     </coveredLifelines>
                     <operands>
@@ -685,20 +685,20 @@
                         name="InteractionOperand1">
                         <coveredLifelines>
                           <lifelineMoniker
+                            Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
+                            LastKnownName="Choice"
+                            LastKnownLocation="Level.uml" />
+                          <lifelineMoniker
                             Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                             LastKnownName="Level Editor"
                             LastKnownLocation="Level.uml" />
                           <lifelineMoniker
-                            Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                            LastKnownName="Menu"
+                            Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                            LastKnownName="Game"
                             LastKnownLocation="Level.uml" />
                           <lifelineMoniker
                             Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
                             LastKnownName="Level"
-                            LastKnownLocation="Level.uml" />
-                          <lifelineMoniker
-                            Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                            LastKnownName="Game"
                             LastKnownLocation="Level.uml" />
                         </coveredLifelines>
                         <fragments>
@@ -708,12 +708,12 @@
                             interactionOperator="Alt">
                             <coveredLifelines>
                               <lifelineMoniker
-                                Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
-                                LastKnownName="Level"
-                                LastKnownLocation="Level.uml" />
-                              <lifelineMoniker
                                 Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                                 LastKnownName="Level Editor"
+                                LastKnownLocation="Level.uml" />
+                              <lifelineMoniker
+                                Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
+                                LastKnownName="Level"
                                 LastKnownLocation="Level.uml" />
                             </coveredLifelines>
                             <operands>
@@ -722,12 +722,12 @@
                                 name="InteractionOperand1">
                                 <coveredLifelines>
                                   <lifelineMoniker
-                                    Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
-                                    LastKnownName="Level"
-                                    LastKnownLocation="Level.uml" />
-                                  <lifelineMoniker
                                     Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                                     LastKnownName="Level Editor"
+                                    LastKnownLocation="Level.uml" />
+                                  <lifelineMoniker
+                                    Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
+                                    LastKnownName="Level"
                                     LastKnownLocation="Level.uml" />
                                 </coveredLifelines>
                                 <guard>
@@ -758,12 +758,12 @@
                                 name="InteractionOperand2">
                                 <coveredLifelines>
                                   <lifelineMoniker
-                                    Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
-                                    LastKnownName="Level"
-                                    LastKnownLocation="Level.uml" />
-                                  <lifelineMoniker
                                     Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                                     LastKnownName="Level Editor"
+                                    LastKnownLocation="Level.uml" />
+                                  <lifelineMoniker
+                                    Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
+                                    LastKnownName="Level"
                                     LastKnownLocation="Level.uml" />
                                 </coveredLifelines>
                                 <guard>
@@ -834,12 +834,12 @@
                                     interactionOperator="Alt">
                                     <coveredLifelines>
                                       <lifelineMoniker
-                                        Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                                        LastKnownName="Game"
-                                        LastKnownLocation="Level.uml" />
-                                      <lifelineMoniker
                                         Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                                         LastKnownName="Level Editor"
+                                        LastKnownLocation="Level.uml" />
+                                      <lifelineMoniker
+                                        Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                                        LastKnownName="Game"
                                         LastKnownLocation="Level.uml" />
                                     </coveredLifelines>
                                     <operands>
@@ -848,12 +848,12 @@
                                         name="InteractionOperand1">
                                         <coveredLifelines>
                                           <lifelineMoniker
-                                            Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                                            LastKnownName="Game"
-                                            LastKnownLocation="Level.uml" />
-                                          <lifelineMoniker
                                             Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                                             LastKnownName="Level Editor"
+                                            LastKnownLocation="Level.uml" />
+                                          <lifelineMoniker
+                                            Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                                            LastKnownName="Game"
                                             LastKnownLocation="Level.uml" />
                                         </coveredLifelines>
                                         <guard>
@@ -977,12 +977,12 @@
                     interactionOperator="Alt">
                     <coveredLifelines>
                       <lifelineMoniker
-                        Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                        LastKnownName="Game"
+                        Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
+                        LastKnownName="Choice"
                         LastKnownLocation="Level.uml" />
                       <lifelineMoniker
-                        Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                        LastKnownName="Menu"
+                        Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                        LastKnownName="Game"
                         LastKnownLocation="Level.uml" />
                       <lifelineMoniker
                         Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
@@ -995,12 +995,12 @@
                         name="InteractionOperand1">
                         <coveredLifelines>
                           <lifelineMoniker
-                            Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                            LastKnownName="Game"
+                            Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
+                            LastKnownName="Choice"
                             LastKnownLocation="Level.uml" />
                           <lifelineMoniker
-                            Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                            LastKnownName="Menu"
+                            Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                            LastKnownName="Game"
                             LastKnownLocation="Level.uml" />
                           <lifelineMoniker
                             Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
@@ -1130,7 +1130,7 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1160,7 +1160,7 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1304,7 +1304,7 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1871,22 +1871,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="f8cd1623-159e-428e-8753-38dec715b015"
-            name="OperandOccurrenceSpecification170">
-            <covered>
-              <lifelineMoniker
-                Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                LastKnownName="Game"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
             Id="fee00dc8-226d-43cc-8515-044960c24f68"
             name="OperandOccurrenceSpecification172">
             <covered>
               <lifelineMoniker
                 Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
                 LastKnownName="Level Editor"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="f8cd1623-159e-428e-8753-38dec715b015"
+            name="OperandOccurrenceSpecification170">
+            <covered>
+              <lifelineMoniker
+                Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                LastKnownName="Game"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -1926,7 +1926,7 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1959,6 +1959,16 @@
             </covered>
           </executionOccurrenceSpecification>
           <operandOccurrenceSpecification
+            Id="589b2f49-ebc8-44b5-a9f9-8b94dd4d89d2"
+            name="OperandOccurrenceSpecification174">
+            <covered>
+              <lifelineMoniker
+                Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
+                LastKnownName="Level Editor"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
             Id="078b1b99-e8f0-40dc-b90b-e4cd98b66943"
             name="OperandOccurrenceSpecification180">
             <covered>
@@ -1984,27 +1994,17 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="589b2f49-ebc8-44b5-a9f9-8b94dd4d89d2"
-            name="OperandOccurrenceSpecification174">
+            Id="1013bf0e-e173-418a-96b1-b0770fba7a4b"
+            name="OperandOccurrenceSpecification191">
             <covered>
               <lifelineMoniker
-                Id="330f0e9c-be10-42ca-a400-41404d99d4cc"
-                LastKnownName="Level Editor"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="0085fa58-85d9-40df-a68a-d2a05837de36"
-            name="OperandOccurrenceSpecification189">
-            <covered>
-              <lifelineMoniker
-                Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                LastKnownName="Game"
+                Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -2019,12 +2019,12 @@
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="1013bf0e-e173-418a-96b1-b0770fba7a4b"
-            name="OperandOccurrenceSpecification191">
+            Id="0085fa58-85d9-40df-a68a-d2a05837de36"
+            name="OperandOccurrenceSpecification189">
             <covered>
               <lifelineMoniker
-                Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                LastKnownName="Game"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -2102,7 +2102,7 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -2177,22 +2177,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="7c87c722-f849-489a-b9b0-a88216379077"
-            name="MessageOccurrenceSpecification86">
-            <covered>
-              <lifelineMoniker
-                Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
-                LastKnownName="Game"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="8a4fa14e-2103-43a2-b4b8-ef90503fc6c0"
             name="MessageOccurrenceSpecification85">
             <covered>
               <lifelineMoniker
                 Id="9cfe8548-48f8-4a28-9034-eba4312e0e1c"
                 LastKnownName="Level"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7c87c722-f849-489a-b9b0-a88216379077"
+            name="MessageOccurrenceSpecification86">
+            <covered>
+              <lifelineMoniker
+                Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
+                LastKnownName="Game"
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -2220,7 +2220,7 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -2268,7 +2268,7 @@
             <covered>
               <lifelineMoniker
                 Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -2279,6 +2279,16 @@
               <lifelineMoniker
                 Id="6ad4e6f8-59ba-435e-8470-a973609a6d87"
                 LastKnownName="Game"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="62bb98eb-91fc-430a-a2b7-599bcb09f0be"
+            name="OperandOccurrenceSpecification100">
+            <covered>
+              <lifelineMoniker
+                Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
+                LastKnownName="Choice"
                 LastKnownLocation="Level.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -2303,16 +2313,6 @@
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="62bb98eb-91fc-430a-a2b7-599bcb09f0be"
-            name="OperandOccurrenceSpecification100">
-            <covered>
-              <lifelineMoniker
-                Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-                LastKnownName="Menu"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
             Id="3b029282-9613-447c-9481-3df1f7b7453b"
             name="OperandOccurrenceSpecification106">
             <covered>
@@ -2326,9 +2326,9 @@
         <lifelines>
           <lifeline
             Id="df667a0b-b267-4bd8-85ef-449ed9740e7e"
-            name="Menu"
+            name="Choice"
             isActor="false"
-            lifelineDisplayName="Menu">
+            lifelineDisplayName="Choice">
             <topLevelOccurrences>
               <operandOccurrenceSpecificationMoniker
                 Id="577e941f-190f-4e87-aa02-ff5cd90f03fb"
@@ -4987,12 +4987,12 @@
             interactionOperator="Loop">
             <coveredLifelines>
               <lifelineMoniker
-                Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
-                LastKnownName="Movement"
-                LastKnownLocation="Level.uml" />
-              <lifelineMoniker
                 Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
                 LastKnownName="Player"
+                LastKnownLocation="Level.uml" />
+              <lifelineMoniker
+                Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
+                LastKnownName="Movement"
                 LastKnownLocation="Level.uml" />
               <lifelineMoniker
                 Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
@@ -5013,12 +5013,12 @@
                 name="InteractionOperand1">
                 <coveredLifelines>
                   <lifelineMoniker
-                    Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
-                    LastKnownName="Movement"
-                    LastKnownLocation="Level.uml" />
-                  <lifelineMoniker
                     Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
                     LastKnownName="Player"
+                    LastKnownLocation="Level.uml" />
+                  <lifelineMoniker
+                    Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
+                    LastKnownName="Movement"
                     LastKnownLocation="Level.uml" />
                   <lifelineMoniker
                     Id="3de9a294-93bb-41d8-9fca-9c1d5d959b9a"
@@ -5040,12 +5040,12 @@
                     interactionOperator="Break">
                     <coveredLifelines>
                       <lifelineMoniker
-                        Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
-                        LastKnownName="Nguyen"
-                        LastKnownLocation="Level.uml" />
-                      <lifelineMoniker
                         Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
                         LastKnownName="End Goal"
+                        LastKnownLocation="Level.uml" />
+                      <lifelineMoniker
+                        Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                        LastKnownName="Nguyen"
                         LastKnownLocation="Level.uml" />
                     </coveredLifelines>
                     <operands>
@@ -5054,12 +5054,12 @@
                         name="InteractionOperand1">
                         <coveredLifelines>
                           <lifelineMoniker
-                            Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
-                            LastKnownName="Nguyen"
-                            LastKnownLocation="Level.uml" />
-                          <lifelineMoniker
                             Id="94cda2e2-b753-4d19-a12e-669cf20f3298"
                             LastKnownName="End Goal"
+                            LastKnownLocation="Level.uml" />
+                          <lifelineMoniker
+                            Id="3c7cf82a-d10f-4177-8b92-8d78eb095bec"
+                            LastKnownName="Nguyen"
                             LastKnownLocation="Level.uml" />
                         </coveredLifelines>
                         <guard>
@@ -5261,22 +5261,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="1536f3c1-52eb-4144-9f40-17115f551739"
-            name="MessageOccurrenceSpecification1">
-            <covered>
-              <lifelineMoniker
-                Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
-                LastKnownName="Player"
-                LastKnownLocation="Level.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="39cdaa20-efe1-4452-b4e1-e362f071606e"
             name="MessageOccurrenceSpecification2">
             <covered>
               <lifelineMoniker
                 Id="67735130-565b-45cc-b8d0-8a6e412e5dd7"
                 LastKnownName="Movement"
+                LastKnownLocation="Level.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1536f3c1-52eb-4144-9f40-17115f551739"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="baee73d0-8d3e-453d-a77b-02c6fd5b9258"
+                LastKnownName="Player"
                 LastKnownLocation="Level.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -8975,6 +8975,45 @@
                 <memberEnd
                   Id="ba26cc74-ccd6-42cd-86a8-c6c9f53d41ad"
                   name="Shape"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9ea297d2-ca49-41cb-b062-631ce3d42465"
+            isDerived="false"
+            sourceEndRoleName="Cell"
+            targetEndRoleName="Entity"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="349de381-0611-433f-bebf-2bc00437f41d"
+              LastKnownName="Entity"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d060fc2a-5ed4-4f6c-b16f-e6bf0e54a7cc"
+                  name="Cell"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e44fe48-6d4e-43ba-89dc-b66f210a30f5"
+                  name="Entity"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="1fc024d5-2098-4433-ae03-7dca08c30526" name="Layout" linkedPackageId="5a2c2e40-24c2-46f0-9cff-8dde85c5c8d1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="1fc024d5-2098-4433-ae03-7dca08c30526" name="Layout" linkedPackageId="5a2c2e40-24c2-46f0-9cff-8dde85c5c8d1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="939fc6e5-3d25-405e-915b-f7d73a588908" name="Layout" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -8,7 +8,7 @@
           <combinedFragment Id="b7a64797-2c84-4490-972c-601ed1d3fdb4" name="CombinedFragment1" interactionOperator="Loop">
             <elementDefinition Id="6a914416-e2d5-4844-ab61-a6838bb6c169" />
             <coveredLifelines>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
               <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
               <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
               <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
@@ -17,7 +17,7 @@
               <interactionOperand Id="69700d02-c137-4dd9-a810-e873a8bd983e" name="InteractionOperand1">
                 <elementDefinition Id="883a6a2b-ad7d-4f28-99a0-0448e7c0a440" />
                 <coveredLifelines>
-                  <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+                  <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
                   <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
                   <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
                   <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
@@ -26,33 +26,33 @@
                   <combinedFragment Id="35b6a23f-3869-4c38-99d7-4bfb3186f9f4" name="CombinedFragment1" interactionOperator="Alt">
                     <elementDefinition Id="4c37cb75-f93b-464b-aa5d-502e373d8c3a" />
                     <coveredLifelines>
+                      <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
                       <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
-                      <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
-                      <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                       <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
+                      <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                     </coveredLifelines>
                     <operands>
                       <interactionOperand Id="09c951de-991d-44d5-a63d-0c5be9f1df03" name="InteractionOperand1">
                         <elementDefinition Id="111345c0-5f34-40fa-a501-7a933f175b26" />
                         <coveredLifelines>
+                          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
                           <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
-                          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
-                          <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                           <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
+                          <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                         </coveredLifelines>
                         <fragments>
                           <combinedFragment Id="6176cd1e-a0bb-40af-82f0-8cc7c7f16e81" name="CombinedFragment1" interactionOperator="Alt">
                             <elementDefinition Id="20c3b257-7ec1-47e6-8c07-e653ea802821" />
                             <coveredLifelines>
-                              <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                               <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
+                              <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                             </coveredLifelines>
                             <operands>
                               <interactionOperand Id="12e56743-3558-44bf-ad61-8f4cfd6e2be8" name="InteractionOperand1">
                                 <elementDefinition Id="9ed726f3-139c-43cf-ae00-9e58aafb3b7a" />
                                 <coveredLifelines>
-                                  <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                                   <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
+                                  <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                                 </coveredLifelines>
                                 <guard>
                                   <interactionConstraint Id="5f15e88d-bfab-4cc6-beac-f2f7da6f5e92">
@@ -69,8 +69,8 @@
                               <interactionOperand Id="ad2beab7-ed09-4fa8-808a-7a7d45bbfff5" name="InteractionOperand2">
                                 <elementDefinition Id="86cada1b-fe46-4e05-83b9-02737931146f" />
                                 <coveredLifelines>
-                                  <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                                   <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
+                                  <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                                 </coveredLifelines>
                                 <guard>
                                   <interactionConstraint Id="2980b3cc-565b-404e-846c-566a3ed5cae7">
@@ -105,15 +105,15 @@
                                   <combinedFragment Id="6cc36005-6549-4a5e-a122-7a346b7d1915" name="CombinedFragment2" interactionOperator="Alt">
                                     <elementDefinition Id="26876ec1-776f-4918-a890-6cde0f292492" />
                                     <coveredLifelines>
-                                      <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
                                       <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
+                                      <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
                                     </coveredLifelines>
                                     <operands>
                                       <interactionOperand Id="0c1864bf-aa21-4bfc-a360-ddbc6742e8ad" name="InteractionOperand1">
                                         <elementDefinition Id="b74593f1-9b74-4d23-aaaa-93512c38ff1c" />
                                         <coveredLifelines>
-                                          <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
                                           <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
+                                          <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
                                         </coveredLifelines>
                                         <guard>
                                           <interactionConstraint Id="8578b55c-ba69-471a-8607-2169ebe367fc" guardText="playLevel == true">
@@ -178,16 +178,16 @@
                   <combinedFragment Id="f4f6fb2f-13ae-4f57-b52d-8dbeb56ac131" name="CombinedFragment2" interactionOperator="Alt">
                     <elementDefinition Id="68a6e254-9e37-4ce0-b1c4-96443d737d4d" />
                     <coveredLifelines>
+                      <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
                       <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
-                      <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
                       <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                     </coveredLifelines>
                     <operands>
                       <interactionOperand Id="4016b964-51c9-4b9e-b03a-423cdfaa59ba" name="InteractionOperand1">
                         <elementDefinition Id="3b7299b5-86b7-4be1-ba4c-e6457b0c809a" />
                         <coveredLifelines>
+                          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
                           <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
-                          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
                           <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
                         </coveredLifelines>
                         <guard>
@@ -256,7 +256,7 @@
           <operandOccurrenceSpecification Id="10ac38dc-4fc3-43b9-a59c-81a009b8ec08" name="OperandOccurrenceSpecification99">
             <elementDefinition Id="577e941f-190f-4e87-aa02-ff5cd90f03fb" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="c1fb7f54-d83d-4745-9278-2a9b4d694bff" name="OperandOccurrenceSpecification177">
@@ -274,7 +274,7 @@
           <operandOccurrenceSpecification Id="724a8a9f-af9e-484b-a5ed-241627b52685" name="OperandOccurrenceSpecification175">
             <elementDefinition Id="57139d99-29ff-40f1-9564-2011b4c701f3" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="06cacec4-41b1-4d07-9f97-01103fb28c50" name="OperandOccurrenceSpecification173">
@@ -335,7 +335,7 @@
           <messageOccurrenceSpecification Id="0418640d-8e78-4648-8156-f7299ba25049" name="MessageOccurrenceSpecification49">
             <elementDefinition Id="46f2dec1-4ee9-4f31-b652-8a08063f741a" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </messageOccurrenceSpecification>
           <operandOccurrenceSpecification Id="0bcf8283-dade-4395-94d5-22f30ec08313" name="OperandOccurrenceSpecification155">
@@ -664,16 +664,16 @@
               <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
             </covered>
           </executionOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="0331d5f6-4d70-4e72-bd33-ccc033e86943" name="OperandOccurrenceSpecification170">
-            <elementDefinition Id="f8cd1623-159e-428e-8753-38dec715b015" />
-            <covered>
-              <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
-            </covered>
-          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="c90c1f09-4dbf-4fed-a12f-d16af276a23d" name="OperandOccurrenceSpecification172">
             <elementDefinition Id="fee00dc8-226d-43cc-8515-044960c24f68" />
             <covered>
               <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0331d5f6-4d70-4e72-bd33-ccc033e86943" name="OperandOccurrenceSpecification170">
+            <elementDefinition Id="f8cd1623-159e-428e-8753-38dec715b015" />
+            <covered>
+              <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="f8c89060-7d75-4297-b970-5a1d857c3fec" name="OperandOccurrenceSpecification166">
@@ -697,7 +697,7 @@
           <messageOccurrenceSpecification Id="6b30d1af-f27e-4c39-b9d5-701649aa90d5" name="MessageOccurrenceSpecification52">
             <elementDefinition Id="b740dd68-20c5-49c8-8b6e-751b2d54671b" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="eea938cc-a368-4b30-adea-2de4cfa87bd2" name="MessageOccurrenceSpecification51">
@@ -717,6 +717,12 @@
               <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
             </covered>
           </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d12c4bab-88cc-4e0e-86f6-778524e648e6" name="OperandOccurrenceSpecification174">
+            <elementDefinition Id="589b2f49-ebc8-44b5-a9f9-8b94dd4d89d2" />
+            <covered>
+              <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="2b947056-4deb-40d4-83ef-453b0c412d91" name="OperandOccurrenceSpecification180">
             <elementDefinition Id="078b1b99-e8f0-40dc-b90b-e4cd98b66943" />
             <covered>
@@ -732,19 +738,13 @@
           <operandOccurrenceSpecification Id="8be143c7-1105-4757-8eb8-4a4b7f2697dd" name="OperandOccurrenceSpecification176">
             <elementDefinition Id="34a7edf9-7d18-47e8-b95c-3b19d56f2737" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="d12c4bab-88cc-4e0e-86f6-778524e648e6" name="OperandOccurrenceSpecification174">
-            <elementDefinition Id="589b2f49-ebc8-44b5-a9f9-8b94dd4d89d2" />
+          <operandOccurrenceSpecification Id="ac165244-02aa-4ff0-b902-0b10f9cceec5" name="OperandOccurrenceSpecification191">
+            <elementDefinition Id="1013bf0e-e173-418a-96b1-b0770fba7a4b" />
             <covered>
-              <lifelineMoniker Id="253cffb2-6162-41f7-a1ca-b37cde06f138" LastKnownName="Level Editor" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="24aaa2af-1a58-49f5-8e73-7623ec9beba6" name="OperandOccurrenceSpecification189">
-            <elementDefinition Id="0085fa58-85d9-40df-a68a-d2a05837de36" />
-            <covered>
-              <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="a46aecb7-01f7-48b6-ade4-def9d6d32e15" name="OperandOccurrenceSpecification193">
@@ -753,10 +753,10 @@
               <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="ac165244-02aa-4ff0-b902-0b10f9cceec5" name="OperandOccurrenceSpecification191">
-            <elementDefinition Id="1013bf0e-e173-418a-96b1-b0770fba7a4b" />
+          <operandOccurrenceSpecification Id="24aaa2af-1a58-49f5-8e73-7623ec9beba6" name="OperandOccurrenceSpecification189">
+            <elementDefinition Id="0085fa58-85d9-40df-a68a-d2a05837de36" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
             </covered>
           </operandOccurrenceSpecification>
           <behaviorExecutionSpecification Id="71c0c8f0-f501-4f5d-8446-ada1f1b2dc92" name="BehaviorExecutionSpecification27">
@@ -797,7 +797,7 @@
           <messageOccurrenceSpecification Id="156eafc6-27ca-4a0a-af6c-b7585441465b" name="MessageOccurrenceSpecification79">
             <elementDefinition Id="ae2816c9-bf52-44da-95ea-cabc6ae86f07" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="4bd45f53-ad18-46ef-ae0c-5880be208d41" name="BehaviorExecutionSpecification28">
@@ -839,16 +839,16 @@
               <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="38d1bbde-de40-4732-92bb-2ed88459fe99" name="MessageOccurrenceSpecification86">
-            <elementDefinition Id="7c87c722-f849-489a-b9b0-a88216379077" />
-            <covered>
-              <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="ca153803-903a-4a73-9b06-2d5b9f7a24bf" name="MessageOccurrenceSpecification85">
             <elementDefinition Id="8a4fa14e-2103-43a2-b4b8-ef90503fc6c0" />
             <covered>
               <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="38d1bbde-de40-4732-92bb-2ed88459fe99" name="MessageOccurrenceSpecification86">
+            <elementDefinition Id="7c87c722-f849-489a-b9b0-a88216379077" />
+            <covered>
+              <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="2879b11f-7c0e-4134-b7d5-53b88b816ea0" name="ExecutionOccurrenceSpecification56">
@@ -865,7 +865,7 @@
           <messageOccurrenceSpecification Id="c012034e-f518-4c47-aa7c-9483cc5c8f03" name="MessageOccurrenceSpecification82">
             <elementDefinition Id="d3758247-12d7-42cd-969d-480e6e8f8d23" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="9d045628-51e3-453f-8a52-d0b539cccfa5" name="MessageOccurrenceSpecification81">
@@ -894,13 +894,19 @@
           <operandOccurrenceSpecification Id="438e5ae9-6d7c-4162-b4e8-959122ab83db" name="OperandOccurrenceSpecification192">
             <elementDefinition Id="21f90977-1626-41f9-b6f7-81e576c85472" />
             <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="851e322b-5c29-4bdb-9976-8b9af2c65a49" name="OperandOccurrenceSpecification190">
             <elementDefinition Id="a8c9b9c7-644b-4cbe-bce5-44b6e7a420e4" />
             <covered>
               <lifelineMoniker Id="b17f43f2-7f9e-4b96-9a79-7c0fc7b000e2" LastKnownName="Game" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ed7025c4-da23-4e5d-a3b7-3dc67404829c" name="OperandOccurrenceSpecification100">
+            <elementDefinition Id="62bb98eb-91fc-430a-a2b7-599bcb09f0be" />
+            <covered>
+              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="d91ecf72-6767-4474-923e-4ec390811619" name="OperandOccurrenceSpecification110">
@@ -915,12 +921,6 @@
               <lifelineMoniker Id="2d70d8ef-02d5-49f1-986d-27b0e24e60db" LastKnownName="Level" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="ed7025c4-da23-4e5d-a3b7-3dc67404829c" name="OperandOccurrenceSpecification100">
-            <elementDefinition Id="62bb98eb-91fc-430a-a2b7-599bcb09f0be" />
-            <covered>
-              <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
-            </covered>
-          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="433f5163-c0db-4beb-85da-12c56a25c30a" name="OperandOccurrenceSpecification106">
             <elementDefinition Id="3b029282-9613-447c-9481-3df1f7b7453b" />
             <covered>
@@ -929,7 +929,7 @@
           </operandOccurrenceSpecification>
         </fragments>
         <lifelines>
-          <lifeline Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" name="Menu" isActor="false" lifelineDisplayName="Menu">
+          <lifeline Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" name="Choice" isActor="false" lifelineDisplayName="Choice">
             <elementDefinition Id="df667a0b-b267-4bd8-85ef-449ed9740e7e" />
             <topLevelOccurrences>
               <operandOccurrenceSpecificationMoniker Id="10ac38dc-4fc3-43b9-a59c-81a009b8ec08" LastKnownName="OperandOccurrenceSpecification99" />

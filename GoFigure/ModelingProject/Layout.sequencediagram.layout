@@ -3,14 +3,14 @@
   <SequenceDesignerModelMoniker Id="1fc024d5-2098-4433-ae03-7dca08c30526" />
   <nestedChildShapes>
     <lifelineShape Id="007e1675-d695-4dac-94ea-ea3af461cca9" absoluteBounds="3.1166666666666667, 1, 0.15, 19.856024209037443" visible="true" visualStyleMode="Modified">
-      <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+      <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
       <relativeChildShapes>
         <umlLifelineHeadShape Id="5f7881df-7407-4e32-8602-d61f966cabbd" absoluteBounds="2.6916666666666669, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
-          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
         <lifelineHoverShape Id="45d2f188-c817-46dc-a62b-dcfceeedc5c4" absoluteBounds="3.1166666666666667, 1, 0, 19.875">
-          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Menu" />
+          <lifelineMoniker Id="1ae268b0-de95-4b12-8e0d-7c1e95a99738" LastKnownName="Choice" />
         </lifelineHoverShape>
       </relativeChildShapes>
     </lifelineShape>
