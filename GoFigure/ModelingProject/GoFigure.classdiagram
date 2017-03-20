@@ -304,10 +304,18 @@
             <elementDefinition Id="b646909e-2a18-4b0e-a871-dda15a64b2a4" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="8765d8d3-c168-4101-bc9c-c870a84bf8d0" name="shape" direction="In" isUnique="false">
-                  <elementDefinition Id="51f1d304-dafd-42ce-ac58-efce1e25b8a1" />
+                <parameter Id="26457e38-26ec-40bd-bff6-df9d2ccb8deb" name="image" direction="In" isUnique="false">
+                  <elementDefinition Id="c4c5cd09-7265-4188-b16f-1cba73ef544e" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="9ecff0b2-2d82-4947-839e-e9e631b281e0" LastKnownName="Shape" />
+                    <referencedTypeMoniker Id="2c53c8b5-f4ec-4caa-9b75-61d28d937a2c" LastKnownName="Image" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="819937c6-934e-44c5-ae86-bd162635cde6" name="point" direction="In" isUnique="false">
+                  <elementDefinition Id="adbe4eec-478b-437c-9330-c7de4f6a3016" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="018cba6d-d18c-4a34-a385-d3e55b0e08d4" LastKnownName="PointF" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -601,6 +609,54 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9675597d-79fe-4d09-869b-82c856953d20" name="Collison" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="27ae953b-cedf-45b3-85d0-ae8a10cb3ef8" />
+          </operation>
+          <operation Id="83f6a158-cf25-4e4a-b054-1fe0adc8ee05" name="Image" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eafb1ebd-2b66-4689-aa07-9108f05a72a9" />
+          </operation>
+          <operation Id="ef7a2463-1675-43fb-ac79-e3e2006715e5" name="Visible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af28d2de-3e03-4fd6-b382-af8b12962536" />
+          </operation>
+          <operation Id="a32e3e43-2e94-45ea-9291-46b82f85caff" name="Shape" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8006b2c8-b942-45d9-a168-00eedcdba540" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8aa05a71-236e-466f-8ed4-f9a214f13da7" name="point" direction="In" isUnique="false">
+                  <elementDefinition Id="5e2f9009-7046-4a55-8c94-038c158f63c1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="018cba6d-d18c-4a34-a385-d3e55b0e08d4" LastKnownName="PointF" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c410d419-2275-4e77-aaa9-28bc0333baaa" name="image" direction="In" isUnique="false">
+                  <elementDefinition Id="3d89391b-ff56-4fff-9abb-6da059365473" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c53c8b5-f4ec-4caa-9b75-61d28d937a2c" LastKnownName="Image" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5197ced4-dd81-4568-8893-1cb0b035a0f4" name="collison" direction="In" isUnique="false">
+                  <elementDefinition Id="fbf87f73-e9bc-4cbb-b40a-c147234d96f6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1839595a-4962-4087-9af3-54567949a3c8" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cb9ee510-5e3b-4623-a9fa-96664a2630dc" name="visible" direction="In" isUnique="false">
+                  <elementDefinition Id="85710213-89fd-43f7-9c03-0fb377fc60af" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1839595a-4962-4087-9af3-54567949a3c8" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>

@@ -7654,14 +7654,28 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="51f1d304-dafd-42ce-ac58-efce1e25b8a1"
-                  name="shape"
+                  Id="c4c5cd09-7265-4188-b16f-1cba73ef544e"
+                  name="image"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-                      LastKnownName="Shape"
+                    <undefinedTypeMoniker
+                      Id="e5e86624-82ac-4a05-b1a6-80da1f6b32a2"
+                      LastKnownName="Image"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="adbe4eec-478b-437c-9330-c7de4f6a3016"
+                  name="point"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a56bb8d3-2b91-499a-a228-b02d57e5bfbe"
+                      LastKnownName="PointF"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -8249,6 +8263,99 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="27ae953b-cedf-45b3-85d0-ae8a10cb3ef8"
+            name="Collison"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="eafb1ebd-2b66-4689-aa07-9108f05a72a9"
+            name="Image"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="af28d2de-3e03-4fd6-b382-af8b12962536"
+            name="Visible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8006b2c8-b942-45d9-a168-00eedcdba540"
+            name="Shape"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5e2f9009-7046-4a55-8c94-038c158f63c1"
+                  name="point"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a56bb8d3-2b91-499a-a228-b02d57e5bfbe"
+                      LastKnownName="PointF"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d89391b-ff56-4fff-9abb-6da059365473"
+                  name="image"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e5e86624-82ac-4a05-b1a6-80da1f6b32a2"
+                      LastKnownName="Image"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fbf87f73-e9bc-4cbb-b40a-c147234d96f6"
+                  name="collison"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="85710213-89fd-43f7-9c03-0fb377fc60af"
+                  name="visible"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
