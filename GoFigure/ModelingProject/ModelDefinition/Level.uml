@@ -6508,6 +6508,47 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d737cba8-9238-4c0b-904f-d33a9266c404"
+            isDerived="false"
+            sourceEndRoleName="Game"
+            targetEndRoleName="Level"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cc5e40b6-e977-4985-976f-587ea42845b0"
+              LastKnownName="Level"
+              LastKnownLocation="Level.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8491d5f-679f-44a2-9e8d-21facc8e44f7"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61b3d8d2-8d59-4604-956c-d93a0c26b950"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="47beddd8-2f93-4cad-95f0-e4cdeb5913ee"
@@ -6892,6 +6933,31 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="8bf33a03-04e6-417e-8970-ab969bb3685f"
+            name="checkIfDead"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="516d21a8-f04c-4adc-9485-8c69d0aaedb8"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -7070,9 +7136,47 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
+              <undefinedTypeMoniker
+                Id="64421c3d-f7dd-4086-879a-11ae9bb79f6e"
+                LastKnownName="Double"
+                LastKnownLocation="Level.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2ba93934-a655-47a2-a53c-fa9cfd730271"
+            name="acceleration"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="64421c3d-f7dd-4086-879a-11ae9bb79f6e"
+                LastKnownName="Double"
+                LastKnownLocation="Level.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8baf8f9b-7e18-4f97-a87a-f874ab8542f6"
+            name="deacceleration"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="64421c3d-f7dd-4086-879a-11ae9bb79f6e"
+                LastKnownName="Double"
                 LastKnownLocation="Level.uml" />
             </type_NamedElement>
           </property>
@@ -7167,6 +7271,30 @@
                     <undefinedTypeMoniker
                       Id="a56bb8d3-2b91-499a-a228-b02d57e5bfbe"
                       LastKnownName="PointF"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0e5a99a7-58fc-4e07-9957-698c5f619761"
+            name="Collison"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="74cc4bd2-02c0-4f72-8a36-2beec3ca4597"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -7756,14 +7884,6 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="27ae953b-cedf-45b3-85d0-ae8a10cb3ef8"
-            name="Collison"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
             Id="eafb1ebd-2b66-4689-aa07-9108f05a72a9"
             name="Image"
             isLeaf="false"
@@ -7921,6 +8041,31 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="1c86d112-20e2-4b04-acb3-39fed7fd1de1"
+            name="Spike"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b67e2b6-f8cb-4c35-96f5-191e0f99d039"
+                  name="point"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="48fe83ca-843f-4ba4-9b0d-accdfcd28ae2"
+                      LastKnownName="pointF"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -7981,6 +8126,45 @@
                     <undefinedTypeMoniker
                       Id="2cb204d5-74f0-4a42-8299-171eb13cdb0a"
                       LastKnownName="void"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bbab1cfb-c7c9-4928-be24-8bfe637da550"
+            name="PressurePlate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ad38445-b6e0-4ee8-ae7b-a25acc2063ed"
+                  name="affected"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
+                      LastKnownName="Shape"
+                      LastKnownLocation="Level.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6a8002dd-bad2-4bd4-ab17-c2ecfd5ed3ea"
+                  name="point"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a56bb8d3-2b91-499a-a228-b02d57e5bfbe"
+                      LastKnownName="PointF"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -8986,6 +9170,11 @@
       <executionEvent
         Id="ee26eaac-547f-4cb2-97b5-a2bb28bd15b3"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="48fe83ca-843f-4ba4-9b0d-accdfcd28ae2"
+        name="pointF" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
