@@ -3,6 +3,12 @@
   dslVersion="1.0.0.0"
   Id="456d16f5-8767-46f6-9a2a-adfb582b586a"
   name="Level" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="2296502d-4d91-4241-865a-b302a4ff0739">
+      <body>height and weight needs to go somewhere</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -6510,7 +6516,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="d737cba8-9238-4c0b-904f-d33a9266c404"
+            Id="4c650233-ea75-415b-9e49-57490d3d12a9"
             isDerived="false"
             sourceEndRoleName="Game"
             targetEndRoleName="Level"
@@ -6523,20 +6529,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="f8491d5f-679f-44a2-9e8d-21facc8e44f7"
+                  Id="3631516e-3517-4511-a431-f17049445e3c"
                   name="Game"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="61b3d8d2-8d59-4604-956c-d93a0c26b950"
+                  Id="7992a4cd-7b99-4c44-9fbf-5ee6a288c562"
                   name="Level"
                   isLeaf="false"
                   isStatic="false"
@@ -6544,7 +6550,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -6761,7 +6767,8 @@
           </operation>
           <operation
             Id="c6d2b54f-6fe4-4d90-b59e-7aefac14d2b4"
-            name="check"
+            name="validateNextPosition"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -6933,31 +6940,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="8bf33a03-04e6-417e-8970-ab969bb3685f"
-            name="checkIfDead"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="516d21a8-f04c-4adc-9485-8c69d0aaedb8"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="Level.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -7080,7 +7062,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-              LastKnownName="Shape"
+              LastKnownName="GameObject"
               LastKnownLocation="Level.uml" />
           </generalization>
         </generalsInternal>
@@ -7365,7 +7347,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="57b06d71-1ad3-41c6-b4b8-3aea42d4121a"
+            Id="38520381-d8fc-422b-9a13-8698aa21b5e3"
             isDerived="false"
             sourceEndRoleName="Level"
             targetEndRoleName="Clock"
@@ -7378,20 +7360,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="7e7135d9-d42e-4226-b428-d28cf2ea4d30"
+                  Id="24fcd82c-7595-4033-b96f-588893fa89df"
                   name="Level"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="8a00d13a-8c2d-4edc-8ef1-8ea1a97d31b4"
+                  Id="36f81618-85cb-411b-86f3-74b4910a53ec"
                   name="Clock"
                   isLeaf="false"
                   isStatic="false"
@@ -7399,7 +7381,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -7480,9 +7462,9 @@
                 value="*, 0..*" />
             </upperValueInternal>
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="6620926d-0de6-418b-bf8d-f56c4503817b"
-                LastKnownName="Cell"
+              <classMoniker
+                Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
+                LastKnownName="GameObject"
                 LastKnownLocation="Level.uml" />
             </type_NamedElement>
           </property>
@@ -7594,17 +7576,29 @@
                   Id="5db56903-d5e6-4d39-b384-f45f66d767aa"
                   direction="Return"
                   isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="42fb6655-173f-4178-81a0-7f6592d7bdcf"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c9b90713-457a-446f-b98f-c254687a4185"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
                   <type_NamedElement>
-                    <enumerationMoniker
-                      Id="349de381-0611-433f-bebf-2bc00437f41d"
-                      LastKnownName="Entity"
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="72e86cd9-7a0a-4114-8ccf-37088617d2a9"
+                  Id="e83737f5-83f5-44cf-b2ab-790aa9ecfb7b"
                   name="x"
                   direction="In"
                   isUnique="false">
@@ -7618,7 +7612,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="de6e5296-63e9-4563-bdb9-330cd0094074"
+                  Id="7923873b-041d-4be7-8fe7-6cce58638fad"
                   name="y"
                   direction="In"
                   isUnique="false">
@@ -7733,9 +7727,9 @@
                       value="*" />
                   </upperValueInternal>
                   <type_NamedElement>
-                    <enumerationMoniker
-                      Id="349de381-0611-433f-bebf-2bc00437f41d"
-                      LastKnownName="Entity"
+                    <classMoniker
+                      Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
+                      LastKnownName="GameObject"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -7787,7 +7781,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-                      LastKnownName="Shape"
+                      LastKnownName="GameObject"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -7800,7 +7794,7 @@
     <packageHasNamedElement>
       <class
         Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-        name="Shape"
+        name="GameObject"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7992,7 +7986,7 @@
             <type_NamedElement>
               <classMoniker
                 Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-                LastKnownName="Shape"
+                LastKnownName="GameObject"
                 LastKnownLocation="Level.uml" />
             </type_NamedElement>
           </property>
@@ -8012,7 +8006,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-              LastKnownName="Shape"
+              LastKnownName="GameObject"
               LastKnownLocation="Level.uml" />
           </generalization>
         </generalsInternal>
@@ -8082,7 +8076,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-              LastKnownName="Shape"
+              LastKnownName="GameObject"
               LastKnownLocation="Level.uml" />
           </generalization>
         </generalsInternal>
@@ -8102,7 +8096,7 @@
             <type_NamedElement>
               <classMoniker
                 Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-                LastKnownName="Shape"
+                LastKnownName="GameObject"
                 LastKnownLocation="Level.uml" />
             </type_NamedElement>
           </property>
@@ -8150,7 +8144,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-                      LastKnownName="Shape"
+                      LastKnownName="GameObject"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -8191,7 +8185,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="e5ddd7a3-1220-498c-aff0-0f2abfd7de59"
+            Id="6ecdd528-52a9-4cce-ae1f-7370f0f224d8"
             isDerived="false"
             sourceEndRoleName="LevelEditor"
             targetEndRoleName="Level"
@@ -8204,20 +8198,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="8c85299c-ee93-48c5-9f4b-f04646d6401a"
+                  Id="bdee1879-1d9f-4f33-87db-dedd2e8e8095"
                   name="LevelEditor"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="b1313a0a-9304-412e-b07b-333670b3c604"
+                  Id="f86e2d51-62e6-443d-9acb-67092d4de5c0"
                   name="Level"
                   isLeaf="false"
                   isStatic="false"
@@ -8225,12 +8219,12 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="e7e3e767-f2d9-471c-9e2e-00c4d4d41a4a"
+            Id="fec764b6-c2ee-4179-bd81-6cee115e7834"
             isDerived="false"
             sourceEndRoleName="LevelEditor"
             targetEndRoleName="Game"
@@ -8243,20 +8237,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a2f6be1c-c65a-43ec-b2d5-d920f1a61661"
+                  Id="d3e19989-4cf1-4d5e-8e40-059f4f5f9e2e"
                   name="LevelEditor"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="53b04466-9a21-4cf0-9630-5944986cecc2"
+                  Id="b81d42ce-945b-4878-bbf6-fba701efdc11"
                   name="Game"
                   isLeaf="false"
                   isStatic="false"
@@ -8264,7 +8258,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -8310,7 +8304,7 @@
         <ownedOperationsInternal>
           <operation
             Id="9da10902-1c23-4211-913f-b33ea468a8a3"
-            name="checkRules"
+            name="validateLevel"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -8737,7 +8731,7 @@
             isAbstract="false">
             <classMoniker
               Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-              LastKnownName="Shape"
+              LastKnownName="GameObject"
               LastKnownLocation="Level.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -8847,25 +8841,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="a21b2280-1775-443b-b800-e0121e7137e4"
-            name="entity"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <enumerationMoniker
-                Id="349de381-0611-433f-bebf-2bc00437f41d"
-                LastKnownName="Entity"
-                LastKnownLocation="Level.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="b4071dcd-3ffd-4ed2-bb63-e5a0346a1a40"
             name="shape"
             visibility="Private"
@@ -8880,7 +8855,7 @@
             <type_NamedElement>
               <classMoniker
                 Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-                LastKnownName="Shape"
+                LastKnownName="GameObject"
                 LastKnownLocation="Level.uml" />
             </type_NamedElement>
           </property>
@@ -8918,7 +8893,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
-                      LastKnownName="Shape"
+                      LastKnownName="GameObject"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -9175,6 +9150,35 @@
       <undefinedType
         Id="48fe83ca-843f-4ba4-9b0d-accdfcd28ae2"
         name="pointF" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a1c06303-fa96-4e6d-9d25-ff9a9cf75eb9"
+        name="Empty"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="74d0223f-f34b-4a4f-8662-607d858b9b58"
+            isSubstitutable="false">
+            <classMoniker
+              Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
+              LastKnownName="GameObject"
+              LastKnownLocation="Level.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7529107c-2637-4f79-97a4-8f3430f2deff"
+            name="Empty"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
