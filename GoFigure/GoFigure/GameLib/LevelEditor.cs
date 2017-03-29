@@ -6,6 +6,7 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -52,7 +53,12 @@ public class LevelEditor
 
 	private bool checkForCharacter()
 	{
-		throw new System.NotImplementedException();
+        PointF point = level.characterLocation();
+        if(point.X < 0)
+        {
+            return false;
+        }
+        return true;
 	}
 
 	private bool checkForEnd()

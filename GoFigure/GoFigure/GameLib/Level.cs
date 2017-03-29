@@ -35,12 +35,6 @@ public class Level
 		set;
 	}
 
-	public virtual IEnumerable<Cell> Cell
-	{
-		get;
-		set;
-	}
-
 	public virtual Clock Clock
 	{
 		get;

@@ -8,10 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 public class Clock
 {
-	private int time
+	public int time
 	{
 		get;
 		set;
@@ -25,7 +26,7 @@ public class Clock
 
 	public virtual void startClock()
 	{
-		throw new System.NotImplementedException();
+		
 	}
 
 	public virtual void stopClock()
