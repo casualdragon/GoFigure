@@ -9,49 +9,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Character : GameObject
+public class Spike : GameObject
 {
-	private Double maxSpeed
-	{
-		get;
-		set;
-	}
-
-	private bool dead
-	{
-		get;
-		set;
-	}
-
-	private Double jumpHeight
-	{
-		get;
-		set;
-	}
-
-	private Double acceleration
-	{
-		get;
-		set;
-	}
-
-	private Double deacceleration
-	{
-		get;
-		set;
-	}
-
-	public virtual void increaseSpeed()
+	public virtual void killPlayer()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void decreaseSpeed()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public Character(Image image, PointF point)
+	public Spike(pointF point)
 	{
 	}
 

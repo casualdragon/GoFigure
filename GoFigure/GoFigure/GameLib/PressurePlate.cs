@@ -9,49 +9,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Character : GameObject
+public class PressurePlate : GameObject
 {
-	private Double maxSpeed
+	private GameObject affectedShape
 	{
 		get;
 		set;
 	}
 
-	private bool dead
-	{
-		get;
-		set;
-	}
-
-	private Double jumpHeight
-	{
-		get;
-		set;
-	}
-
-	private Double acceleration
-	{
-		get;
-		set;
-	}
-
-	private Double deacceleration
-	{
-		get;
-		set;
-	}
-
-	public virtual void increaseSpeed()
+	public virtual void activate()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void decreaseSpeed()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public Character(Image image, PointF point)
+	public PressurePlate(GameObject affected, PointF point)
 	{
 	}
 
