@@ -35,16 +35,6 @@ public class GameObject
 		set;
 	}
 
-	public virtual void Image()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void Visible()
-	{
-		throw new System.NotImplementedException();
-	}
-
 	public virtual void Shape(PointF point, Image image, bool collison, bool visible)
 	{
 		throw new System.NotImplementedException();

@@ -14,7 +14,7 @@ public class Clock
 	private int time
 	{
 		get;
-		private set;
+		set;
 	}
 
 	private Thread thread

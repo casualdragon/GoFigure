@@ -51,11 +51,6 @@ public class Character : GameObject
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void Dead()
-	{
-		throw new System.NotImplementedException();
-	}
-
 	public Character(Image image, PointF point)
 	{
 	}
