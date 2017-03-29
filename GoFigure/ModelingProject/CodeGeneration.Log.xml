@@ -6,50 +6,50 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="High" Text="Code generation or text transformation started." />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Diagnostic" Text="Name = ClassTemplate" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Diagnostic" Text="ProjectPath = ..\LevelLib\LevelLib.csproj" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Diagnostic" Text="TemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2017-03-29T13:29:14" Importance="Medium" Text="Level's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Level::Clock' -  (Class), 'Level::Level' -  (Class), 'Level::GameObject' -  (Class), 'Level::Character' -  (Class), 'Level::Game' -  (Class), 'Level::PressurePlate' -  (Class), 'Level::Empty' -  (Class), 'Level::LevelEditor' -  (Class), 'Level::Spike' -  (Class) " />
-  <Message Timestamp="2017-03-29T13:29:15" Importance="Medium" Text="'Level::Clock' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Clock.cs" />
-  <Message Timestamp="2017-03-29T13:29:15" Importance="Medium" Text="'Level::Level' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Level.cs" />
-  <Message Timestamp="2017-03-29T13:29:15" Importance="Medium" Text="'Level::GameObject' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\GameObject.cs" />
-  <Message Timestamp="2017-03-29T13:29:15" Importance="Medium" Text="'Level::Character' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Character.cs" />
-  <Message Timestamp="2017-03-29T13:29:15" Importance="Medium" Text="'Level::Game' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Game.cs" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Medium" Text="'Level::PressurePlate' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\PressurePlate.cs" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Medium" Text="'Level::Empty' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Empty.cs" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Medium" Text="'Level::LevelEditor' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\LevelEditor.cs" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Medium" Text="'Level::Spike' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Spike.cs" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="Name = StructTemplate" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="ProjectPath = ..\LevelLib\LevelLib.csproj" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="TemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Medium" Text="Level's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Level::Clock' -  (Class), 'Level::Level' -  (Class), 'Level::GameObject' -  (Class), 'Level::Character' -  (Class), 'Level::Game' -  (Class), 'Level::PressurePlate' -  (Class), 'Level::Empty' -  (Class), 'Level::LevelEditor' -  (Class), 'Level::Spike' -  (Class) " />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::Clock' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::Level' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::GameObject' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::Character' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::Game' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::PressurePlate' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::Empty' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::LevelEditor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::Spike' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="The selection included 9 elements which were not bound to a template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'1f339841-9360-436e-bf7a-f801d226434d' -  (Generalization): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'3618ea0d-cf1b-459c-bd52-b3b69f2175a0' -  (Generalization): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'7de5267f-949d-40c9-b1c7-c9996a026a5e' -  (Generalization): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'74d0223f-f34b-4a4f-8662-607d858b9b58' -  (Generalization): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="Diagnostic" Text="'2296502d-4d91-4241-865a-b302a4ff0739' -  (Comment): no bound template." />
-  <Message Timestamp="2017-03-29T13:29:16" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Diagnostic" Text="ProjectPath = ..\LevelLib\LevelLib.csproj" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Diagnostic" Text="TemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="Level's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Level::Clock' -  (Class), 'Level::Level' -  (Class), 'Level::GameObject' -  (Class), 'Level::Character' -  (Class), 'Level::Game' -  (Class), 'Level::PressurePlate' -  (Class), 'Level::Empty' -  (Class), 'Level::LevelEditor' -  (Class), 'Level::Spike' -  (Class) " />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="'Level::Clock' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Clock.cs" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="'Level::Level' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Level.cs" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="'Level::GameObject' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\GameObject.cs" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="'Level::Character' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Character.cs" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="'Level::Game' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Game.cs" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="'Level::PressurePlate' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\PressurePlate.cs" />
+  <Message Timestamp="2017-03-29T13:38:01" Importance="Medium" Text="'Level::Empty' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Empty.cs" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Medium" Text="'Level::LevelEditor' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\LevelEditor.cs" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Medium" Text="'Level::Spike' -  (Class) : success (file replaced) - C:\Users\Amy\Source\Repos\GoFigure\GoFigure\LevelLib\GeneratedCode\Spike.cs" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="ProjectPath = ..\LevelLib\LevelLib.csproj" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="TemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\VISUALSTUDIOENTERPRISE2015\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Medium" Text="Level's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Level::Clock' -  (Class), 'Level::Level' -  (Class), 'Level::GameObject' -  (Class), 'Level::Character' -  (Class), 'Level::Game' -  (Class), 'Level::PressurePlate' -  (Class), 'Level::Empty' -  (Class), 'Level::LevelEditor' -  (Class), 'Level::Spike' -  (Class) " />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::Clock' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::Level' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::GameObject' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::Character' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::Game' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::PressurePlate' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::Empty' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::LevelEditor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::Spike' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="The selection included 9 elements which were not bound to a template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'1f339841-9360-436e-bf7a-f801d226434d' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'3618ea0d-cf1b-459c-bd52-b3b69f2175a0' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'7de5267f-949d-40c9-b1c7-c9996a026a5e' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'74d0223f-f34b-4a4f-8662-607d858b9b58' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'Level::' -  (Association): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="Diagnostic" Text="'2296502d-4d91-4241-865a-b302a4ff0739' -  (Comment): no bound template." />
+  <Message Timestamp="2017-03-29T13:38:02" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
 </Log>

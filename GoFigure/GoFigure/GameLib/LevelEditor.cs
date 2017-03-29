@@ -9,50 +9,64 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Character : GameObject
+public class LevelEditor
 {
-	private Double maxSpeed
+	public virtual Level level
 	{
 		get;
 		set;
 	}
 
-	private bool dead
+	public virtual Game game
 	{
 		get;
 		set;
 	}
 
-	private Double jumpHeight
+	public virtual Level Level
 	{
 		get;
 		set;
 	}
 
-	private Double acceleration
+	public virtual Game Game
 	{
 		get;
 		set;
 	}
 
-	private Double deacceleration
-	{
-		get;
-		set;
-	}
-
-	public virtual void increaseSpeed()
+	public virtual bool validateLevel()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void decreaseSpeed()
+	public virtual void updateLevel()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public Character(Image image, PointF point)
+	public virtual void exit()
 	{
+		throw new System.NotImplementedException();
+	}
+
+	private bool checkForCharacter()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	private bool checkForEnd()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public LevelEditor(Level level)
+	{
+	}
+
+	private bool checkForGround()
+	{
+		throw new System.NotImplementedException();
 	}
 
 }

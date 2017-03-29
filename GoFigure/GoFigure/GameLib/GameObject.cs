@@ -9,50 +9,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Character : GameObject
+public class GameObject
 {
-	private Double maxSpeed
+	private Image image
 	{
 		get;
 		set;
 	}
 
-	private bool dead
+	private PointF point
 	{
 		get;
 		set;
 	}
 
-	private Double jumpHeight
+	private bool visible
 	{
 		get;
 		set;
 	}
 
-	private Double acceleration
+	private bool collison
 	{
 		get;
 		set;
 	}
 
-	private Double deacceleration
-	{
-		get;
-		set;
-	}
-
-	public virtual void increaseSpeed()
+	public virtual void Shape(PointF point, Image image, bool collison, bool visible)
 	{
 		throw new System.NotImplementedException();
-	}
-
-	public virtual void decreaseSpeed()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public Character(Image image, PointF point)
-	{
 	}
 
 }

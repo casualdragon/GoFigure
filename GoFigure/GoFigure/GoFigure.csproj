@@ -63,6 +63,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GameLib\Character.cs" />
+    <Compile Include="GameLib\Clock.cs" />
+    <Compile Include="GameLib\Empty.cs" />
+    <Compile Include="GameLib\Game.cs" />
+    <Compile Include="GameLib\GameObject.cs" />
+    <Compile Include="GameLib\Level.cs" />
+    <Compile Include="GameLib\LevelEditor.cs" />
+    <Compile Include="GameLib\PressurePlate.cs" />
+    <Compile Include="GameLib\Spike.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

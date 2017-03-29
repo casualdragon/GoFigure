@@ -1856,62 +1856,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="efbe6065-cdba-4ca9-967c-8e34960c5b61" name="Collison" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="fef1c69f-be13-444d-b6fd-9dd064f8c55b" name="method" profile="CSharpProfile">
-                <elementDefinition Id="51eb752f-450a-42e7-a744-ba57605d771f" />
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="57b9bf02-a4ec-4658-ac66-2e07effe941b">
-                    <propertyInstance Id="1b962e14-f229-43a1-ac68-12ea27ad4c86" name="ClrAttributes">
-                      <elementDefinition Id="043489a1-4458-4d6e-a0bd-76fd2daeb396" />
-                    </propertyInstance>
-                    <elementDefinition Id="c540d801-790e-4d14-9d92-a6993549343f" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="7c4dcb15-48d0-45ff-b5ca-fc1587195995">
-                    <propertyInstance Id="99b4e5ed-c9de-43cc-b86d-b1ca5dc0d50c" name="IsPartial" value="false">
-                      <elementDefinition Id="bd626104-ed7c-4e93-b329-5a26a9721e4c" />
-                    </propertyInstance>
-                    <elementDefinition Id="9e2c255a-b5ee-4283-9a58-4cdffa04eb1a" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="c38e6251-7326-408c-aa83-e23525f10148">
-                    <propertyInstance Id="99e31880-1907-437b-99f3-ecccd625d1be" name="IsUnsafe" value="false">
-                      <elementDefinition Id="94b19457-0a14-4a86-b336-62db76d522b0" />
-                    </propertyInstance>
-                    <elementDefinition Id="54a68e0c-0fa7-48c0-a23c-6861897ce2b3" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="ca970a45-c9cd-4dda-ba48-67487288238c">
-                    <propertyInstance Id="89b74ccc-4f6d-44c9-88a8-9b409dd21848" name="Inheritance" value="none">
-                      <elementDefinition Id="d3e11372-dfd6-401e-a792-36e229e60f0e" />
-                    </propertyInstance>
-                    <elementDefinition Id="a88ec56f-0af4-4c71-9a31-0487c7a30d47" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="4ea72826-4947-4ac5-9219-69ea293709d5">
-                    <propertyInstance Id="b302522e-e8f5-49ed-9614-9e35bfa2d870" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="f6252113-d455-4d6e-bc76-7d2a8df72ef0" />
-                    </propertyInstance>
-                    <elementDefinition Id="451fe446-80eb-4e9e-8c64-0dd46f507f74" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="79291cce-0742-49d0-b3ad-966324f47deb">
-                    <propertyInstance Id="75f2d5b2-d722-4d2f-897c-9f27ede48b2e" name="params" value="false">
-                      <elementDefinition Id="8ddee075-f13b-4d3b-a916-f468bdcca0ad" />
-                    </propertyInstance>
-                    <elementDefinition Id="f31d9ef1-c75d-407f-91f9-5328f2bfa566" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <elementDefinition Id="0e5a99a7-58fc-4e07-9957-698c5f619761" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="b011bee4-8302-4a2f-8004-148d21fe6f21" direction="Return" isUnique="false">
-                  <elementDefinition Id="74cc4bd2-02c0-4f72-8a36-2beec3ca4597" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="1839595a-4962-4087-9af3-54567949a3c8" LastKnownName="Boolean" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>

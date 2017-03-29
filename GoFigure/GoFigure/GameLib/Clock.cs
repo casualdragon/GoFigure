@@ -9,49 +9,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Character : GameObject
+public class Clock
 {
-	private Double maxSpeed
+	private int time
 	{
 		get;
 		set;
 	}
 
-	private bool dead
+	private Thread thread
 	{
 		get;
 		set;
 	}
 
-	private Double jumpHeight
-	{
-		get;
-		set;
-	}
-
-	private Double acceleration
-	{
-		get;
-		set;
-	}
-
-	private Double deacceleration
-	{
-		get;
-		set;
-	}
-
-	public virtual void increaseSpeed()
+	public virtual void startClock()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void decreaseSpeed()
+	public virtual void stopClock()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public Character(Image image, PointF point)
+	public Clock()
 	{
 	}
 
