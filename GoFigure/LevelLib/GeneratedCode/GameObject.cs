@@ -13,26 +13,50 @@ public class GameObject
 {
 	private Image image
 	{
-		get;
-		set;
+        get
+        {
+            return image;
+        }
+		set
+        {
+            image = value;
+        }
 	}
 
 	private PointF point
 	{
-		get;
-		set;
+		get
+        {
+            return point;
+        }
+		set
+        {
+            point = value;
+        }
 	}
 
 	private bool visible
 	{
-		get;
-		set;
+		get
+        {
+            return visible;
+        }
+		set
+        {
+            visible = value;
+        }
 	}
 
 	private bool collison
 	{
-		get;
-		set;
+		get
+        {
+            return collison;
+        }
+		set
+        {
+            collison = value;
+        }
 	}
 
 	public virtual void Shape(PointF point, Image image, bool collison, bool visible)

@@ -13,40 +13,54 @@ public class Character : GameObject
 {
 	private Double maxSpeed
 	{
-		get;
-		set;
+		get
+        {
+            return maxSpeed;
+        }
+		set
+        {
+            maxSpeed = value;
+        }
 	}
 
 	private bool dead
 	{
-		get;
-		set;
+		get
+        {
+            return dead;
+        }
+		set
+        {
+            dead = value;
+        }
 	}
 
 	private Double jumpHeight
 	{
-		get;
-		set;
+		get
+        {
+            return jumpHeight;
+        }
+		set
+        {
+            jumpHeight = value;
+        }
 	}
 
 	private Double acceleration
 	{
-		get;
-		set;
+		get
+        {
+            return acceleration;
+        }
+		set
+        {
+            acceleration = value;
+        }
 	}
 
-	private Double deacceleration
-	{
-		get;
-		set;
-	}
 
-	public virtual void increaseSpeed()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void decreaseSpeed()
+	public virtual void changeSpeed()
 	{
 		throw new System.NotImplementedException();
 	}
