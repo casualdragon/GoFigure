@@ -2461,7 +2461,7 @@
                 <parameter Id="467d2b76-288b-4dbd-b673-950f03556ca1" direction="Return" isUnique="false">
                   <elementDefinition Id="17b4b017-2802-4891-bca1-01600e7d6729" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="7751503f-11fe-4674-a891-de2118e48633" LastKnownName="Cell" />
+                    <referencedTypeMoniker Id="018cba6d-d18c-4a34-a385-d3e55b0e08d4" LastKnownName="PointF" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -4023,11 +4023,6 @@
     <packageHasNamedElement>
       <referencedType Id="b7d77e12-ff6f-40fc-aac1-184fd94c9506" name="Timer" isAbstract="false" isLeaf="false" cachedFullName="Timer">
         <elementDefinition Id="1e1f3108-0d8b-47c7-970d-48d0c17798fb" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="7751503f-11fe-4674-a891-de2118e48633" name="Cell" isAbstract="false" isLeaf="false" cachedFullName="Level::Cell">
-        <elementDefinition Id="f36e1c6c-393d-40a0-82b7-f6d288a54f93" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>

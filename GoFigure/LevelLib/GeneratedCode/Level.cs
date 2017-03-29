@@ -76,7 +76,7 @@ public class Level
 		throw new System.NotImplementedException();
 	}
 
-	public virtual Cell characterLocation()
+	public virtual PointF characterLocation()
 	{
 		throw new System.NotImplementedException();
 	}

@@ -13,14 +13,8 @@ public class PressurePlate : GameObject
 {
 	private GameObject affectedShape
 	{
-		get
-        {
-            return affectedShape;
-        }
-		set
-        {
-            affectedShape = value;
-        }
+		get;
+		set;
 	}
 
 	public virtual void activate()

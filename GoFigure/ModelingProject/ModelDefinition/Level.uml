@@ -9888,9 +9888,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="f36e1c6c-393d-40a0-82b7-f6d288a54f93"
-                      LastKnownName="Cell"
+                    <undefinedTypeMoniker
+                      Id="a56bb8d3-2b91-499a-a228-b02d57e5bfbe"
+                      LastKnownName="PointF"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>

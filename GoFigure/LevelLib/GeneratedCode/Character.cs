@@ -13,52 +13,27 @@ public class Character : GameObject
 {
 	private Double maxSpeed
 	{
-		get
-        {
-            return maxSpeed;
-        }
-		set
-        {
-            maxSpeed = value;
-        }
+		get;
+		set;
 	}
 
 	private bool dead
 	{
-		get
-        {
-            return dead;
-        }
-		set
-        {
-            dead = value;
-        }
+		get;
+		set;
 	}
 
 	private Double jumpHeight
 	{
-		get
-        {
-            return jumpHeight;
-        }
-		set
-        {
-            jumpHeight = value;
-        }
+		get;
+		set;
 	}
 
 	private Double acceleration
 	{
-		get
-        {
-            return acceleration;
-        }
-		set
-        {
-            acceleration = value;
-        }
+		get;
+		set;
 	}
-
 
 	public virtual void changeSpeed()
 	{

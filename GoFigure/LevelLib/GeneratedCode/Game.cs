@@ -71,7 +71,7 @@ public class Game
 		throw new System.NotImplementedException();
 	}
 
-	private bool checkForCollison()
+	private bool checkForCollision()
 	{
 		throw new System.NotImplementedException();
 	}
