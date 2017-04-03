@@ -12,7 +12,7 @@ using System.Text;
 
 public class Character : GameObject
 {
-	private Double maxSpeed
+	private int maxSpeed
 	{
 		get;
 		set;
@@ -24,7 +24,7 @@ public class Character : GameObject
 		set;
 	}
 
-	private Double jumpHeight
+	private int jumpHeight
 	{
 		get;
 		set;
@@ -45,7 +45,8 @@ public class Character : GameObject
 
     public Character(Image image, PointF point)
 	{
-        
+        this.image = image;
+        this.point = point;
 	}
 
 }

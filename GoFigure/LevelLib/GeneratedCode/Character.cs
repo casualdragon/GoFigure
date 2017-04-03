@@ -35,13 +35,14 @@ public class Character : GameObject
 		set;
 	}
 
-	public Character(Image image, PointF point)
+	public Character(Image image, int x, int y)
 	{
 	}
 
 	public virtual void changeSpeed(int speed)
 	{
 		throw new System.NotImplementedException();
+        this.currentSpeed = currentSpeed + speed;
 	}
 
 }
