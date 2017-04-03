@@ -6,12 +6,16 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Timers;
+using System.Windows.Media;
 
 public class Game
 {
-	private Level level
+    enum Movement {LEFT, RIGHT, STOPPED }
+    private Level level
 	{
 		get;
 		set;
@@ -29,7 +33,13 @@ public class Game
 		set;
 	}
 
-	private bool testing
+    private Movement movement
+    {
+        get;
+        set;
+    }
+
+    private bool testing
 	{
 		get;
 		set;
@@ -47,49 +57,50 @@ public class Game
 		set;
 	}
 
-	public virtual void play()
-	{
-		throw new System.NotImplementedException();
-	}
+    public virtual void play()
+    {
+        update();
+        if (thread.Enabled == true)
+        {
+            thread.Interval += 500;
+        }
+    }
 
 	public Game(Level level, bool testing)
 	{
+        this.level = level;
+        this.testing = testing;
+        thread = new Timer();
+        movement = Movement.STOPPED;
 	}
 
 	private bool checkForEnd()
 	{
-		throw new System.NotImplementedException();
-	}
+        throw new System.NotImplementedException();
+    }
 
-	public virtual void return()
+	public virtual void exit()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	private bool validateNextPosition()
+	private bool validateNextPosition(GameObject gameObject)
 	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForCollison()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForSpike()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForPressurePlate()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private void render()
-	{
-		throw new System.NotImplementedException();
-	}
+        bool flag = true;
+        if (gameObject.collison)
+        {
+            flag = false;
+        }
+        if(gameObject is Spike)
+        {
+            level.character.dead = true;
+        }
+        if(gameObject is PressurePlate)
+        {
+            ((PressurePlate)gameObject).activate();
+        }
+        return flag;
+    }
 
 	private void endSequence()
 	{
@@ -98,7 +109,14 @@ public class Game
 
 	private void update()
 	{
-		throw new System.NotImplementedException();
+        if (movement == Movement.LEFT)
+        {
+            level.character.changeSpeed(10);
+        }
+        else if(movement == Movement.RIGHT)
+        {
+            level.character.changeSpeed(-10);
+        }
 	}
 
 }

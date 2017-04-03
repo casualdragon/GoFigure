@@ -9,40 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Character : GameObject
+public enum Movement : int
 {
-	private Double maxSpeed
-	{
-		get;
-		set;
-	}
-
-	private bool dead
-	{
-		get;
-		set;
-	}
-
-	private Double jumpHeight
-	{
-		get;
-		set;
-	}
-
-	private int currentSpeed
-	{
-		get;
-		set;
-	}
-
-	public Character(Image image, PointF point)
-	{
-	}
-
-	public virtual void changeSpeed(int speed)
-	{
-		throw new System.NotImplementedException();
-	}
-
+	LEFT,
+	RIGHT,
+	STOPPED,
 }
-

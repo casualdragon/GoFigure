@@ -35,6 +35,12 @@ public class Level
 		set;
 	}
 
+	private Character character
+	{
+		get;
+		set;
+	}
+
 	public virtual IEnumerable<Cell> Cell
 	{
 		get;
@@ -72,11 +78,6 @@ public class Level
 	}
 
 	private bool checkReadOnly()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual PointF characterLocation()
 	{
 		throw new System.NotImplementedException();
 	}

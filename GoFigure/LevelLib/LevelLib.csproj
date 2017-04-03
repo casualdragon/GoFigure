@@ -47,6 +47,7 @@
     <Compile Include="GeneratedCode\GameObject.cs" />
     <Compile Include="GeneratedCode\Level.cs" />
     <Compile Include="GeneratedCode\LevelEditor.cs" />
+    <Compile Include="GeneratedCode\Movement.cs" />
     <Compile Include="GeneratedCode\PressurePlate.cs" />
     <Compile Include="GeneratedCode\Spike.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
