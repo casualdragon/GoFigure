@@ -6,18 +6,17 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
 public class Spike : GameObject
 {
-	public virtual void killPlayer()
-	{
-		throw new System.NotImplementedException();
-	}
 
-	public Spike(pointF point)
+	public Spike(PointF point, Image image)
 	{
+        this.point = point;
+        this.image = image;
 	}
 
 }

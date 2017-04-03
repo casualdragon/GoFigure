@@ -6,24 +6,40 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
 public class PressurePlate : GameObject
 {
-	private GameObject affectedShape
+	public GameObject affectedShape
 	{
 		get;
 		set;
 	}
 
+    public int verticalChange
+    {
+        get;
+        set;
+    }
+
+    public int horizontalChange
+    {
+        get;
+        set;
+    }
+
 	public virtual void activate()
 	{
-		throw new System.NotImplementedException();
+        affectedShape.point.X = point.X + horizontalChange;
+        affectedShape.point.Y = point.Y + verticalChange;
 	}
 
 	public PressurePlate(GameObject affected, PointF point)
 	{
+        affectedShape = affected;
+        this.point = point;
 	}
 
 }
