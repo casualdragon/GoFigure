@@ -12,13 +12,13 @@ using System.Text;
 
 public class GameObject
 {
-	private Image image
+	protected Image image
 	{
 		get;
 		set;
 	}
 
-	private PointF point
+	public PointF point
 	{
 		get;
 		set;
@@ -30,15 +30,18 @@ public class GameObject
 		set;
 	}
 
-	public bool collison
+	public bool collision
 	{
 		get;
 		set;
 	}
 
-	public virtual void Shape(PointF point, Image image, bool collison, bool visible)
+	public virtual void Shape(PointF point, Image image, bool collision, bool visible)
 	{
-		throw new System.NotImplementedException();
+        this.point = point;
+        this.image = image;
+        this.collision = collision;
+        this.visible = visible;
 	}
 
 }
