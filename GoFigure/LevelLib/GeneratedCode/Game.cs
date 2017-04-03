@@ -35,7 +35,13 @@ public class Game
 		set;
 	}
 
-	private Graphics graphics
+	private bool up
+	{
+		get;
+		set;
+	}
+
+	private Movement movement
 	{
 		get;
 		set;
@@ -56,42 +62,7 @@ public class Game
 	{
 	}
 
-	private bool checkForEnd()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void return()
-	{
-		throw new System.NotImplementedException();
-	}
-
 	private bool validateNextPosition()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForCollision()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForSpike()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForPressurePlate()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private void render()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private void endSequence()
 	{
 		throw new System.NotImplementedException();
 	}

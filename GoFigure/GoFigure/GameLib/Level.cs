@@ -11,7 +11,12 @@ using System.Text;
 
 public class Level
 {
-	private string filename
+    public Character character
+    {
+        get;
+        set;
+    }
+    private string filename
 	{
 		get;
 		set;
@@ -66,11 +71,6 @@ public class Level
 	}
 
 	private bool checkReadOnly()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual Cell characterLocation()
 	{
 		throw new System.NotImplementedException();
 	}

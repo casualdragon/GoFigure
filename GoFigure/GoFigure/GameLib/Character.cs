@@ -6,6 +6,7 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -17,7 +18,7 @@ public class Character : GameObject
 		set;
 	}
 
-	private bool dead
+	public bool dead
 	{
 		get;
 		set;
@@ -29,30 +30,22 @@ public class Character : GameObject
 		set;
 	}
 
-	private Double acceleration
-	{
-		get;
-		set;
-	}
+    private int currentSpeed
+    {
+        get;
+        set;
+    }
 
-	private Double deacceleration
-	{
-		get;
-		set;
-	}
+    public virtual void changeSpeed(int speed)
+    {
+        if (currentSpeed <= maxSpeed) {
+            currentSpeed += speed;
+        }
+    }
 
-	public virtual void increaseSpeed()
+    public Character(Image image, PointF point)
 	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void decreaseSpeed()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public Character(Image image, PointF point)
-	{
+        
 	}
 
 }

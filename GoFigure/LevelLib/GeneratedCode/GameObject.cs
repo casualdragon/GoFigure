@@ -35,6 +35,18 @@ public class GameObject
 		set;
 	}
 
+	private int height
+	{
+		get;
+		set;
+	}
+
+	private int width
+	{
+		get;
+		set;
+	}
+
 	public virtual void Shape(PointF point, Image image, bool collison, bool visible)
 	{
 		throw new System.NotImplementedException();

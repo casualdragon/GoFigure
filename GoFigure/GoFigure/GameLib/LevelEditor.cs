@@ -68,6 +68,7 @@ public class LevelEditor
 
 	public LevelEditor(Level level)
 	{
+        this.level = level;
 	}
 
 	private bool checkForGround()
