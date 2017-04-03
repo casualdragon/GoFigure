@@ -8007,8 +8007,8 @@
             </appliedStereotypesInternal>
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="64421c3d-f7dd-4086-879a-11ae9bb79f6e"
-                LastKnownName="Double"
+                Id="85adff5b-1fb0-4475-8ce2-9274c3443c0a"
+                LastKnownName="int"
                 LastKnownLocation="Level.uml" />
             </type_NamedElement>
           </property>
@@ -8159,8 +8159,8 @@
             </appliedStereotypesInternal>
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="64421c3d-f7dd-4086-879a-11ae9bb79f6e"
-                LastKnownName="Double"
+                Id="85adff5b-1fb0-4475-8ce2-9274c3443c0a"
+                LastKnownName="int"
                 LastKnownLocation="Level.uml" />
             </type_NamedElement>
           </property>
@@ -9023,10 +9023,22 @@
                   Id="3a81eae7-9fb3-4680-a1ab-00bc8f75fb05"
                   direction="Return"
                   isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0c7706fa-2be5-40cf-ab3d-394103b74338"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="acb0d35b-d0d3-4336-9595-084aadf83f01"
+                      name="Upper"
+                      value="*, 0..*" />
+                  </upperValueInternal>
                   <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
+                    <classMoniker
+                      Id="41a1c9aa-957f-471a-9806-1686808cc7ac"
+                      LastKnownName="GameObject"
                       LastKnownLocation="Level.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -10357,80 +10369,6 @@
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="40ab2dc4-e67b-4196-a5a9-e43c104a4f56"
-            name="killPlayer"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="4513446b-8435-408e-a0df-8571aaf5e38d"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2876232e-afdc-4d33-bbc7-4fc911c2062f">
-                    <propertyInstance
-                      Id="fbf95430-a068-4bee-af56-fe07d41362c0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5f91c757-7bd7-4334-b653-12595c2c51ee">
-                    <propertyInstance
-                      Id="b26f789d-aa5e-4a2f-a0f0-b1dd1b4328df"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="90c2716a-a24c-4a38-80e0-dca35fc281b0">
-                    <propertyInstance
-                      Id="c8504b2c-615c-4432-9b27-32fa5afccccf"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f808c715-c647-4592-a909-e673961687de">
-                    <propertyInstance
-                      Id="67c28ccc-9112-4c89-87ca-f3401558c5fb"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ca9cf541-afd7-44a1-8d04-333c1c03c283">
-                    <propertyInstance
-                      Id="8f50dc10-1e88-469d-b3d7-b5bd9f859577"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f90dd440-786d-4a93-97e4-60e883808771">
-                    <propertyInstance
-                      Id="69b6097f-9a8b-49c4-b860-dc0ed767a547"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e9b6bd7a-8346-48df-bd81-fd430f01fd20"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="2cb204d5-74f0-4a42-8299-171eb13cdb0a"
-                      LastKnownName="void"
-                      LastKnownLocation="Level.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation
             Id="1c86d112-20e2-4b04-acb3-39fed7fd1de1"
             name="Spike"

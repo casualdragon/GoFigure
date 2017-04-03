@@ -94,9 +94,11 @@ public class Game
         if(gameObject is Spike)
         {
             level.character.dead = true;
+            //execute end sequence
         }
         if(gameObject is PressurePlate)
         {
+            //activates the pressure plate
             ((PressurePlate)gameObject).activate();
         }
         return flag;
@@ -111,11 +113,13 @@ public class Game
 	{
         if (movement == Movement.LEFT)
         {
-            level.character.changeSpeed(10);
+            //validate the next position
+            level.character.changeSpeed(20);
         }
         else if(movement == Movement.RIGHT)
         {
-            level.character.changeSpeed(-10);
+            //validate the next position
+            level.character.changeSpeed(-20);
         }
 	}
 

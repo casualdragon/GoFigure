@@ -6,6 +6,7 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -40,13 +41,13 @@ public class Level
 		set;
 	}
 
-	public virtual Clock Clock
+	public virtual Clock clock
 	{
 		get;
 		set;
 	}
 
-	public virtual bool loadLevel()
+	public virtual IEnumerable<GameObject> loadLevel()
 	{
 		throw new System.NotImplementedException();
 	}
@@ -68,6 +69,17 @@ public class Level
 
 	public Level(string filename)
 	{
+        this.filename = filename;
+        layout = loadLevel();
+        foreach (GameObject gameObject in layout)
+        {
+            if(gameObject is Character)
+            {
+                character = (Character)gameObject;
+                break;
+            }
+        }
+        clock = new Clock();
 	}
 
 	private bool checkReadOnly()
@@ -80,9 +92,16 @@ public class Level
 		throw new System.NotImplementedException();
 	}
 
-	public virtual GameObject shapeAt(int x, int y)
+	public virtual GameObject shapeAt(PointF point)
 	{
-		throw new System.NotImplementedException();
+        foreach (GameObject gameObject in layout)
+        {
+            if(gameObject.point == point)
+            {
+                return gameObject;
+            }
+        }
+        return null;
 	}
 
 }
