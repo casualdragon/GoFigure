@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 public class Level
 {
@@ -49,8 +50,20 @@ public class Level
 
 	public virtual IEnumerable<GameObject> loadLevel()
 	{
-		throw new System.NotImplementedException();
-	}
+        try
+        {
+            using (StreamReader sr = new StreamReader(this.filename))
+            {
+                String line = sr.ReadToEnd();
+                //DrawImage, probably going to need to do serialization 
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("The file could not be read:");
+            Console.WriteLine(e.Message);
+        }
+    }
 
 	public virtual bool saveLevel()
 	{
