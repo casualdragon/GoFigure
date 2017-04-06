@@ -53,11 +53,11 @@ public class LevelEditor
 
 	private bool checkForCharacter()
 	{
-        PointF point = level.characterLocation();
-        if(point.X < 0)
-        {
-            return false;
-        }
+        //PointF point = level.characterLocation();
+        //if(point.X < 0)
+        //{
+        //    return false;
+        //}
         return true;
 	}
 

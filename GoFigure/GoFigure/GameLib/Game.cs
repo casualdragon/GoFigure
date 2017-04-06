@@ -14,7 +14,7 @@ using System.Windows.Media;
 
 public class Game
 {
-    enum Movement {LEFT, RIGHT, STOPPED }
+    public enum Movement {LEFT, RIGHT, STOPPED }
     private Level level
 	{
 		get;
@@ -33,7 +33,7 @@ public class Game
 		set;
 	}
 
-    private Movement movement
+    public Movement movement
     {
         get;
         set;
@@ -87,7 +87,7 @@ public class Game
 	private bool validateNextPosition(GameObject gameObject)
 	{
         bool flag = true;
-        if (gameObject.collison)
+        if (gameObject.collision)
         {
             flag = false;
         }
