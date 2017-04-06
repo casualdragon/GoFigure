@@ -61,6 +61,7 @@ public class LevelEditor
         return true;
 	}
 
+    //Is this necessary since it's in the Game?
 	private bool checkForEnd()
 	{
 		throw new System.NotImplementedException();
