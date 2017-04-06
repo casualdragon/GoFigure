@@ -101,6 +101,10 @@ public class Game
             //activates the pressure plate
             ((PressurePlate)gameObject).activate();
         }
+        if (checkForEnd() == true)
+        {
+            //bring up ending menu
+        }
         return flag;
     }
 
