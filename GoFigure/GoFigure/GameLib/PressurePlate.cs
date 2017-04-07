@@ -32,8 +32,8 @@ public class PressurePlate : GameObject
 
 	public virtual void activate()
 	{
-        affectedShape.point.X = point.X + horizontalChange;
-        affectedShape.point.Y = point.Y + verticalChange;
+        //affectedShape.point.X = point.X + horizontalChange;
+        //affectedShape.point.Y = point.Y + verticalChange;
 	}
 
 	public PressurePlate(GameObject affected, PointF point)
