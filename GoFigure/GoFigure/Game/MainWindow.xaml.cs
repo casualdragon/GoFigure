@@ -1,19 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
-using System.Drawing.Printing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using System.Windows.Media;
+using System.Windows.Interop;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace GoFigure
 {
@@ -28,11 +19,20 @@ namespace GoFigure
 
         public MainWindow()
         {
-            InitializeComponent();
-            
+            Rectangle screenRes = Screen.PrimaryScreen.Bounds;
+
+            int WIDTH = Convert.ToInt32(this.Width);
+            int HEIGHT = Convert.ToInt32(this.Height);
+            imageLevel.Width = WIDTH;
+            imageLevel.Height = HEIGHT;
+
+            Bitmap displayBitmap = new Bitmap(WIDTH, HEIGHT);
+            BitmapSource bitmap = Imaging.CreateBitmapSourceFromHBitmap(displayBitmap.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromWidthAndHeight(WIDTH, HEIGHT));
+            imageLevel.Source = bitmap;
+
             //level = new Level(filename);
             //game = new Game(level, false);
-            
+
         }
         private void MainWindow_Paint (object sender, PaintEventArgs e)
         {
@@ -49,6 +49,8 @@ namespace GoFigure
             game.movement = Game.Movement.STOPPED;
         }
 
+        //This method determines whether which direction the character 
+        //is moving based on the user input
         private void keyDown(KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -64,5 +66,22 @@ namespace GoFigure
                     break;
             }
         }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            string message = "Are you sure you want to leave?";
+            string caption = "Go Figure";
+            MessageBoxButton buttons = MessageBoxButton.OKCancel;
+            MessageBoxImage icon = MessageBoxImage.Warning;
+            MessageBoxResult result = System.Windows.MessageBox.Show(message, caption, buttons, icon);
+            switch (result)
+            {
+                //This stops the apllication from closing
+                case MessageBoxResult.Cancel:
+                    e.Cancel = true;
+                    break;
+            }
+            base.OnClosed(e);
+        }
+
     }
 }

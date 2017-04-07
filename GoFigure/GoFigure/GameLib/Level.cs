@@ -83,7 +83,7 @@ public class Level
 	public Level(string filename)
 	{
         this.filename = filename;
-        layout = loadLevel();
+        //layout = loadLevel();
         foreach (GameObject gameObject in layout)
         {
             if(gameObject is Character)

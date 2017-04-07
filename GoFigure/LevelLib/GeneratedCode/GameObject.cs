@@ -17,17 +17,11 @@ public class GameObject
 		set;
 	}
 
-	public int x
+	private PointF point
 	{
 		get;
 		set;
 	}
-
-    public int y
-    {
-        get;
-        set;
-    }
 
 	private bool visible
 	{
@@ -53,7 +47,7 @@ public class GameObject
 		set;
 	}
 
-	public virtual void Shape(int x, int y, Image image, bool collison, bool visible)
+	public virtual void Shape(PointF point, Image image, bool collison, bool visible)
 	{
 		throw new System.NotImplementedException();
 	}

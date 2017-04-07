@@ -53,7 +53,7 @@ public class Level
 		set;
 	}
 
-	public virtual bool loadLevel()
+	public virtual IEnumerable<GameObject> loadLevel()
 	{
 		throw new System.NotImplementedException();
 	}

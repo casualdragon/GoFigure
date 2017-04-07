@@ -50,23 +50,8 @@ public class LevelEditor
 		throw new System.NotImplementedException();
 	}
 
-	private bool checkForCharacter()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForEnd()
-	{
-		throw new System.NotImplementedException();
-	}
-
 	public LevelEditor(Level level)
 	{
-	}
-
-	private bool checkForGround()
-	{
-		throw new System.NotImplementedException();
 	}
 
 }

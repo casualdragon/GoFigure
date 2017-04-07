@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Timers;
+using System.Windows;
 using System.Windows.Media;
 
 public class Game
@@ -62,7 +63,7 @@ public class Game
         update();
         if (thread.Enabled == true)
         {
-            thread.Interval += 500;
+            thread.Interval = 500;
         }
     }
 
@@ -103,14 +104,14 @@ public class Game
         }
         if (checkForEnd() == true)
         {
-            //bring up ending menu
+            endSequence();
         }
         return flag;
     }
 
 	private void endSequence()
 	{
-		throw new System.NotImplementedException();
+        
 	}
 
 	private void update()

@@ -9,10 +9,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Spike : GameObject
+public class StartEnd : GameObject
 {
-	public Spike(pointF point)
+	private bool startEnd
 	{
+		get;
+		set;
 	}
 
 }

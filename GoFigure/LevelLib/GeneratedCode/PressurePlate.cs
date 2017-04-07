@@ -17,29 +17,13 @@ public class PressurePlate : GameObject
 		set;
 	}
 
-    private int verticalChange
-    {
-        get;
-        set;
-    }
-
-    private int horizontalChange
-    {
-        get;
-        set;
-    }
-
 	public virtual void activate()
 	{
 		throw new System.NotImplementedException();
-        affectedShape.y = y + verticalChange;
-        affectedShape.x = x + horizontalChange;
 	}
 
-	public PressurePlate(GameObject affected, int x, int y)
+	public PressurePlate(GameObject affected, PointF point)
 	{
-        affected.y = y + verticalChange;
-        affected.x = x + horizontalChange;
 	}
 
 }
