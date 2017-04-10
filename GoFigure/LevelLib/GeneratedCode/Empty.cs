@@ -11,7 +11,7 @@ using System.Text;
 
 public class Empty : GameObject
 {
-	public Empty()
+	public Empty(PointF point)
 	{
 	}
 

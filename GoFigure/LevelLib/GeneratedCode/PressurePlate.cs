@@ -22,7 +22,7 @@ public class PressurePlate : GameObject
 		throw new System.NotImplementedException();
 	}
 
-	public PressurePlate(GameObject affected, PointF point)
+	public PressurePlate(GameObject affected, PointF point, Image image)
 	{
 	}
 

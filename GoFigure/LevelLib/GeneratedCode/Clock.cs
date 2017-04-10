@@ -23,6 +23,12 @@ public class Clock
 		set;
 	}
 
+	private bool stopThread
+	{
+		get;
+		set;
+	}
+
 	public virtual void startClock()
 	{
 		throw new System.NotImplementedException();
@@ -35,6 +41,11 @@ public class Clock
 
 	public Clock()
 	{
+	}
+
+	private void incrementTime()
+	{
+		throw new System.NotImplementedException();
 	}
 
 }

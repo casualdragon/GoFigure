@@ -39,7 +39,12 @@ public class Character : GameObject
 	{
 	}
 
-	public virtual void changeSpeed(int speed)
+	public virtual void move(int speed, int width)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void jump(int speed, int height)
 	{
 		throw new System.NotImplementedException();
 	}

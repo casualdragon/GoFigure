@@ -76,12 +76,20 @@
     <Compile Include="GameLib\LevelEditor.cs" />
     <Compile Include="GameLib\PressurePlate.cs" />
     <Compile Include="GameLib\Spike.cs" />
+    <Compile Include="GameLib\StartEnd.cs" />
     <Compile Include="Game\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainMenuWindow.xaml.cs">
+      <DependentUpon>MainMenuWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -110,6 +118,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LevelEditor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\pixelbackgound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\character.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

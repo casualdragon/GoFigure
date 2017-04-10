@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
@@ -21,14 +22,23 @@ namespace GoFigure
         {
             Rectangle screenRes = Screen.PrimaryScreen.Bounds;
 
-            int WIDTH = Convert.ToInt32(this.Width);
-            int HEIGHT = Convert.ToInt32(this.Height);
-            imageLevel.Width = WIDTH;
-            imageLevel.Height = HEIGHT;
+            int height = screenRes.Height;
+            int width = screenRes.Width;
 
-            Bitmap displayBitmap = new Bitmap(WIDTH, HEIGHT);
-            BitmapSource bitmap = Imaging.CreateBitmapSourceFromHBitmap(displayBitmap.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromWidthAndHeight(WIDTH, HEIGHT));
-            imageLevel.Source = bitmap;
+            Canvas canvas = new Canvas();
+            canvas = canvaslevel;
+
+            System.Windows.Controls.Image img = new System.Windows.Controls.Image();
+            BitmapImage map = new BitmapImage();
+            map.UriSource= new Uri("images/character.png", UriKind.Relative);
+
+            Character character = new Character(new System.Windows.Controls.Image(), new System.Drawing.Point(100,100));
+            character.image.Source = map;
+
+            Canvas.SetLeft(character.image, 100);
+            Canvas.SetTop(character.image, 100);
+
+            canvas.Children.Add(character.image);
 
             //level = new Level(filename);
             //game = new Game(level, false);
@@ -46,7 +56,7 @@ namespace GoFigure
         
         private void keyUp(object sender, KeyEventArgs e)
         {
-            game.movement = Game.Movement.STOPPED;
+            
         }
 
         //This method determines whether which direction the character 
@@ -56,10 +66,10 @@ namespace GoFigure
             switch (e.KeyCode)
             {
                 case Keys.Left:
-                    game.movement = Game.Movement.LEFT;
+                    
                     break;
                 case Keys.Right:
-                    game.movement = Game.Movement.RIGHT;
+                    
                     break;
                 case Keys.Up:
                     

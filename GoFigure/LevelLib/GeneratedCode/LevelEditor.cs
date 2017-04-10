@@ -40,18 +40,18 @@ public class LevelEditor
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void updateLevel()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void exit()
+	public virtual void saveLevel()
 	{
 		throw new System.NotImplementedException();
 	}
 
 	public LevelEditor(Level level)
 	{
+	}
+
+	private bool checkForCharacter()
+	{
+		throw new System.NotImplementedException();
 	}
 
 }

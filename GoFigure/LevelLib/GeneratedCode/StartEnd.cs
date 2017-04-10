@@ -11,10 +11,14 @@ using System.Text;
 
 public class StartEnd : GameObject
 {
-	private bool startEnd
+	private bool startOrEnd
 	{
 		get;
 		set;
+	}
+
+	public StartEnd(bool startOrEnd)
+	{
 	}
 
 }
