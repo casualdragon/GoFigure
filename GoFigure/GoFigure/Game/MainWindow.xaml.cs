@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
-using System.Windows.Interop;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace GoFigure
@@ -29,12 +29,10 @@ namespace GoFigure
             Canvas canvas = new Canvas();
             canvas = canvaslevel;
 
-            System.Windows.Controls.Image img = new System.Windows.Controls.Image();
-            BitmapImage map = new BitmapImage();
-            map.UriSource= new Uri("images/character.png", UriKind.Relative);
-
+            ImageSource image = new BitmapImage(new Uri("/GoFigure;component/images/character.png", UriKind.Relative));
+            
             Character character = new Character(new System.Windows.Controls.Image(), new System.Drawing.Point(100,100));
-            character.image.Source = map;
+            character.image.Source = image;
 
             Canvas.SetLeft(character.image, 100);
             Canvas.SetTop(character.image, 100);

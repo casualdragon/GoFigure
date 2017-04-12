@@ -17,16 +17,17 @@
                 <ImageBrush ImageSource="/GoFigure;component/images/block.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="spike" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,0,0,10" DockPanel.Dock="Bottom" BorderThickness="0">
+        <Button x:Name="spike" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,0,0,10" BorderThickness="0" DockPanel.Dock="Bottom">
             <Button.Background>
                 <ImageBrush ImageSource="/GoFigure;component/images/spike.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="character" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" DockPanel.Dock="Bottom" MouseEnter="character_MouseEnter" >
+        <Button x:Name="character" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" BorderBrush="#FF707070" >
             <Button.Background>
                 <ImageBrush ImageSource="/GoFigure;component/images/character.png"/>
             </Button.Background>
         </Button>
-        
+        <Grid Height="250" Width="194" Margin="0,0,0,0"/>
     </DockPanel>
+
 </Window>
