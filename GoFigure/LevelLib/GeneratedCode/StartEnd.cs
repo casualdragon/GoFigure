@@ -9,20 +9,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class PressurePlate : GameObject
+public class StartEnd : GameObject
 {
-	private GameObject affectedShape
+	private bool startOrEnd
 	{
 		get;
 		set;
 	}
 
-	public virtual void activate()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public PressurePlate(GameObject affected, PointF point, Image image)
+	public StartEnd(bool startOrEnd)
 	{
 	}
 

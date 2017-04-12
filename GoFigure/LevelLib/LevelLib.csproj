@@ -50,6 +50,7 @@
     <Compile Include="GeneratedCode\Movement.cs" />
     <Compile Include="GeneratedCode\PressurePlate.cs" />
     <Compile Include="GeneratedCode\Spike.cs" />
+    <Compile Include="GeneratedCode\StartEnd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

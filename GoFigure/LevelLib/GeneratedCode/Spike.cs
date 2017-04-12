@@ -11,11 +11,6 @@ using System.Text;
 
 public class Spike : GameObject
 {
-	public virtual void killPlayer()
-	{
-		throw new System.NotImplementedException();
-	}
-
 	public Spike(pointF point)
 	{
 	}

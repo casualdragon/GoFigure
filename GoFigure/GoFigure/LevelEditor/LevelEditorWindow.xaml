@@ -1,0 +1,32 @@
+﻿<Window x:Class="GoFigure.LevelEditor.LevelEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoFigure.LevelEditor"
+        mc:Ignorable="d"
+        Title="LevelEditorWindow" Height="300" Width="300">
+    <DockPanel Height="250" Margin="10,10,10.10,10" VerticalAlignment="Top">
+        <Button x:Name="pressurePlate" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" DockPanel.Dock="Bottom" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/pressurePlate.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ground" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" DockPanel.Dock="Bottom" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/block.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="spike" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,0,0,10" DockPanel.Dock="Bottom" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/spike.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="character" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" DockPanel.Dock="Bottom" MouseEnter="character_MouseEnter" >
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/character.png"/>
+            </Button.Background>
+        </Button>
+        
+    </DockPanel>
+</Window>

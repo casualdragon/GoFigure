@@ -40,22 +40,7 @@ public class LevelEditor
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void updateLevel()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void exit()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForCharacter()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool checkForEnd()
+	public virtual void saveLevel()
 	{
 		throw new System.NotImplementedException();
 	}
@@ -64,7 +49,7 @@ public class LevelEditor
 	{
 	}
 
-	private bool checkForGround()
+	private bool checkForCharacter()
 	{
 		throw new System.NotImplementedException();
 	}

@@ -17,19 +17,7 @@ public class Level
 		set;
 	}
 
-	private IEnumerable<string> soundEffets
-	{
-		get;
-		set;
-	}
-
 	private IEnumerable<GameObject> layout
-	{
-		get;
-		set;
-	}
-
-	private Clock timer
 	{
 		get;
 		set;
@@ -53,17 +41,12 @@ public class Level
 		set;
 	}
 
-	public virtual bool loadLevel()
+	public virtual IEnumerable<GameObject> loadLevel()
 	{
 		throw new System.NotImplementedException();
 	}
 
 	public virtual bool saveLevel()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private bool levelExisit()
 	{
 		throw new System.NotImplementedException();
 	}

@@ -11,7 +11,7 @@ using System.Text;
 
 public class Character : GameObject
 {
-	private Double maxSpeed
+	private int maxSpeed
 	{
 		get;
 		set;
@@ -23,7 +23,7 @@ public class Character : GameObject
 		set;
 	}
 
-	private Double jumpHeight
+	private int jumpHeight
 	{
 		get;
 		set;
@@ -35,14 +35,18 @@ public class Character : GameObject
 		set;
 	}
 
-	public Character(Image image, int x, int y)
+	public Character(Image image, PointF point)
 	{
 	}
 
-	public virtual void changeSpeed(int speed)
+	public virtual void move(int speed, int width)
 	{
 		throw new System.NotImplementedException();
-        this.currentSpeed = currentSpeed + speed;
+	}
+
+	public virtual void jump(int speed, int height)
+	{
+		throw new System.NotImplementedException();
 	}
 
 }

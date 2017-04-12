@@ -17,12 +17,6 @@ public class Game
 		set;
 	}
 
-	private MediaPlayer mediaplayer
-	{
-		get;
-		set;
-	}
-
 	private Timer thread
 	{
 		get;
@@ -35,13 +29,19 @@ public class Game
 		set;
 	}
 
-	private bool up
+	private bool jumping
 	{
 		get;
 		set;
 	}
 
-	private Movement movement
+	private bool endOfLevel
+	{
+		get;
+		set;
+	}
+
+	private Clock timer
 	{
 		get;
 		set;
