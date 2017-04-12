@@ -35,29 +35,16 @@ public class Character : GameObject
         set;
     }
 
-    public virtual void move(int speed, int maxwidth)
+    public virtual void move()
     {
-        ThicknessAnimation ta;
-        Storyboard sb = new Storyboard();
-        /*
-        if (speed > 0) {
-             ta = new ThicknessAnimation(
-                new Duration(TimeSpan.FromSeconds(1)),
-                new Thickness(point.X, 0, point.Y, 0),
-                new Thickness(0),
-                 0.9f);
-        } else if (speed < 0){
-            ta = new ThicknessAnimation(
-                new Duration(TimeSpan.FromSeconds(1)),
-                new Thickness(point.X, 0, point.Y, 0),
-                new Thickness(0),
-                DecelerationRatio = 0.9f);
-        }
-        */
-    }
-    public virtual void jump(int speed, int height)
-    {
+        System.Drawing.PointF p = new System.Drawing.PointF(point.X + maxSpeed, point.Y);
+        point = p; 
 
+    }
+    public virtual void jump()
+    {
+        System.Drawing.PointF p = new System.Drawing.PointF(point.X, point.Y + jumpHeight);
+        point = p;
     }
 
     public Character(Image image, System.Drawing.PointF point) : base(point, image, true, true)

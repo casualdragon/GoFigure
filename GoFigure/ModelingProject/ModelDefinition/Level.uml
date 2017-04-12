@@ -8543,34 +8543,6 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="aab0f170-8b93-4816-93ee-0a2add2670f3"
-                  name="speed"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="85adff5b-1fb0-4475-8ce2-9274c3443c0a"
-                      LastKnownName="int"
-                      LastKnownLocation="Level.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="32c77003-f203-4395-a76b-de1be4a24df3"
-                  name="width"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="85adff5b-1fb0-4475-8ce2-9274c3443c0a"
-                      LastKnownName="int"
-                      LastKnownLocation="Level.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
                   Id="a9bca2e7-fa5c-44cf-9c7d-2a0e4f8f3700"
                   direction="Return"
                   isUnique="false">
@@ -8643,34 +8615,6 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="bd236c3d-c803-4244-8835-367d7d09a7af"
-                  name="speed"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="85adff5b-1fb0-4475-8ce2-9274c3443c0a"
-                      LastKnownName="int"
-                      LastKnownLocation="Level.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4f57f2dd-0c56-4b45-ba1e-f5b9954ac74e"
-                  name="height"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="85adff5b-1fb0-4475-8ce2-9274c3443c0a"
-                      LastKnownName="int"
-                      LastKnownLocation="Level.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="2a8f3c13-e753-497c-8153-984bd7180288"

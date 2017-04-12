@@ -1504,22 +1504,6 @@
             <elementDefinition Id="ccf6a601-c63d-46b6-af9a-1cd7654907f2" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="5044ebff-f9da-4694-bdb6-8ee1ea3e81f1" name="speed" direction="In" isUnique="false">
-                  <elementDefinition Id="aab0f170-8b93-4816-93ee-0a2add2670f3" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="06b7f4f2-c38e-44d1-a6e2-95e43660fcf9" LastKnownName="int" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="194b893f-92c7-452c-8ef2-10a8daa099f7" name="width" direction="In" isUnique="false">
-                  <elementDefinition Id="32c77003-f203-4395-a76b-de1be4a24df3" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="06b7f4f2-c38e-44d1-a6e2-95e43660fcf9" LastKnownName="int" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
                 <parameter Id="80a1e51c-3131-44ee-85cd-08877e4e81f1" direction="Return" isUnique="false">
                   <elementDefinition Id="a9bca2e7-fa5c-44cf-9c7d-2a0e4f8f3700" />
                   <type_NamedElement>
@@ -1575,22 +1559,6 @@
             </appliedStereotypesInternal>
             <elementDefinition Id="fa41b9a6-1723-44ae-8e04-6530d9942642" />
             <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="db5d94e9-fd98-46bd-bd08-6e2920f48c47" name="speed" direction="In" isUnique="false">
-                  <elementDefinition Id="bd236c3d-c803-4244-8835-367d7d09a7af" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="06b7f4f2-c38e-44d1-a6e2-95e43660fcf9" LastKnownName="int" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="b1236ab0-af0a-438c-8386-940366973606" name="height" direction="In" isUnique="false">
-                  <elementDefinition Id="4f57f2dd-0c56-4b45-ba1e-f5b9954ac74e" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="06b7f4f2-c38e-44d1-a6e2-95e43660fcf9" LastKnownName="int" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter Id="dbcfa430-c025-40c0-b912-e3294b6af896" direction="Return" isUnique="false">
                   <elementDefinition Id="2a8f3c13-e753-497c-8153-984bd7180288" />
