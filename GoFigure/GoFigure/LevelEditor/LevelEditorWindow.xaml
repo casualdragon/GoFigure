@@ -6,8 +6,27 @@
         xmlns:local="clr-namespace:GoFigure.LevelEditor"
         mc:Ignorable="d"
         Title="LevelEditorWindow" Height="300" Width="300">
-    <DockPanel Height="270" Margin="0,0,-0.4,0" VerticalAlignment="Top">
-        <Image x:Name="image" Height="50" VerticalAlignment="Bottom" Width="290" Margin="0,0,0,0" DockPanel.Dock="Bottom"/>
-
+    <DockPanel Height="250" Margin="10,10,10.10,10" VerticalAlignment="Top">
+        <Button x:Name="pressurePlate" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" DockPanel.Dock="Bottom" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/pressurePlate.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ground" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" DockPanel.Dock="Bottom" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/block.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="spike" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,0,0,10" DockPanel.Dock="Bottom" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/spike.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="character" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,5" DockPanel.Dock="Bottom" MouseEnter="character_MouseEnter" >
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/images/character.png"/>
+            </Button.Background>
+        </Button>
+        
     </DockPanel>
 </Window>

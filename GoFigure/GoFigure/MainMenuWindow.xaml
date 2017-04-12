@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GoFigure"
         mc:Ignorable="d"
-        Title="Go Figure Menu" Height="350" Width="525">
+        Title="Go Figure Menu" Height="350" Width="525" MaxHeight="720" MaxWidth="1280">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="images/pixelbackgound.png"/>
         </Grid.Background>
-        <Button x:Name="Play_Game" Content="Play" HorizontalAlignment="Left" Margin="221,164,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" Click="Click" MouseLeave="MouseLeave"/>
-        <Button x:Name="Level_Editor" Content="Level Editor" HorizontalAlignment="Left" Margin="221,217,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Margin="221,265,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,50,0.0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Snap ITC" FontSize="48" Foreground="White"><Run Text="Go Figure"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,-100,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Snap ITC" FontSize="48" Foreground="White"><Run Text="Go Figure"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="Play_Game" Content="Play" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" Click="Click" MouseLeave="MouseLeave"/>
+        <Button x:Name="Level_Editor" Content="Level Editor" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Center" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave" Click="Level_Editor_Click"/>
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Center" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave" Click="Exit_Click"/>
 
     </Grid>
 </Window>

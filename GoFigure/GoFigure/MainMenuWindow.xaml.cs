@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GoFigure.LevelEditor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,34 +38,31 @@ namespace GoFigure
 
         private void Click(object sender, RoutedEventArgs e)
         {
-            Button button = (Button)e.OriginalSource;
-            if (button == Play_Game)
-            {
-                MainWindow game = new MainWindow();
-                game.Show();
-                this.Close();
-                
+            MainWindow game = new MainWindow();
+            game.Show();
+            Hide();
+        }
 
-            }
-            else if (button == Level_Editor)
-            {
+        private void Level_Editor_Click(object sender, RoutedEventArgs e)
+        {
+            LevelEditorWindow leveleditor = new LevelEditorWindow();
+            leveleditor.Show();
+            Hide();
+        }
 
-            }
-            else if (button == Exit)
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            string message = "Are you sure you want to leave?";
+            string caption = "Go Figure";
+            MessageBoxButton buttons = MessageBoxButton.OKCancel;
+            MessageBoxImage icon = MessageBoxImage.Warning;
+            MessageBoxResult result = System.Windows.MessageBox.Show(message, caption, buttons, icon);
+            switch (result)
             {
-                string message = "Are you sure you want to leave?";
-                string caption = "Go Figure";
-                MessageBoxButton buttons = MessageBoxButton.OKCancel;
-                MessageBoxImage icon = MessageBoxImage.Warning;
-                MessageBoxResult result = System.Windows.MessageBox.Show(message, caption, buttons, icon);
-                switch (result)
-                {
-                    //This stops the apllication from closing
-                    case MessageBoxResult.Cancel:
-                        this.Close();
-                        break;
-                }
-                
+                //This stops the apllication from closing
+                case MessageBoxResult.OK:
+                    this.Close();
+                    break;
             }
         }
     }

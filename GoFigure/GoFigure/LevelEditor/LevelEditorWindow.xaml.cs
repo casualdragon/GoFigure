@@ -22,6 +22,13 @@ namespace GoFigure.LevelEditor
         public LevelEditorWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void character_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Button button = (Button)sender;
+            Brush background = button.Background;
         }
     }
 }

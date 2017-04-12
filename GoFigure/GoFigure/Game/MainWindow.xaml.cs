@@ -20,6 +20,7 @@ namespace GoFigure
 
         public MainWindow()
         {
+            InitializeComponent();
             Rectangle screenRes = Screen.PrimaryScreen.Bounds;
 
             int height = screenRes.Height;
@@ -38,7 +39,7 @@ namespace GoFigure
             Canvas.SetLeft(character.image, 100);
             Canvas.SetTop(character.image, 100);
 
-            canvas.Children.Add(character.image);
+            canvaslevel.Children.Add(character.image);
 
             //level = new Level(filename);
             //game = new Game(level, false);

@@ -123,12 +123,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\spike.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="images\pixelbackgound.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\character.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\pressurePlate.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
