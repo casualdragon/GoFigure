@@ -28,9 +28,9 @@ public class PressurePlate : GameObject
 
 	public virtual void activate()
 	{
-        //affectedShape.point.X = point.X + horizontalChange;
-        //affectedShape.point.Y = point.Y + verticalChange;
-	}
+        System.Drawing.PointF p = new System.Drawing.PointF(point.X + horizontalChange, point.Y + verticalChange);
+        point = p;
+    }
 
 	public PressurePlate(GameObject affected, System.Drawing.PointF point, Image image):base(point,image,false,true)
 	{

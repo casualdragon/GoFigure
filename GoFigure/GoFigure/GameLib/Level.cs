@@ -28,14 +28,13 @@ public class Level
 
 	public virtual IEnumerable<GameObject> loadLevel()
 	{
-        return null;
         try
         {
             using (StreamReader sr = new StreamReader(this.filename))
             {
-                String line = sr.ReadToEnd();
-                //DrawImage, probably going to need to do serialization 
-
+                var x = new System.Xml.Serialization.XmlSerializer(GetType(this));
+                //Maybe GameObject instead?
+                this = (Level)(x.Deserialize(sr));
                 
             }
         }
@@ -45,14 +44,21 @@ public class Level
             Console.WriteLine(e.Message);
             return null;
         }
+        return null;
     }
 
 	public virtual bool saveLevel()
 	{
-		throw new System.NotImplementedException();
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(GetType(this));
+        return true;
 	}
 
-	public virtual IEnumerable<int> checkLocation(int x, int y)
+    private Type GetType(Level level)
+    {
+        throw new NotImplementedException();
+    }
+
+    public virtual IEnumerable<int> checkLocation(int x, int y)
 	{
 		throw new System.NotImplementedException();
 	}
