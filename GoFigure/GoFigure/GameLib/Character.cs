@@ -4,6 +4,8 @@
 // The character speed will determine which direction the character will
 // move. 
 //------------------------------------------------------------------------------
+using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
@@ -11,10 +13,10 @@ public class Character : GameObject
 {
     // If speed is positive, then move right. 
     // If speed is negative move left.
-    private int maxSpeed
+    public int maxSpeed
 	{
 		get;
-		set;
+		private set;
 	}
 
 	public bool dead
@@ -23,31 +25,30 @@ public class Character : GameObject
 		set;
 	}
 
-	private int jumpHeight
+	public int jumpHeight
 	{
 		get;
-		set;
+		private set;
 	}
 
-    private int currentSpeed
+    public int currentSpeed
     {
         get;
-        set;
+        private set;
     }
 
-    public virtual void move()
+    public void move(PointF position)
     {
-        System.Drawing.PointF p = new System.Drawing.PointF(point.X + maxSpeed, point.Y);
-        point = p; 
+        point = position;
 
     }
     public virtual void jump()
     {
-        System.Drawing.PointF p = new System.Drawing.PointF(point.X, point.Y + jumpHeight);
+        PointF p = new PointF(point.X, point.Y + jumpHeight);
         point = p;
     }
 
-    public Character(Image image, System.Drawing.PointF point) : base(point, image, true, true)
+    public Character(System.Windows.Controls.Image image, System.Drawing.PointF point) : base(point, image, true, true)
 	{
         maxSpeed = 100;
         dead = false;

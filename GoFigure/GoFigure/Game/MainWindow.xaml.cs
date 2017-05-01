@@ -25,6 +25,7 @@ namespace GoFigure
 
             int height = screenRes.Height;
             int width = screenRes.Width;
+            //KeyDown += keyDown;
 
             Canvas canvas = new Canvas();
             canvas = canvaslevel;
@@ -43,15 +44,7 @@ namespace GoFigure
             //game = new Game(level, false);
 
         }
-        private void MainWindow_Paint (object sender, PaintEventArgs e)
-        {
-            using(Graphics g = e.Graphics)
-            {
-                System.Drawing.Rectangle rect = new System.Drawing.Rectangle(100,100,100,100);
-                g.DrawRectangle(Pens.Black, rect);
-            }
-           
-        }
+
         
         private void keyUp(object sender, KeyEventArgs e)
         {
@@ -60,21 +53,24 @@ namespace GoFigure
 
         //This method determines whether which direction the character 
         //is moving based on the user input
-        private void keyDown(KeyEventArgs e)
+        private void keyDown(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
-            {
+            {               
                 case Keys.Left:
-                    
+                    PointF point = new PointF(level.character.point.X - 30, level.character.point.Y);
+                    level.character.move(point);
                     break;
                 case Keys.Right:
-                    
+                    point = new PointF(level.character.point.X + 30, level.character.point.Y);
+                    level.character.move(point);
                     break;
                 case Keys.Up:
                     
                     break;
             }
         }
+
         protected override void OnClosing(CancelEventArgs e)
         {
             string message = "Are you sure you want to leave?";

@@ -59,6 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Game\GameLevelSelectWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Game\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,6 +81,9 @@
     <Compile Include="GameLib\PressurePlate.cs" />
     <Compile Include="GameLib\Spike.cs" />
     <Compile Include="GameLib\StartEnd.cs" />
+    <Compile Include="Game\GameLevelSelectWindow.xaml.cs">
+      <DependentUpon>GameLevelSelectWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Game\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -137,6 +144,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\pressurePlate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\menuIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="levels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

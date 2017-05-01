@@ -4,7 +4,7 @@
 //------------------------------------------------------------------------------
 using System.Windows.Controls;
 
-public class GameObject : System.Windows.DependencyObject
+public class GameObject
 {
 	public Image image
 	{
