@@ -12,17 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace GoFigure.LevelEditor
+namespace GoFigure.Game
 {
     /// <summary>
-    /// Interaction logic for LevelEditorWindow.xaml
+    /// Interaction logic for GameLevelSelectWindow.xaml
     /// </summary>
-    public partial class LevelEditorWindow : Window
+    public partial class GameLevelSelectWindow : Window
     {
-        public LevelEditorWindow()
+        public GameLevelSelectWindow()
         {
             InitializeComponent();
-
         }
     }
 }

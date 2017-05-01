@@ -49,11 +49,7 @@ public class Game
 
     public virtual void play()
     {
-        update();
-        if (thread.Enabled == true)
-        {
-            thread.Interval = 500;
-        }
+
     }
 
     //Constructor
@@ -82,13 +78,6 @@ public class Game
         {
             //activates the pressure plate
             ((PressurePlate)gameObject).activate();
-        }
-        if (gameObject is StartEnd)
-        {
-            if(((StartEnd)gameObject).startOrEnd == true)
-            {
-                endOfLevel = true;
-            }
         }
         return flag;
     }
