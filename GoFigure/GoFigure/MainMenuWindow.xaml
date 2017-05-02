@@ -10,10 +10,10 @@
         <Grid.Background>
             <ImageBrush ImageSource="images/pixelbackgound.png"/>
         </Grid.Background>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,-100,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Snap ITC" FontSize="48" Foreground="White"><Run Text="Go Figure"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="Play_Game" Content="Play" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" Click="Click" MouseLeave="MouseLeave"/>
-        <Button x:Name="Level_Editor" Content="Level Editor" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Center" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave" Click="Level_Editor_Click"/>
-        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Center" Width="75" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave" Click="Exit_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Snap ITC" FontSize="72" Foreground="White"><Run Text="Go Figure"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="Play_Game" Content="Play" HorizontalAlignment="Center" Margin="0,0,0,60" VerticalAlignment="Center" Foreground="White" Background="Black" MouseEnter="MouseEnter" Click="Click" MouseLeave="MouseLeave" FontSize="36" Padding="5" FontFamily="Showcard Gothic"/>
+        <Button x:Name="Level_Editor" Content="Level Editor" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Center" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave" Padding="5" Click="Level_Editor_Click" FontSize="32" FontFamily="Showcard Gothic"/>
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Center" Foreground="White" Background="Black" MouseEnter="MouseEnter" MouseLeave="MouseLeave" Click="Exit_Click" Padding="5" FontSize="36" FontFamily="Showcard Gothic"/>
 
     </Grid>
 </Window>

@@ -1,18 +1,8 @@
 ﻿using GoFigure.Game;
 using GoFigure.LevelEditor;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace GoFigure
 {
@@ -28,12 +18,12 @@ namespace GoFigure
 
         private void MouseEnter(object sender, MouseEventArgs e)
         {
-            Button button = (Button)e.Source;
+            System.Windows.Controls.Button button = (System.Windows.Controls.Button)e.Source;
             button.Background = Brushes.DarkGray;
         }
         private void MouseLeave(object sender, MouseEventArgs e)
         {
-            Button button = (Button)e.Source;
+            System.Windows.Controls.Button button = (System.Windows.Controls.Button)e.Source;
             button.Background = Brushes.Black;
         }
 

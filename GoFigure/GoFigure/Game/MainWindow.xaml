@@ -14,7 +14,7 @@
                 <ImageBrush ImageSource="/GoFigure;component/icons/menuIcon.png"/>
             </Button.Background>
         </Button>
-        <TextBox x:Name="time_textbox" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3" SelectionBrush="#003399FF" FontSize="20" FontFamily="Stencil" IsReadOnly="True" MouseEnter="time_textbox_MouseEnter" HorizontalAlignment="Left"/>
+        <TextBox x:Name="time_textbox" Height="23" Margin="10,0,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3" SelectionBrush="#003399FF" FontSize="20" FontFamily="Stencil" IsReadOnly="True" MouseEnter="time_textbox_MouseEnter" HorizontalAlignment="Left"/>
         <Canvas Name="canvaslevel" MinHeight="690" MinWidth="1280" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

@@ -35,5 +35,14 @@ namespace GoFigure.Game
             new MainMenuWindow().Show();
             Close();
         }
+
+        private void NotAvailable_Click(object sender, RoutedEventArgs e)
+        {
+            string message = "Sorry! This level will be able in the next expansion.";
+            string caption = "Go Figure";
+            MessageBoxButton buttons = MessageBoxButton.OK;
+            MessageBoxImage icon = MessageBoxImage.Information;
+            MessageBoxResult result = System.Windows.MessageBox.Show(message, caption, buttons, icon);
+        }
     }
 }

@@ -39,8 +39,10 @@ namespace GoFigure.Game
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            Visibility = Visibility.Collapsed;    
+            Visibility = Visibility.Collapsed;
+            main = new MainWindow();
             main.Visibility = Visibility.Visible;
+            main.Show();  
         }
     }
 }

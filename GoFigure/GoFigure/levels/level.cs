@@ -9,14 +9,15 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GoFigure.LevelEditor
 {
-    public class Layer
+    public class ClassLevel
+
     {
         //Declares array for level/map layer
         public int[,] layer;
         //Declares map and tile size
         int mapWidth, mapHeight, tileWidth, tileHeight;
 
-        public Layer(int mapWidth, int mapHeight, int tileWidth, int tileHeight)
+        public ClassLevel(int mapWidth, int mapHeight, int tileWidth, int tileHeight)
         {
             //Initializing instance variables
             this.mapHeight = mapHeight;
