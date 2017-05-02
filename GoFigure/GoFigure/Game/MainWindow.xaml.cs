@@ -1,10 +1,12 @@
-﻿using System;
+﻿using GoFigure.Game;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 
 namespace GoFigure
@@ -15,7 +17,7 @@ namespace GoFigure
     public partial class MainWindow : Window
     {
         private String filename;
-        private Game game;
+//        private Game game;
         private Level level;
 
         public MainWindow()
@@ -40,6 +42,7 @@ namespace GoFigure
 
             canvaslevel.Children.Add(character.image);
 
+            
             //level = new Level(filename);
             //game = new Game(level, false);
 
@@ -88,5 +91,17 @@ namespace GoFigure
             base.OnClosed(e);
         }
 
+        private void time_textbox_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            System.Windows.Controls.TextBox tb = (System.Windows.Controls.TextBox)sender;
+            tb.Background = System.Windows.Media.Brushes.White;
+            tb.BorderBrush = System.Windows.Media.Brushes.White;
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Visibility = Visibility.Collapsed;
+            new IntermediateWindow(this).Show();
+        }
     }
 }

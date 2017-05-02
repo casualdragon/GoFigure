@@ -34,7 +34,7 @@ public class Level
             {
                 var x = new System.Xml.Serialization.XmlSerializer(GetType(this));
                 //Maybe GameObject instead?
-                this = (Level)(x.Deserialize(sr));
+                //this = (Level)(x.Deserialize(sr));
                 
             }
         }
