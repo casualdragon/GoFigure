@@ -23,5 +23,17 @@ namespace GoFigure.Game
         {
             InitializeComponent();
         }
+        private void Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow game = new MainWindow();
+            game.Show();
+            Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            new MainMenuWindow().Show();
+            Close();
+        }
     }
 }

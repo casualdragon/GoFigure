@@ -1,4 +1,5 @@
-﻿using GoFigure.LevelEditor;
+﻿using GoFigure.Game;
+using GoFigure.LevelEditor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,16 +39,16 @@ namespace GoFigure
 
         private void Click(object sender, RoutedEventArgs e)
         {
-            MainWindow game = new MainWindow();
-            game.Show();
-            Hide();
+            GameLevelSelectWindow levelselect = new GameLevelSelectWindow();
+            levelselect.Show();
+            Close();
         }
 
         private void Level_Editor_Click(object sender, RoutedEventArgs e)
         {
             LevelEditorWindow leveleditor = new LevelEditorWindow();
             leveleditor.Show();
-            Hide();
+            Close();
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)

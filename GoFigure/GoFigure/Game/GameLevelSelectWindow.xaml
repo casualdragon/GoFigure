@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="GameLevelSelectWindow" MinHeight="720" MinWidth="1280" MaxHeight="720" MaxWidth="1280">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/GoFigure;component/images/pixelbackgound.png"/>
+
+        </Grid.Background>
+        <Button x:Name="level0" Content="0" HorizontalAlignment="Center" Margin="123,221,563.6,0" VerticalAlignment="Top" Width="75" FontSize="72" FontFamily="Showcard Gothic" BorderBrush="{x:Null}" Background="#00DDDDDD" Foreground="White" Click="Click"/>
+        <Button x:Name="level1" Content="1" HorizontalAlignment="Center" Margin="201,223,485.6,0" VerticalAlignment="Top" Width="75" FontSize="72" FontFamily="Showcard Gothic" BorderBrush="{x:Null}" Background="#00DDDDDD" Foreground="White" RenderTransformOrigin="0.587,0.517">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.967"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.756"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="level2" Content="2" HorizontalAlignment="Center" Margin="268,221,418.6,0" VerticalAlignment="Top" Width="75" FontSize="72" FontFamily="Showcard Gothic" BorderBrush="{x:Null}" Background="#00DDDDDD" Foreground="White"/>
+        <Button x:Name="level3" Content="3" HorizontalAlignment="Center" Margin="0,221,0,0" VerticalAlignment="Top" Width="75" FontSize="72" FontFamily="Showcard Gothic" BorderBrush="{x:Null}" Background="#00DDDDDD" Foreground="White"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="Levels" VerticalAlignment="Top" FontSize="80" FontFamily="Showcard Gothic" BorderBrush="#00ABADB3" Foreground="White" Background="Transparent" SelectionBrush="#003399FF"/>
+        <Button x:Name="level4" Content="4" HorizontalAlignment="Center" Margin="418,221,268.6,0" VerticalAlignment="Top" Width="75" FontSize="72" FontFamily="Showcard Gothic" BorderBrush="{x:Null}" Background="#00DDDDDD" Foreground="White"/>
+        <Button x:Name="level5" Content="5" HorizontalAlignment="Center" Margin="480,221,206.6,0" VerticalAlignment="Top" Width="75" FontSize="72" FontFamily="Showcard Gothic" BorderBrush="{x:Null}" Background="#00DDDDDD" Foreground="White"/>
+        <Button x:Name="level6" Content="6" HorizontalAlignment="Center" Margin="560,221,126.6,0" VerticalAlignment="Top" Width="75" FontSize="72" FontFamily="Showcard Gothic" BorderBrush="{x:Null}" Background="#00DDDDDD" Foreground="White"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Right" Margin="0,61,20,0" VerticalAlignment="Top" Width="75" BorderBrush="#00707070" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/GoFigure;component/icons/backArrowcon.png"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>

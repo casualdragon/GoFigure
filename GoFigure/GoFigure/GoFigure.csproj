@@ -63,6 +63,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Game\IntermediateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Game\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -83,6 +87,9 @@
     <Compile Include="GameLib\StartEnd.cs" />
     <Compile Include="Game\GameLevelSelectWindow.xaml.cs">
       <DependentUpon>GameLevelSelectWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game\IntermediateWindow.xaml.cs">
+      <DependentUpon>IntermediateWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Game\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -150,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="levels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\backArrowcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
