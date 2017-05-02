@@ -20,9 +20,9 @@ namespace GoFigure
         private String filename;
 //        private Game game;
         private Level level;
-        Character character;
-        System.Windows.Point point;
-        int counter = 0;
+        private Character character;
+        private System.Windows.Point point;
+        private int counter = 0;
 
         public MainWindow()
         {
@@ -42,10 +42,32 @@ namespace GoFigure
 
             Canvas.SetLeft(character.image, 100);
             Canvas.SetTop(character.image, 100);
+
+            Spike spike = new Spike(new PointF(620, 1000), new System.Windows.Controls.Image());
+            image = new BitmapImage(new Uri("/GoFigure;component/images/spike.png", UriKind.Relative));
+            spike.image.Source = image;
+
+            GameObject floor = new Spike(new PointF(0, 0), new System.Windows.Controls.Image());
+            image = new BitmapImage(new Uri("/GoFigure;component/images/block.png", UriKind.Relative));
+            floor.image.Source = image;
+            floor.image.Height = 55;
+            floor.image.Width = 1280;
+            floor.image.Stretch = Stretch.Fill;
+
             point.X = 100;
             point.Y = 100;
 
             canvaslevel.Children.Add(character.image);
+
+            Canvas.SetBottom(spike.image, 50);
+            Canvas.SetRight(spike.image, 500);
+            spike.image.Height = 100;
+            spike.image.Width = 100;
+            canvaslevel.Children.Add(spike.image);
+
+            Canvas.SetBottom(floor.image, 0);
+            Canvas.SetRight(floor.image, 0);
+            canvaslevel.Children.Add(floor.image);
 
             DispatcherTimer timer = new DispatcherTimer();
             timer.Tick += new EventHandler(gameLoop);
